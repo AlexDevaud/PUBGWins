@@ -30,7 +30,7 @@ namespace PUBGWinsUI
 
         private void ButtonStore_Click(object sender, EventArgs e)
         {
-            /*
+            
             int kills = int.Parse(BoxKills.Text);
             string perspective = MenuPerspective.Text;
             string server = MenuServer.Text;
@@ -40,7 +40,7 @@ namespace PUBGWinsUI
             string teammate3 = BoxTeammate3.Text;
             int teammates = int.Parse(MenuTeammates.Text);
             string description = BoxDescription.Text;
-            */
+            
 
             // Store with SQL
             using (SqlConnection conn = new SqlConnection(WinDB))
@@ -54,6 +54,113 @@ namespace PUBGWinsUI
                         int rowsAffected = command.ExecuteNonQuery();
                         trans.Commit();
                         LabelDebug.Text = "Rows affected = " + rowsAffected;
+                    }
+
+                    // Set data for this game.
+                    if (teammates == 0)
+                    {
+                        using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Empty = 1", conn, trans))
+                        {
+                            command.Parameters.AddWithValue("@Kills", kills);
+                            command.Parameters.AddWithValue("@Map", map);
+                            command.Parameters.AddWithValue("@Teammates", teammates);
+                            command.Parameters.AddWithValue("@Description", description);
+                            command.Parameters.AddWithValue("@Server", server);
+                            command.Parameters.AddWithValue("@Perspective", perspective);
+
+                            int rowsAffected = command.ExecuteNonQuery();
+
+                            if (rowsAffected == 1)
+                            {
+                                LabelDebug.Text = "A row was updated.";
+                            }
+                            else
+                            {
+                                LabelDebug.Text = rowsAffected + " rows were effectied.";
+                            }
+
+                        }
+                    }
+                    else if (teammates == 1)
+                    {
+                        using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Teammate1 = @Teammate1, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Empty = 1", conn, trans))
+                        {
+                            command.Parameters.AddWithValue("@Kills", kills);
+                            command.Parameters.AddWithValue("@Map", map);
+                            command.Parameters.AddWithValue("@Teammates", teammates);
+                            command.Parameters.AddWithValue("@Teammate1", teammate1);
+                            command.Parameters.AddWithValue("@Description", description);
+                            command.Parameters.AddWithValue("@Server", server);
+                            command.Parameters.AddWithValue("@Perspective", perspective);
+
+
+                            int rowsAffected = command.ExecuteNonQuery();
+
+                            if (rowsAffected == 1)
+                            {
+                                LabelDebug.Text = "A row was updated.";
+                            }
+                            else
+                            {
+                                LabelDebug.Text = rowsAffected + " rows were effectied.";
+                            }
+
+                        }
+                    }
+                    else if (teammates == 2)
+                    {
+                        using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Teammate1 = @Teammate1, Teammate2 = @Teammate2, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Empty = 1", conn, trans))
+                        {
+                            command.Parameters.AddWithValue("@Kills", kills);
+                            command.Parameters.AddWithValue("@Map", map);
+                            command.Parameters.AddWithValue("@Teammates", teammates);
+                            command.Parameters.AddWithValue("@Teammate1", teammate1);
+                            command.Parameters.AddWithValue("@Teammate2", teammate2);
+                            command.Parameters.AddWithValue("@Description", description);
+                            command.Parameters.AddWithValue("@Server", server);
+                            command.Parameters.AddWithValue("@Perspective", perspective);
+
+
+                            int rowsAffected = command.ExecuteNonQuery();
+
+                            if (rowsAffected == 1)
+                            {
+                                LabelDebug.Text = "A row was updated.";
+                            }
+                            else
+                            {
+                                LabelDebug.Text = rowsAffected + " rows were effectied.";
+                            }
+
+                        }
+                    }
+                    else if (teammates == 3)
+                    {
+                        using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Teammate1 = @Teammate1, Teammate2 = @Teammate2, Teammate3 = @Teammate3, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Empty = 1", conn, trans))
+                        {
+                            command.Parameters.AddWithValue("@Kills", kills);
+                            command.Parameters.AddWithValue("@Map", map);
+                            command.Parameters.AddWithValue("@Teammates", teammates);
+                            command.Parameters.AddWithValue("@Teammate1", teammate1);
+                            command.Parameters.AddWithValue("@Teammate2", teammate2);
+                            command.Parameters.AddWithValue("@Teammate3", teammate3);
+                            command.Parameters.AddWithValue("@Description", description);
+                            command.Parameters.AddWithValue("@Server", server);
+                            command.Parameters.AddWithValue("@Perspective", perspective);
+
+
+                            int rowsAffected = command.ExecuteNonQuery();
+
+                            if (rowsAffected == 1)
+                            {
+                                LabelDebug.Text = "A row was updated.";
+                            }
+                            else
+                            {
+                                LabelDebug.Text = rowsAffected + " rows were effectied.";
+                            }
+
+                        }
                     }
                 }
             }
