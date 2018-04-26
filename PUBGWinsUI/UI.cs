@@ -16,6 +16,9 @@ namespace PUBGWinsUI
     {
         private static string WinDB; // The connection string to the DB
 
+        /// <summary>
+        /// Construtor
+        /// </summary>
         public UI()
         {
             InitializeComponent();
@@ -26,11 +29,18 @@ namespace PUBGWinsUI
 
             // SQL database.
             WinDB = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Alex\\source\\repos\\PUBGWins\\PUBGWinsUI\\WinDB.mdf; Integrated Security = True";
+
+            SetStats();
         }
 
+        /// <summary>
+        /// Store a game that has been entered.
+        /// Also updates the stats when done.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonStore_Click(object sender, EventArgs e)
         {
-            
             int kills = int.Parse(BoxKills.Text);
             string perspective = MenuPerspective.Text;
             string server = MenuServer.Text;
@@ -66,7 +76,6 @@ namespace PUBGWinsUI
                     using (SqlCommand command = new SqlCommand("INSERT INTO Wins (Empty) VALUES (1)", conn, trans))
                     {
                         int rowsAffected = command.ExecuteNonQuery();
-                        LabelDebug.Text = "Rows affected = " + rowsAffected;
                     }
 
                     // Set data for this game.
@@ -81,17 +90,7 @@ namespace PUBGWinsUI
                             command.Parameters.AddWithValue("@Server", server);
                             command.Parameters.AddWithValue("@Perspective", perspective);
 
-                            int rowsAffected = command.ExecuteNonQuery();
-
-                            if (rowsAffected == 1)
-                            {
-                                LabelDebug.Text = "A row was updated.";
-                            }
-                            else
-                            {
-                                LabelDebug.Text = rowsAffected + " rows were effectied.";
-                            }
-
+                            command.ExecuteNonQuery();
                         }
                     }
                     else if (teammates == 1)
@@ -106,17 +105,7 @@ namespace PUBGWinsUI
                             command.Parameters.AddWithValue("@Server", server);
                             command.Parameters.AddWithValue("@Perspective", perspective);
 
-                            int rowsAffected = command.ExecuteNonQuery();
-
-                            if (rowsAffected == 1)
-                            {
-                                LabelDebug.Text = "A row was updated.";
-                            }
-                            else
-                            {
-                                LabelDebug.Text = rowsAffected + " rows were effectied.";
-                            }
-
+                            command.ExecuteNonQuery();
                         }
                     }
                     else if (teammates == 2)
@@ -133,17 +122,7 @@ namespace PUBGWinsUI
                             command.Parameters.AddWithValue("@Perspective", perspective);
 
 
-                            int rowsAffected = command.ExecuteNonQuery();
-
-                            if (rowsAffected == 1)
-                            {
-                                LabelDebug.Text = "A row was updated.";
-                            }
-                            else
-                            {
-                                LabelDebug.Text = rowsAffected + " rows were effectied.";
-                            }
-
+                            command.ExecuteNonQuery();
                         }
                     }
                     else if (teammates == 3)
@@ -161,27 +140,19 @@ namespace PUBGWinsUI
                             command.Parameters.AddWithValue("@Perspective", perspective);
 
 
-                            int rowsAffected = command.ExecuteNonQuery();
-
-                            if (rowsAffected == 1)
-                            {
-                                LabelDebug.Text = "A row was updated.";
-                            }
-                            else
-                            {
-                                LabelDebug.Text = rowsAffected + " rows were effectied.";
-                            }
-
+                            command.ExecuteNonQuery();
                         }
                     }
                     trans.Commit();
                 }
             }
-            //SetStats();
+            SetStats();
             BoxDescription.Text = "";
-        }             
+        }
 
-
+        /// <summary>
+        /// Calculate and display stats from the game info in the DB.
+        /// </summary>
         private void SetStats()
         {
             using (SqlConnection conn = new SqlConnection(WinDB))
@@ -194,37 +165,23 @@ namespace PUBGWinsUI
                     int miramarWins = 0;
                     int savageWins = 0;
 
-                    
+
                     int erangelKills = GetKillCount("Erangel", out erangelWins, conn, trans);
                     int miramarKills = GetKillCount("Miramar", out miramarWins, conn, trans);
                     int savageKills = GetKillCount("Savage", out savageWins, conn, trans);
 
+                    int naWins = GetServerCount("NA", conn, trans);
+                    int asWins = GetServerCount("AS", conn, trans);
+                    int euWins = GetServerCount("EU", conn, trans);
+                    int testWins = GetServerCount("Test", conn, trans);
+
+                    int soloWins = GetTeamSizeCount(0, conn, trans);
+                    int duoWins = GetTeamSizeCount(1, conn, trans);
+                    int trioWins = GetTeamSizeCount(2, conn, trans);
+                    int squadWins = GetTeamSizeCount(3, conn, trans);
+
                     int totalKills = 0;
                     int totalWins = 0;
-
-                    /*
-                    // Get erangel count and kills.
-                    erangelKills = GetKillCount("Erangel", out erangelWins, conn, trans);
-                    miramarKills = GetKillCount("Miramar", out miramarWins, conn, trans);
-                    */
-
-                    /*
-                    using (SqlCommand command = new SqlCommand("SELECT Kills FROM Wins WHERE Map = 'Erangel'", conn, trans))
-                    {
-                        SqlDataReader dbReader = command.ExecuteReader();
-                        if (dbReader.HasRows)
-                        {
-                            while (dbReader.Read())
-                            {
-                                erangelWins++;
-                                erangelKills += (int)dbReader.GetSqlInt32(0);
-                            }
-                        }
-                        WinsErangel.Text = "" + erangelWins;
-                        KillsErangel.Text = "" + erangelKills;
-                        dbReader.Close();
-                    }
-                    */
 
                     // Display stats
                     WinsErangel.Text = "" + erangelWins;
@@ -235,6 +192,15 @@ namespace PUBGWinsUI
                     KillsMiramar.Text = "" + miramarKills;
                     KillsSavage.Text = "" + savageKills;
 
+                    NAWins.Text = "" + naWins;
+                    ASWins.Text = "" + asWins;
+                    EUWins.Text = "" + euWins;
+                    TestWins.Text = "" + testWins;
+
+                    SoloWins.Text = "" + soloWins;
+                    DuoWins.Text = "" + duoWins;
+                    TrioWins.Text = "" + trioWins;
+                    SquadWins.Text = "" + squadWins;
 
                     // Total stats.
                     totalKills = erangelKills + miramarKills + savageKills;
@@ -242,6 +208,13 @@ namespace PUBGWinsUI
 
                     WinsTotal.Text = "" + totalWins;
                     KillsTotal.Text = "" + totalKills;
+                    double averageKills = 1.0 * totalKills / totalWins;
+                    string averageString = "" + averageKills;
+                    if (averageString.Length > 5)
+                    {
+                        averageString = averageString.Substring(0, 5);
+                    }
+                    KillsPerWin.Text = averageString;
                 }
             }
         }
@@ -275,11 +248,67 @@ namespace PUBGWinsUI
             return kills;
         }
 
+        /// <summary>
+        /// Get games won on a server.
+        /// </summary>
+        /// <param name="server"></param>
+        /// <param name="conn"></param>
+        /// <param name="trans"></param>
+        /// <returns></returns>
+        private int GetServerCount(string server, SqlConnection conn, SqlTransaction trans)
+        {
+            int wins = 0;
+            using (SqlCommand command = new SqlCommand("SELECT Kills FROM Wins WHERE Server = @Server", conn, trans))
+            {
+                command.Parameters.AddWithValue("@Server", server);
+                SqlDataReader dbReader = command.ExecuteReader();
+                if (dbReader.HasRows)
+                {
+                    while (dbReader.Read())
+                    {
+                        wins++;
+                    }
+                }
+                dbReader.Close();
+            }
+            return wins;
+        }
+
+        /// <summary>
+        /// Click a button to display the stats.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonStats_Click(object sender, EventArgs e)
         {
             SetStats();
         }
+
+        /// <summary>
+        /// Returns the number of games won with the given number of teammates.
+        /// </summary>
+        /// <param name="teammates"></param>
+        /// <param name="conn"></param>
+        /// <param name="trans"></param>
+        /// <returns></returns>
+        private int GetTeamSizeCount(int teammates, SqlConnection conn, SqlTransaction trans)
+        {
+            int wins = 0;
+            using (SqlCommand command = new SqlCommand("SELECT Kills FROM Wins WHERE Teammates = @Teammates", conn, trans))
+            {
+                command.Parameters.AddWithValue("Teammates", teammates);
+                SqlDataReader dbReader = command.ExecuteReader();
+                if (dbReader.HasRows)
+                {
+                    while (dbReader.Read())
+                    {
+                        wins++;
+                    }
+                }
+                dbReader.Close();
+            }
+            return wins;
+        }
     }
-
-
+    
 }
