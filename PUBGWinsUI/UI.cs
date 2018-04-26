@@ -38,9 +38,23 @@ namespace PUBGWinsUI
             string teammate1 = BoxTeammate1.Text;
             string teammate2 = BoxTeammate2.Text;
             string teammate3 = BoxTeammate3.Text;
-            int teammates = int.Parse(MenuTeammates.Text);
             string description = BoxDescription.Text;
-            
+            int teammates = 0;
+
+            // Count the teamates
+            if (teammate1 != "")
+            {
+                teammates++;
+            }
+            if (teammate2 != "")
+            {
+                teammates++;
+            }
+            if (teammate3 != "")
+            {
+                teammates++;
+            }
+
 
             // Store with SQL
             using (SqlConnection conn = new SqlConnection(WinDB))
@@ -52,7 +66,6 @@ namespace PUBGWinsUI
                     using (SqlCommand command = new SqlCommand("INSERT INTO Wins (Empty) VALUES (1)", conn, trans))
                     {
                         int rowsAffected = command.ExecuteNonQuery();
-                        trans.Commit();
                         LabelDebug.Text = "Rows affected = " + rowsAffected;
                     }
 
@@ -92,7 +105,6 @@ namespace PUBGWinsUI
                             command.Parameters.AddWithValue("@Description", description);
                             command.Parameters.AddWithValue("@Server", server);
                             command.Parameters.AddWithValue("@Perspective", perspective);
-
 
                             int rowsAffected = command.ExecuteNonQuery();
 
@@ -162,35 +174,112 @@ namespace PUBGWinsUI
 
                         }
                     }
+                    trans.Commit();
                 }
             }
-            
+            //SetStats();
+            BoxDescription.Text = "";
+        }             
 
-            /*
-            // 2nd connection.
+
+        private void SetStats()
+        {
             using (SqlConnection conn = new SqlConnection(WinDB))
             {
                 conn.Open();
                 using (SqlTransaction trans = conn.BeginTransaction())
                 {
-                    using (SqlCommand command = new SqlCommand("SELECT Kills From Wins WHERE Empty = 1", conn, trans))
+                    // Build stats.
+                    int erangelWins = 0;
+                    int miramarWins = 0;
+                    int savageWins = 0;
+
+                    
+                    int erangelKills = GetKillCount("Erangel", out erangelWins, conn, trans);
+                    int miramarKills = GetKillCount("Miramar", out miramarWins, conn, trans);
+                    int savageKills = GetKillCount("Savage", out savageWins, conn, trans);
+
+                    int totalKills = 0;
+                    int totalWins = 0;
+
+                    /*
+                    // Get erangel count and kills.
+                    erangelKills = GetKillCount("Erangel", out erangelWins, conn, trans);
+                    miramarKills = GetKillCount("Miramar", out miramarWins, conn, trans);
+                    */
+
+                    /*
+                    using (SqlCommand command = new SqlCommand("SELECT Kills FROM Wins WHERE Map = 'Erangel'", conn, trans))
                     {
-                        //int? killsFound = (int)command.ExecuteScalar();
-
-
-                        SqlDataReader resultDB = command.ExecuteReader();
-
-                        if (resultDB.HasRows)
+                        SqlDataReader dbReader = command.ExecuteReader();
+                        if (dbReader.HasRows)
                         {
-                            // There is already a pending game.
-                            LabelDebug.Text = "Wins exist" + resultDB.FieldCount;
-
+                            while (dbReader.Read())
+                            {
+                                erangelWins++;
+                                erangelKills += (int)dbReader.GetSqlInt32(0);
+                            }
                         }
-                        resultDB.Close();
+                        WinsErangel.Text = "" + erangelWins;
+                        KillsErangel.Text = "" + erangelKills;
+                        dbReader.Close();
                     }
+                    */
+
+                    // Display stats
+                    WinsErangel.Text = "" + erangelWins;
+                    WinsMiramar.Text = "" + miramarWins;
+                    WinsSavage.Text = "" + savageWins;
+
+                    KillsErangel.Text = "" + erangelKills;
+                    KillsMiramar.Text = "" + miramarKills;
+                    KillsSavage.Text = "" + savageKills;
+
+
+                    // Total stats.
+                    totalKills = erangelKills + miramarKills + savageKills;
+                    totalWins = erangelWins + miramarWins + savageKills;
+
+                    WinsTotal.Text = "" + totalWins;
+                    KillsTotal.Text = "" + totalKills;
                 }
             }
-            */
-        }             
+        }
+
+        /// <summary>
+        /// Get the kill count and play count.
+        /// </summary>
+        /// <param name="map"></param>
+        /// <param name="played"></param>
+        /// <param name="conn"></param>
+        /// <param name="trans"></param>
+        /// <returns></returns>
+        private int GetKillCount(string map, out int played, SqlConnection conn, SqlTransaction trans)
+        {
+            int kills = 0;
+            played = 0;
+            using (SqlCommand command = new SqlCommand("SELECT Kills FROM Wins WHERE Map = @Map", conn, trans))
+            {
+                command.Parameters.AddWithValue("@Map", map);
+                SqlDataReader dbReader = command.ExecuteReader();
+                if (dbReader.HasRows)
+                {
+                    while (dbReader.Read())
+                    {
+                        played++;
+                        kills += (int)dbReader.GetSqlInt32(0);
+                    }
+                }
+                dbReader.Close();
+            }
+            return kills;
+        }
+
+        private void ButtonStats_Click(object sender, EventArgs e)
+        {
+            SetStats();
+        }
     }
+
+
 }

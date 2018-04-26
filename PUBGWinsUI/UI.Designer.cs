@@ -33,8 +33,6 @@
             this.MenuPerspective = new System.Windows.Forms.ComboBox();
             this.MenuServer = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.MenuTeammates = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.MenuMap = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,6 +47,23 @@
             this.BoxTeammate3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.LabelDebug = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.WinsErangel = new System.Windows.Forms.Label();
+            this.ButtonStats = new System.Windows.Forms.Button();
+            this.KillsErangel = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.KillsTotal = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.WinsTotal = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.KillsMiramar = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.WinsMiramar = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.KillsSavage = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.WinsSavage = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -102,28 +117,6 @@
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Server: ";
-            // 
-            // MenuTeammates
-            // 
-            this.MenuTeammates.FormattingEnabled = true;
-            this.MenuTeammates.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3"});
-            this.MenuTeammates.Location = new System.Drawing.Point(93, 143);
-            this.MenuTeammates.Name = "MenuTeammates";
-            this.MenuTeammates.Size = new System.Drawing.Size(61, 21);
-            this.MenuTeammates.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 151);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Teammates: ";
             // 
             // MenuMap
             // 
@@ -246,11 +239,182 @@
             this.LabelDebug.TabIndex = 21;
             this.LabelDebug.Text = "Debug";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(683, 65);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(91, 13);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Wins on Erangel: ";
+            // 
+            // WinsErangel
+            // 
+            this.WinsErangel.AutoSize = true;
+            this.WinsErangel.Location = new System.Drawing.Point(780, 65);
+            this.WinsErangel.Name = "WinsErangel";
+            this.WinsErangel.Size = new System.Drawing.Size(13, 13);
+            this.WinsErangel.TabIndex = 23;
+            this.WinsErangel.Text = "0";
+            // 
+            // ButtonStats
+            // 
+            this.ButtonStats.Location = new System.Drawing.Point(733, 13);
+            this.ButtonStats.Name = "ButtonStats";
+            this.ButtonStats.Size = new System.Drawing.Size(75, 23);
+            this.ButtonStats.TabIndex = 24;
+            this.ButtonStats.Text = "Show Stats";
+            this.ButtonStats.UseVisualStyleBackColor = true;
+            this.ButtonStats.Click += new System.EventHandler(this.ButtonStats_Click);
+            // 
+            // KillsErangel
+            // 
+            this.KillsErangel.AutoSize = true;
+            this.KillsErangel.Location = new System.Drawing.Point(913, 65);
+            this.KillsErangel.Name = "KillsErangel";
+            this.KillsErangel.Size = new System.Drawing.Size(13, 13);
+            this.KillsErangel.TabIndex = 26;
+            this.KillsErangel.Text = "0";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(816, 65);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(85, 13);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Kills on Erangel: ";
+            // 
+            // KillsTotal
+            // 
+            this.KillsTotal.AutoSize = true;
+            this.KillsTotal.Location = new System.Drawing.Point(913, 134);
+            this.KillsTotal.Name = "KillsTotal";
+            this.KillsTotal.Size = new System.Drawing.Size(13, 13);
+            this.KillsTotal.TabIndex = 28;
+            this.KillsTotal.Text = "0";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(816, 134);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 13);
+            this.label14.TabIndex = 27;
+            this.label14.Text = "Total Kills: ";
+            // 
+            // WinsTotal
+            // 
+            this.WinsTotal.AutoSize = true;
+            this.WinsTotal.Location = new System.Drawing.Point(780, 134);
+            this.WinsTotal.Name = "WinsTotal";
+            this.WinsTotal.Size = new System.Drawing.Size(13, 13);
+            this.WinsTotal.TabIndex = 30;
+            this.WinsTotal.Text = "0";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(683, 134);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(64, 13);
+            this.label15.TabIndex = 29;
+            this.label15.Text = "Total Wins: ";
+            // 
+            // KillsMiramar
+            // 
+            this.KillsMiramar.AutoSize = true;
+            this.KillsMiramar.Location = new System.Drawing.Point(913, 89);
+            this.KillsMiramar.Name = "KillsMiramar";
+            this.KillsMiramar.Size = new System.Drawing.Size(13, 13);
+            this.KillsMiramar.TabIndex = 34;
+            this.KillsMiramar.Text = "0";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(816, 89);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(86, 13);
+            this.label16.TabIndex = 33;
+            this.label16.Text = "Kills on Miramar: ";
+            // 
+            // WinsMiramar
+            // 
+            this.WinsMiramar.AutoSize = true;
+            this.WinsMiramar.Location = new System.Drawing.Point(780, 89);
+            this.WinsMiramar.Name = "WinsMiramar";
+            this.WinsMiramar.Size = new System.Drawing.Size(13, 13);
+            this.WinsMiramar.TabIndex = 32;
+            this.WinsMiramar.Text = "0";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(683, 89);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(92, 13);
+            this.label18.TabIndex = 31;
+            this.label18.Text = "Wins on Miramar: ";
+            // 
+            // KillsSavage
+            // 
+            this.KillsSavage.AutoSize = true;
+            this.KillsSavage.Location = new System.Drawing.Point(913, 113);
+            this.KillsSavage.Name = "KillsSavage";
+            this.KillsSavage.Size = new System.Drawing.Size(13, 13);
+            this.KillsSavage.TabIndex = 38;
+            this.KillsSavage.Text = "0";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(816, 113);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(86, 13);
+            this.label17.TabIndex = 37;
+            this.label17.Text = "Kills on Savage: ";
+            // 
+            // WinsSavage
+            // 
+            this.WinsSavage.AutoSize = true;
+            this.WinsSavage.Location = new System.Drawing.Point(780, 113);
+            this.WinsSavage.Name = "WinsSavage";
+            this.WinsSavage.Size = new System.Drawing.Size(13, 13);
+            this.WinsSavage.TabIndex = 36;
+            this.WinsSavage.Text = "0";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(683, 113);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(92, 13);
+            this.label20.TabIndex = 35;
+            this.label20.Text = "Wins on Savage: ";
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 777);
+            this.ClientSize = new System.Drawing.Size(1187, 777);
+            this.Controls.Add(this.KillsSavage);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.WinsSavage);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.KillsMiramar);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.WinsMiramar);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.WinsTotal);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.KillsTotal);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.KillsErangel);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.ButtonStats);
+            this.Controls.Add(this.WinsErangel);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.LabelDebug);
             this.Controls.Add(this.BoxTeammate3);
             this.Controls.Add(this.label10);
@@ -263,8 +427,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.BoxKills);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.MenuTeammates);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.MenuMap);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.MenuServer);
@@ -286,8 +448,6 @@
         private System.Windows.Forms.ComboBox MenuPerspective;
         private System.Windows.Forms.ComboBox MenuServer;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox MenuTeammates;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox MenuMap;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -302,6 +462,23 @@
         private System.Windows.Forms.TextBox BoxTeammate3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label LabelDebug;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label WinsErangel;
+        private System.Windows.Forms.Button ButtonStats;
+        private System.Windows.Forms.Label KillsErangel;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label KillsTotal;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label WinsTotal;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label KillsMiramar;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label WinsMiramar;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label KillsSavage;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label WinsSavage;
+        private System.Windows.Forms.Label label20;
     }
 }
 
