@@ -94,13 +94,8 @@ namespace PUBGWinsUI
                     {
                         using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Empty = 1", conn, trans))
                         {
-                            command.Parameters.AddWithValue("@Kills", kills);
-                            command.Parameters.AddWithValue("@Map", map);
+                            AddCommonParameters(command);
                             command.Parameters.AddWithValue("@Teammates", teammates);
-                            command.Parameters.AddWithValue("@Description", description);
-                            command.Parameters.AddWithValue("@Server", server);
-                            command.Parameters.AddWithValue("@Perspective", perspective);
-
                             command.ExecuteNonQuery();
                         }
                     }
@@ -108,14 +103,9 @@ namespace PUBGWinsUI
                     {
                         using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Teammate1 = @Teammate1, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Empty = 1", conn, trans))
                         {
-                            command.Parameters.AddWithValue("@Kills", kills);
-                            command.Parameters.AddWithValue("@Map", map);
+                            AddCommonParameters(command);
                             command.Parameters.AddWithValue("@Teammates", teammates);
                             command.Parameters.AddWithValue("@Teammate1", teammate1);
-                            command.Parameters.AddWithValue("@Description", description);
-                            command.Parameters.AddWithValue("@Server", server);
-                            command.Parameters.AddWithValue("@Perspective", perspective);
-
                             command.ExecuteNonQuery();
                         }
                     }
@@ -123,16 +113,10 @@ namespace PUBGWinsUI
                     {
                         using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Teammate1 = @Teammate1, Teammate2 = @Teammate2, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Empty = 1", conn, trans))
                         {
-                            command.Parameters.AddWithValue("@Kills", kills);
-                            command.Parameters.AddWithValue("@Map", map);
+                            AddCommonParameters(command);
                             command.Parameters.AddWithValue("@Teammates", teammates);
                             command.Parameters.AddWithValue("@Teammate1", teammate1);
                             command.Parameters.AddWithValue("@Teammate2", teammate2);
-                            command.Parameters.AddWithValue("@Description", description);
-                            command.Parameters.AddWithValue("@Server", server);
-                            command.Parameters.AddWithValue("@Perspective", perspective);
-
-
                             command.ExecuteNonQuery();
                         }
                     }
@@ -140,17 +124,11 @@ namespace PUBGWinsUI
                     {
                         using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Teammate1 = @Teammate1, Teammate2 = @Teammate2, Teammate3 = @Teammate3, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Empty = 1", conn, trans))
                         {
-                            command.Parameters.AddWithValue("@Kills", kills);
-                            command.Parameters.AddWithValue("@Map", map);
+                            AddCommonParameters(command);
                             command.Parameters.AddWithValue("@Teammates", teammates);
                             command.Parameters.AddWithValue("@Teammate1", teammate1);
                             command.Parameters.AddWithValue("@Teammate2", teammate2);
                             command.Parameters.AddWithValue("@Teammate3", teammate3);
-                            command.Parameters.AddWithValue("@Description", description);
-                            command.Parameters.AddWithValue("@Server", server);
-                            command.Parameters.AddWithValue("@Perspective", perspective);
-
-
                             command.ExecuteNonQuery();
                         }
                     }
@@ -159,6 +137,15 @@ namespace PUBGWinsUI
             }
             SetStats();
             BoxDescription.Text = "";
+        }
+
+        private void AddCommonParameters(SqlCommand command)
+        {
+            command.Parameters.AddWithValue("@Kills", int.Parse(BoxKills.Text));
+            command.Parameters.AddWithValue("@Map", MenuMap.Text);
+            command.Parameters.AddWithValue("@Description", BoxDescription.Text);
+            command.Parameters.AddWithValue("@Server", MenuServer.Text);
+            command.Parameters.AddWithValue("@Perspective", MenuPerspective.Text);
         }
 
         /// <summary>
@@ -313,6 +300,11 @@ namespace PUBGWinsUI
             return wins;
         }
 
+        /// <summary>
+        /// Show the last played game.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonLast_Click(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(WinDB))
@@ -341,6 +333,7 @@ namespace PUBGWinsUI
                             dbReader.Close();
                         }
                     }
+                    currentOldID = lastPlayedID;
                     // Get the last game.
                     ShowOldGame(lastPlayedID, conn, trans);
 
@@ -354,29 +347,28 @@ namespace PUBGWinsUI
 
         private void ButtonPrevious_Click(object sender, EventArgs e)
         {
-            if (lastPlayedID != 0)
-            {
-                if (currentOldID != 0)
-                {
-                    currentOldID--;
-                }
-                else
-                {
-                    currentOldID = lastPlayedID - 1;
-                }
+            currentOldID--;
 
-                // Load this game.
-                using (SqlConnection conn = new SqlConnection(WinDB))
+            // Load this game.
+            using (SqlConnection conn = new SqlConnection(WinDB))
                 {
                     conn.Open();
                     using (SqlTransaction trans = conn.BeginTransaction())
                     ShowOldGame(currentOldID, conn, trans);
                 }
-            }
+            
         }
 
+        /// <summary>
+        /// Display info about a game pulled from the DB.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="conn"></param>
+        /// <param name="trans"></param>
         private void ShowOldGame(int id, SqlConnection conn, SqlTransaction trans)
         {
+            // This game may not exist.
+
             // Get the last game.
             using (SqlCommand command = new SqlCommand("SELECT Kills, Perspective, Server, Map, Description, Teammate1, Teammate2, Teammate3 FROM Wins WHERE ID = @LastID", conn, trans))
             {
@@ -427,6 +419,33 @@ namespace PUBGWinsUI
         private void ButtonUpdate_Click(object sender, EventArgs e)
         {
             
+        }
+
+        /// <summary>
+        /// Remove the displayed old game.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonRemove_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(WinDB))
+            {
+                conn.Open();
+                using (SqlTransaction trans = conn.BeginTransaction())
+                {
+                    using (SqlCommand command = new SqlCommand("DELETE Wins WHERE Id = @ID", conn, trans))
+                    {
+                        command.Parameters.AddWithValue("ID", currentOldID);
+                        command.ExecuteNonQuery();
+                    }
+                    // Show the next previous game.
+                    currentOldID--;
+                    ShowOldGame(currentOldID, conn, trans);
+
+                    trans.Commit();
+                }
+            }
+            SetStats();
         }
     }
     

@@ -639,6 +639,7 @@
             this.ButtonRemove.Text = "Remove Win";
             this.ButtonRemove.UseVisualStyleBackColor = true;
             this.ButtonRemove.Visible = false;
+            this.ButtonRemove.Click += new System.EventHandler(this.ButtonRemove_Click);
             // 
             // UI
             // 
