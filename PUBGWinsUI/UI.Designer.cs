@@ -86,7 +86,8 @@
             this.label30 = new System.Windows.Forms.Label();
             this.ButtonLast = new System.Windows.Forms.Button();
             this.ButtonUpdate = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ButtonPrevious = new System.Windows.Forms.Button();
+            this.ButtonRemove = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -609,28 +610,43 @@
             // 
             // ButtonUpdate
             // 
-            this.ButtonUpdate.Location = new System.Drawing.Point(546, 500);
+            this.ButtonUpdate.Location = new System.Drawing.Point(545, 500);
             this.ButtonUpdate.Name = "ButtonUpdate";
             this.ButtonUpdate.Size = new System.Drawing.Size(75, 23);
             this.ButtonUpdate.TabIndex = 62;
             this.ButtonUpdate.Text = "Update Win";
             this.ButtonUpdate.UseVisualStyleBackColor = true;
+            this.ButtonUpdate.Visible = false;
+            this.ButtonUpdate.Click += new System.EventHandler(this.ButtonUpdate_Click);
             // 
-            // button1
+            // ButtonPrevious
             // 
-            this.button1.Location = new System.Drawing.Point(286, 500);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 23);
-            this.button1.TabIndex = 63;
-            this.button1.Text = "Show Previous Game";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ButtonPrevious.Location = new System.Drawing.Point(211, 500);
+            this.ButtonPrevious.Name = "ButtonPrevious";
+            this.ButtonPrevious.Size = new System.Drawing.Size(118, 23);
+            this.ButtonPrevious.TabIndex = 63;
+            this.ButtonPrevious.Text = "Show Previous Game";
+            this.ButtonPrevious.UseVisualStyleBackColor = true;
+            this.ButtonPrevious.Visible = false;
+            this.ButtonPrevious.Click += new System.EventHandler(this.ButtonPrevious_Click);
+            // 
+            // ButtonRemove
+            // 
+            this.ButtonRemove.Location = new System.Drawing.Point(396, 500);
+            this.ButtonRemove.Name = "ButtonRemove";
+            this.ButtonRemove.Size = new System.Drawing.Size(82, 23);
+            this.ButtonRemove.TabIndex = 64;
+            this.ButtonRemove.Text = "Remove Win";
+            this.ButtonRemove.UseVisualStyleBackColor = true;
+            this.ButtonRemove.Visible = false;
             // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 858);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonRemove);
+            this.Controls.Add(this.ButtonPrevious);
             this.Controls.Add(this.ButtonUpdate);
             this.Controls.Add(this.ButtonLast);
             this.Controls.Add(this.SAWins);
@@ -756,7 +772,8 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Button ButtonLast;
         private System.Windows.Forms.Button ButtonUpdate;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ButtonPrevious;
+        private System.Windows.Forms.Button ButtonRemove;
     }
 }
 

@@ -15,7 +15,9 @@ namespace PUBGWinsUI
     public partial class UI : Form
     {
         private static string WinDB; // The connection string to the DB
-        private int lastID;
+        private int lastPlayedID; // The last game entered into the database.
+        private int currentOldID; // The game we are lookin at.
+
 
         /// <summary>
         /// Construtor
@@ -27,7 +29,8 @@ namespace PUBGWinsUI
             // Set defaults.
             MenuPerspective.Text = "FPP";
             MenuServer.Text = "NA";
-            lastID = 0;
+            lastPlayedID = 0;
+            currentOldID = 0;
 
             // SQL database.
             WinDB = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Alex\\source\\repos\\PUBGWins\\PUBGWinsUI\\WinDB.mdf; Integrated Security = True";
@@ -54,9 +57,9 @@ namespace PUBGWinsUI
             int teammates = 0;
 
             // Update last ID if it is stored
-            if (lastID != 0)
+            if (lastPlayedID != 0)
             {
-                lastID++;
+                lastPlayedID++;
             }
 
             // Count the teamates
@@ -318,7 +321,7 @@ namespace PUBGWinsUI
                 using (SqlTransaction trans = conn.BeginTransaction())
                 {
                     // Get all the games and find the largest gameID.
-                    if (lastID == 0)
+                    if (lastPlayedID == 0)
                     {
                         using (SqlCommand command = new SqlCommand("SELECT ID FROM Wins", conn, trans))
                         {
@@ -329,9 +332,9 @@ namespace PUBGWinsUI
                                 while (dbReader.Read())
                                 {
                                     currentID = dbReader.GetInt32(0);
-                                    if (currentID > lastID)
+                                    if (currentID > lastPlayedID)
                                     {
-                                        lastID = currentID;
+                                        lastPlayedID = currentID;
                                     }
                                 }
                             }
@@ -339,41 +342,91 @@ namespace PUBGWinsUI
                         }
                     }
                     // Get the last game.
-                    using (SqlCommand command = new SqlCommand("SELECT Kills, Perspective, Server, Map, Description, Teammate1, Teammate2, Teammate3 FROM Wins WHERE ID = @LastID", conn, trans))
-                    {
-                        command.Parameters.AddWithValue("LastID", lastID);
-                        SqlDataReader dbReader = command.ExecuteReader();
-                        if (dbReader.HasRows)
-                        {
-                            dbReader.Read();
-                            BoxKills.Text = "" + dbReader.GetInt32(0);
-                            MenuPerspective.Text = dbReader.GetString(1);
-                            MenuServer.Text = dbReader.GetString(2);
-                            MenuMap.Text = dbReader.GetString(3);
-                            BoxDescription.Text = dbReader.GetString(4);
+                    ShowOldGame(lastPlayedID, conn, trans);
 
-                            string teammate1 = dbReader.GetString(5);
-                            string teammate2 = dbReader.GetString(6);
-                            string teammate3 = dbReader.GetString(7);
-                            if (teammate1 != null)
-                            {
-                                BoxTeammate1.Text = teammate1;
-                            }
-                            if (teammate2 != null)
-                            {
-                                BoxTeammate2.Text = teammate2;
-                            }
-                            if (teammate3 != null)
-                            {
-                                BoxTeammate3.Text = teammate3;
-                            }
-
-                        }
-                        dbReader.Close();
-                    }
-
+                    // Show additional options.
+                    ButtonPrevious.Visible = true;
+                    ButtonRemove.Visible = true;
+                    ButtonUpdate.Visible = true;
                 }
             }
+        }
+
+        private void ButtonPrevious_Click(object sender, EventArgs e)
+        {
+            if (lastPlayedID != 0)
+            {
+                if (currentOldID != 0)
+                {
+                    currentOldID--;
+                }
+                else
+                {
+                    currentOldID = lastPlayedID - 1;
+                }
+
+                // Load this game.
+                using (SqlConnection conn = new SqlConnection(WinDB))
+                {
+                    conn.Open();
+                    using (SqlTransaction trans = conn.BeginTransaction())
+                    ShowOldGame(currentOldID, conn, trans);
+                }
+            }
+        }
+
+        private void ShowOldGame(int id, SqlConnection conn, SqlTransaction trans)
+        {
+            // Get the last game.
+            using (SqlCommand command = new SqlCommand("SELECT Kills, Perspective, Server, Map, Description, Teammate1, Teammate2, Teammate3 FROM Wins WHERE ID = @LastID", conn, trans))
+            {
+                command.Parameters.AddWithValue("LastID", id);
+                SqlDataReader dbReader = command.ExecuteReader();
+                if (dbReader.HasRows)
+                {
+                    dbReader.Read();
+                    BoxKills.Text = "" + dbReader.GetInt32(0);
+                    MenuPerspective.Text = dbReader.GetString(1);
+                    MenuServer.Text = dbReader.GetString(2);
+                    MenuMap.Text = dbReader.GetString(3);
+                    BoxDescription.Text = dbReader.GetString(4);
+
+                    // Teammate names may be null.
+                    if (!dbReader.IsDBNull(5))
+                    {
+                        BoxTeammate1.Text = dbReader.GetString(5);
+                    }
+                    else
+                    {
+                        BoxTeammate1.Text = "";
+                    }
+
+                    if (!dbReader.IsDBNull(6))
+                    {
+                        BoxTeammate2.Text = dbReader.GetString(6);
+                    }
+                    else
+                    {
+                        BoxTeammate2.Text = "";
+                    }
+
+                    if (!dbReader.IsDBNull(7))
+                    {
+                        BoxTeammate3.Text = dbReader.GetString(7);
+                    }
+                    else
+                    {
+                        BoxTeammate3.Text = "";
+                    }
+                    
+                }
+                dbReader.Close();
+            }
+        }
+
+        private void ButtonUpdate_Click(object sender, EventArgs e)
+        {
+            
         }
     }
     
