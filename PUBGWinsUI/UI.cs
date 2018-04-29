@@ -15,6 +15,7 @@ namespace PUBGWinsUI
     public partial class UI : Form
     {
         private static string WinDB; // The connection string to the DB
+        private int lastID;
 
         /// <summary>
         /// Construtor
@@ -26,6 +27,7 @@ namespace PUBGWinsUI
             // Set defaults.
             MenuPerspective.Text = "FPP";
             MenuServer.Text = "NA";
+            lastID = 0;
 
             // SQL database.
             WinDB = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Alex\\source\\repos\\PUBGWins\\PUBGWinsUI\\WinDB.mdf; Integrated Security = True";
@@ -50,6 +52,12 @@ namespace PUBGWinsUI
             string teammate3 = BoxTeammate3.Text;
             string description = BoxDescription.Text;
             int teammates = 0;
+
+            // Update last ID if it is stored
+            if (lastID != 0)
+            {
+                lastID++;
+            }
 
             // Count the teamates
             if (teammate1 != "")
@@ -300,6 +308,72 @@ namespace PUBGWinsUI
                 dbReader.Close();
             }
             return wins;
+        }
+
+        private void ButtonLast_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(WinDB))
+            {
+                conn.Open();
+                using (SqlTransaction trans = conn.BeginTransaction())
+                {
+                    // Get all the games and find the largest gameID.
+                    if (lastID == 0)
+                    {
+                        using (SqlCommand command = new SqlCommand("SELECT ID FROM Wins", conn, trans))
+                        {
+                            SqlDataReader dbReader = command.ExecuteReader();
+                            if (dbReader.HasRows)
+                            {
+                                int currentID;
+                                while (dbReader.Read())
+                                {
+                                    currentID = dbReader.GetInt32(0);
+                                    if (currentID > lastID)
+                                    {
+                                        lastID = currentID;
+                                    }
+                                }
+                            }
+                            dbReader.Close();
+                        }
+                    }
+                    // Get the last game.
+                    using (SqlCommand command = new SqlCommand("SELECT Kills, Perspective, Server, Map, Description, Teammate1, Teammate2, Teammate3 FROM Wins WHERE ID = @LastID", conn, trans))
+                    {
+                        command.Parameters.AddWithValue("LastID", lastID);
+                        SqlDataReader dbReader = command.ExecuteReader();
+                        if (dbReader.HasRows)
+                        {
+                            dbReader.Read();
+                            BoxKills.Text = "" + dbReader.GetInt32(0);
+                            MenuPerspective.Text = dbReader.GetString(1);
+                            MenuServer.Text = dbReader.GetString(2);
+                            MenuMap.Text = dbReader.GetString(3);
+                            BoxDescription.Text = dbReader.GetString(4);
+
+                            string teammate1 = dbReader.GetString(5);
+                            string teammate2 = dbReader.GetString(6);
+                            string teammate3 = dbReader.GetString(7);
+                            if (teammate1 != null)
+                            {
+                                BoxTeammate1.Text = teammate1;
+                            }
+                            if (teammate2 != null)
+                            {
+                                BoxTeammate2.Text = teammate2;
+                            }
+                            if (teammate3 != null)
+                            {
+                                BoxTeammate3.Text = teammate3;
+                            }
+
+                        }
+                        dbReader.Close();
+                    }
+
+                }
+            }
         }
     }
     

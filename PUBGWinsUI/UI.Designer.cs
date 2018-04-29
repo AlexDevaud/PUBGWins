@@ -84,6 +84,9 @@
             this.label28 = new System.Windows.Forms.Label();
             this.SAWins = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
+            this.ButtonLast = new System.Windows.Forms.Button();
+            this.ButtonUpdate = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -594,11 +597,42 @@
             this.label30.TabIndex = 59;
             this.label30.Text = "SA Wins: ";
             // 
+            // ButtonLast
+            // 
+            this.ButtonLast.Location = new System.Drawing.Point(17, 500);
+            this.ButtonLast.Name = "ButtonLast";
+            this.ButtonLast.Size = new System.Drawing.Size(127, 23);
+            this.ButtonLast.TabIndex = 61;
+            this.ButtonLast.Text = "Show Last Game Won";
+            this.ButtonLast.UseVisualStyleBackColor = true;
+            this.ButtonLast.Click += new System.EventHandler(this.ButtonLast_Click);
+            // 
+            // ButtonUpdate
+            // 
+            this.ButtonUpdate.Location = new System.Drawing.Point(546, 500);
+            this.ButtonUpdate.Name = "ButtonUpdate";
+            this.ButtonUpdate.Size = new System.Drawing.Size(75, 23);
+            this.ButtonUpdate.TabIndex = 62;
+            this.ButtonUpdate.Text = "Update Win";
+            this.ButtonUpdate.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(286, 500);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 23);
+            this.button1.TabIndex = 63;
+            this.button1.Text = "Show Previous Game";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 510);
+            this.ClientSize = new System.Drawing.Size(962, 858);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonUpdate);
+            this.Controls.Add(this.ButtonLast);
             this.Controls.Add(this.SAWins);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.SEAWins);
@@ -720,6 +754,9 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label SAWins;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Button ButtonLast;
+        private System.Windows.Forms.Button ButtonUpdate;
+        private System.Windows.Forms.Button button1;
     }
 }
 
