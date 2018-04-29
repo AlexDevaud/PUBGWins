@@ -170,16 +170,6 @@ namespace PUBGWinsUI
                     int miramarKills = GetKillCount("Miramar", out miramarWins, conn, trans);
                     int savageKills = GetKillCount("Savage", out savageWins, conn, trans);
 
-                    int naWins = GetServerCount("NA", conn, trans);
-                    int asWins = GetServerCount("AS", conn, trans);
-                    int euWins = GetServerCount("EU", conn, trans);
-                    int testWins = GetServerCount("Test", conn, trans);
-
-                    int soloWins = GetTeamSizeCount(0, conn, trans);
-                    int duoWins = GetTeamSizeCount(1, conn, trans);
-                    int trioWins = GetTeamSizeCount(2, conn, trans);
-                    int squadWins = GetTeamSizeCount(3, conn, trans);
-
                     int totalKills = 0;
                     int totalWins = 0;
 
@@ -192,15 +182,17 @@ namespace PUBGWinsUI
                     KillsMiramar.Text = "" + miramarKills;
                     KillsSavage.Text = "" + savageKills;
 
-                    NAWins.Text = "" + naWins;
-                    ASWins.Text = "" + asWins;
-                    EUWins.Text = "" + euWins;
-                    TestWins.Text = "" + testWins;
+                    NAWins.Text = "" + GetServerCount("NA", conn, trans);
+                    ASWins.Text = "" + GetServerCount("AS", conn, trans);
+                    EUWins.Text = "" + GetServerCount("EU", conn, trans);
+                    TestWins.Text = "" + GetServerCount("Test", conn, trans);
+                    SEAWins.Text = "" + GetServerCount("SEA", conn, trans);
+                    SAWins.Text = "" + GetServerCount("SA", conn, trans);
 
-                    SoloWins.Text = "" + soloWins;
-                    DuoWins.Text = "" + duoWins;
-                    TrioWins.Text = "" + trioWins;
-                    SquadWins.Text = "" + squadWins;
+                    SoloWins.Text = "" + GetTeamSizeCount(0, conn, trans);
+                    DuoWins.Text = "" + GetTeamSizeCount(1, conn, trans);
+                    TrioWins.Text = "" + GetTeamSizeCount(2, conn, trans);
+                    SquadWins.Text = "" + GetTeamSizeCount(3, conn, trans);
 
                     // Total stats.
                     totalKills = erangelKills + miramarKills + savageKills;
