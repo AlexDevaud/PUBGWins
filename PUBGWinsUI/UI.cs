@@ -46,14 +46,9 @@ namespace PUBGWinsUI
         /// <param name="e"></param>
         private void ButtonStore_Click(object sender, EventArgs e)
         {
-            int kills = int.Parse(BoxKills.Text);
-            string perspective = MenuPerspective.Text;
-            string server = MenuServer.Text;
-            string map = MenuMap.Text;
             string teammate1 = BoxTeammate1.Text;
             string teammate2 = BoxTeammate2.Text;
             string teammate3 = BoxTeammate3.Text;
-            string description = BoxDescription.Text;
             int teammates = 0;
 
             // Update last ID if it is stored
@@ -139,6 +134,10 @@ namespace PUBGWinsUI
             BoxDescription.Text = "";
         }
 
+        /// <summary>
+        /// Add values that are the same for any number of teammates.
+        /// </summary>
+        /// <param name="command"></param>
         private void AddCommonParameters(SqlCommand command)
         {
             command.Parameters.AddWithValue("@Kills", int.Parse(BoxKills.Text));
@@ -313,30 +312,37 @@ namespace PUBGWinsUI
                 using (SqlTransaction trans = conn.BeginTransaction())
                 {
                     // Get all the games and find the largest gameID.
-                    if (lastPlayedID == 0)
+                    using (SqlCommand command = new SqlCommand("SELECT ID FROM Wins", conn, trans))
                     {
-                        using (SqlCommand command = new SqlCommand("SELECT ID FROM Wins", conn, trans))
+                        SqlDataReader dbReader = command.ExecuteReader();
+                        if (dbReader.HasRows)
                         {
-                            SqlDataReader dbReader = command.ExecuteReader();
-                            if (dbReader.HasRows)
+                            int currentID;
+                            while (dbReader.Read())
                             {
-                                int currentID;
-                                while (dbReader.Read())
+                                currentID = dbReader.GetInt32(0);
+                                if (currentID > lastPlayedID)
                                 {
-                                    currentID = dbReader.GetInt32(0);
-                                    if (currentID > lastPlayedID)
-                                    {
-                                        lastPlayedID = currentID;
-                                    }
+                                    lastPlayedID = currentID;
                                 }
                             }
-                            dbReader.Close();
                         }
+                        dbReader.Close();
                     }
                     currentOldID = lastPlayedID;
                     // Get the last game.
-                    ShowOldGame(lastPlayedID, conn, trans);
-
+                    // Find and display the last played game.
+                    while (true)
+                    {
+                        if (currentOldID == 0 || ShowOldGame(currentOldID, conn, trans))
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            currentOldID--;
+                        }
+                    }
                     // Show additional options.
                     ButtonPrevious.Visible = true;
                     ButtonRemove.Visible = true;
@@ -345,31 +351,51 @@ namespace PUBGWinsUI
             }
         }
 
+        /// <summary>
+        /// Go back one game through the wins entered.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonPrevious_Click(object sender, EventArgs e)
         {
             currentOldID--;
 
             // Load this game.
             using (SqlConnection conn = new SqlConnection(WinDB))
+            {
+                conn.Open();
+                using (SqlTransaction trans = conn.BeginTransaction())
                 {
-                    conn.Open();
-                    using (SqlTransaction trans = conn.BeginTransaction())
-                    ShowOldGame(currentOldID, conn, trans);
+                    // Find and display the last played game.
+                    while (true)
+                    {
+                        if (currentOldID == 0 || ShowOldGame(currentOldID, conn, trans))
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            currentOldID--;
+                        }
+                    }
                 }
-            
+                    
+            }
+
         }
 
         /// <summary>
         /// Display info about a game pulled from the DB.
+        /// Returns if this is a valid game ID. It may have been deleted.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="conn"></param>
         /// <param name="trans"></param>
-        private void ShowOldGame(int id, SqlConnection conn, SqlTransaction trans)
+        private bool ShowOldGame(int id, SqlConnection conn, SqlTransaction trans)
         {
             // This game may not exist.
 
-            // Get the last game.
+            // Get the parameter game.
             using (SqlCommand command = new SqlCommand("SELECT Kills, Perspective, Server, Map, Description, Teammate1, Teammate2, Teammate3 FROM Wins WHERE ID = @LastID", conn, trans))
             {
                 command.Parameters.AddWithValue("LastID", id);
@@ -410,19 +436,107 @@ namespace PUBGWinsUI
                     {
                         BoxTeammate3.Text = "";
                     }
-                    
+                    dbReader.Close();
+                    return true;
                 }
-                dbReader.Close();
+                else
+                {
+                    dbReader.Close();
+                    return false;
+                }
+                
             }
         }
 
+        /// <summary>
+        /// Change the entry in the DB to use this data.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonUpdate_Click(object sender, EventArgs e)
         {
-            
+            string teammate1 = BoxTeammate1.Text;
+            string teammate2 = BoxTeammate2.Text;
+            string teammate3 = BoxTeammate3.Text;
+            int teammates = 0;
+
+            // Count the teamates
+            if (teammate1 != "")
+            {
+                teammates++;
+            }
+            if (teammate2 != "")
+            {
+                teammates++;
+            }
+            if (teammate3 != "")
+            {
+                teammates++;
+            }
+
+
+            // Store with SQL
+            using (SqlConnection conn = new SqlConnection(WinDB))
+            {
+                conn.Open();
+                using (SqlTransaction trans = conn.BeginTransaction())
+                {
+                    // Set data for this game.
+                    if (teammates == 0)
+                    {
+                        using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Id = @Id", conn, trans))
+                        {
+                            AddCommonParameters(command);
+                            command.Parameters.AddWithValue("@Id", currentOldID);
+                            command.Parameters.AddWithValue("@Teammates", teammates);
+                            command.ExecuteNonQuery();
+                        }
+                    }
+                    else if (teammates == 1)
+                    {
+                        using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Teammate1 = @Teammate1, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Id = @Id", conn, trans))
+                        {
+                            AddCommonParameters(command);
+                            command.Parameters.AddWithValue("@Id", currentOldID);
+                            command.Parameters.AddWithValue("@Teammates", teammates);
+                            command.Parameters.AddWithValue("@Teammate1", teammate1);
+                            command.ExecuteNonQuery();
+                        }
+                    }
+                    else if (teammates == 2)
+                    {
+                        using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Teammate1 = @Teammate1, Teammate2 = @Teammate2, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Id = @Id", conn, trans))
+                        {
+                            AddCommonParameters(command);
+                            command.Parameters.AddWithValue("@Id", currentOldID);
+                            command.Parameters.AddWithValue("@Teammates", teammates);
+                            command.Parameters.AddWithValue("@Teammate1", teammate1);
+                            command.Parameters.AddWithValue("@Teammate2", teammate2);
+                            command.ExecuteNonQuery();
+                        }
+                    }
+                    else if (teammates == 3)
+                    {
+                        using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Teammate1 = @Teammate1, Teammate2 = @Teammate2, Teammate3 = @Teammate3, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Id = @Id", conn, trans))
+                        {
+                            AddCommonParameters(command);
+                            command.Parameters.AddWithValue("@Id", currentOldID);
+                            command.Parameters.AddWithValue("@Teammates", teammates);
+                            command.Parameters.AddWithValue("@Teammate1", teammate1);
+                            command.Parameters.AddWithValue("@Teammate2", teammate2);
+                            command.Parameters.AddWithValue("@Teammate3", teammate3);
+                            command.ExecuteNonQuery();
+                        }
+                    }
+                    trans.Commit();
+                }
+            }
+            SetStats();
+            BoxDescription.Text = "";
         }
 
         /// <summary>
-        /// Remove the displayed old game.
+        /// Remove the displayed old game from the DB.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -438,15 +552,28 @@ namespace PUBGWinsUI
                         command.Parameters.AddWithValue("ID", currentOldID);
                         command.ExecuteNonQuery();
                     }
+
+                    /*
                     // Show the next previous game.
                     currentOldID--;
                     ShowOldGame(currentOldID, conn, trans);
-
+                    */
                     trans.Commit();
                 }
             }
             SetStats();
+
+            // Clear the boxes.
+            BoxKills.Text = "";
+            BoxTeammate1.Text = "";
+            BoxTeammate2.Text = "";
+            BoxTeammate3.Text = "";
+            BoxDescription.Text = "";
+
+            // Show the newest added game.
+            ButtonLast_Click(sender, e);
         }
+
     }
     
 }
