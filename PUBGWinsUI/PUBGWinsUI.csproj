@@ -61,6 +61,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller.cs" />
+    <Compile Include="Interface.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="UI.cs">
       <SubType>Form</SubType>
     </Compile>

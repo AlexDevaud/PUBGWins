@@ -16,7 +16,11 @@ namespace PUBGWinsUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UI());
+
+            UI ui = new UI();
+            Controller controller = new Controller(ui);
+
+            Application.Run(ui);
         }
     }
 }

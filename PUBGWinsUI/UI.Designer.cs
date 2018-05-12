@@ -88,6 +88,26 @@
             this.ButtonUpdate = new System.Windows.Forms.Button();
             this.ButtonPrevious = new System.Windows.Forms.Button();
             this.ButtonRemove = new System.Windows.Forms.Button();
+            this.KillsSquad = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.KillsTrio = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.KillsDuo = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.KillsSolo = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.KillsSA = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.KillsSEA = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.KillsEU = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.KillsTest = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.KillsAS = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.KillsNA = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -468,9 +488,9 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(651, 74);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(58, 13);
+            this.label22.Size = new System.Drawing.Size(61, 13);
             this.label22.TabIndex = 45;
-            this.label22.Text = "TestWins: ";
+            this.label22.Text = "Test Wins: ";
             // 
             // EUWins
             // 
@@ -641,11 +661,211 @@
             this.ButtonRemove.Visible = false;
             this.ButtonRemove.Click += new System.EventHandler(this.ButtonRemove_Click);
             // 
+            // KillsSquad
+            // 
+            this.KillsSquad.AutoSize = true;
+            this.KillsSquad.Location = new System.Drawing.Point(706, 462);
+            this.KillsSquad.Name = "KillsSquad";
+            this.KillsSquad.Size = new System.Drawing.Size(13, 13);
+            this.KillsSquad.TabIndex = 72;
+            this.KillsSquad.Text = "0";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(640, 462);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(65, 13);
+            this.label29.TabIndex = 71;
+            this.label29.Text = "Squad Kills: ";
+            // 
+            // KillsTrio
+            // 
+            this.KillsTrio.AutoSize = true;
+            this.KillsTrio.Location = new System.Drawing.Point(706, 432);
+            this.KillsTrio.Name = "KillsTrio";
+            this.KillsTrio.Size = new System.Drawing.Size(13, 13);
+            this.KillsTrio.TabIndex = 70;
+            this.KillsTrio.Text = "0";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(639, 432);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(52, 13);
+            this.label32.TabIndex = 69;
+            this.label32.Text = "Trio Kills: ";
+            // 
+            // KillsDuo
+            // 
+            this.KillsDuo.AutoSize = true;
+            this.KillsDuo.Location = new System.Drawing.Point(706, 402);
+            this.KillsDuo.Name = "KillsDuo";
+            this.KillsDuo.Size = new System.Drawing.Size(13, 13);
+            this.KillsDuo.TabIndex = 68;
+            this.KillsDuo.Text = "0";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(640, 402);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(54, 13);
+            this.label34.TabIndex = 67;
+            this.label34.Text = "Duo Kills: ";
+            // 
+            // KillsSolo
+            // 
+            this.KillsSolo.AutoSize = true;
+            this.KillsSolo.Location = new System.Drawing.Point(706, 372);
+            this.KillsSolo.Name = "KillsSolo";
+            this.KillsSolo.Size = new System.Drawing.Size(13, 13);
+            this.KillsSolo.TabIndex = 66;
+            this.KillsSolo.Text = "0";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(640, 372);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(55, 13);
+            this.label36.TabIndex = 65;
+            this.label36.Text = "Solo Kills: ";
+            // 
+            // KillsSA
+            // 
+            this.KillsSA.AutoSize = true;
+            this.KillsSA.Location = new System.Drawing.Point(817, 163);
+            this.KillsSA.Name = "KillsSA";
+            this.KillsSA.Size = new System.Drawing.Size(13, 13);
+            this.KillsSA.TabIndex = 84;
+            this.KillsSA.Text = "0";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(761, 163);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(48, 13);
+            this.label31.TabIndex = 83;
+            this.label31.Text = "SA Kills: ";
+            // 
+            // KillsSEA
+            // 
+            this.KillsSEA.AutoSize = true;
+            this.KillsSEA.Location = new System.Drawing.Point(817, 133);
+            this.KillsSEA.Name = "KillsSEA";
+            this.KillsSEA.Size = new System.Drawing.Size(13, 13);
+            this.KillsSEA.TabIndex = 82;
+            this.KillsSEA.Text = "0";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(761, 133);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(55, 13);
+            this.label35.TabIndex = 81;
+            this.label35.Text = "SEA Kills: ";
+            // 
+            // KillsEU
+            // 
+            this.KillsEU.AutoSize = true;
+            this.KillsEU.Location = new System.Drawing.Point(817, 103);
+            this.KillsEU.Name = "KillsEU";
+            this.KillsEU.Size = new System.Drawing.Size(13, 13);
+            this.KillsEU.TabIndex = 80;
+            this.KillsEU.Text = "0";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(761, 103);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(49, 13);
+            this.label38.TabIndex = 79;
+            this.label38.Text = "EU Kills: ";
+            // 
+            // KillsTest
+            // 
+            this.KillsTest.AutoSize = true;
+            this.KillsTest.Location = new System.Drawing.Point(817, 73);
+            this.KillsTest.Name = "KillsTest";
+            this.KillsTest.Size = new System.Drawing.Size(13, 13);
+            this.KillsTest.TabIndex = 78;
+            this.KillsTest.Text = "0";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(761, 73);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(55, 13);
+            this.label40.TabIndex = 77;
+            this.label40.Text = "Test Kills: ";
+            // 
+            // KillsAS
+            // 
+            this.KillsAS.AutoSize = true;
+            this.KillsAS.Location = new System.Drawing.Point(817, 43);
+            this.KillsAS.Name = "KillsAS";
+            this.KillsAS.Size = new System.Drawing.Size(13, 13);
+            this.KillsAS.TabIndex = 76;
+            this.KillsAS.Text = "0";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(762, 43);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(48, 13);
+            this.label42.TabIndex = 75;
+            this.label42.Text = "AS Kills: ";
+            // 
+            // KillsNA
+            // 
+            this.KillsNA.AutoSize = true;
+            this.KillsNA.Location = new System.Drawing.Point(817, 13);
+            this.KillsNA.Name = "KillsNA";
+            this.KillsNA.Size = new System.Drawing.Size(13, 13);
+            this.KillsNA.TabIndex = 74;
+            this.KillsNA.Text = "0";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(762, 13);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(49, 13);
+            this.label44.TabIndex = 73;
+            this.label44.Text = "NA Kills: ";
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 858);
+            this.Controls.Add(this.KillsSA);
+            this.Controls.Add(this.label31);
+            this.Controls.Add(this.KillsSEA);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.KillsEU);
+            this.Controls.Add(this.label38);
+            this.Controls.Add(this.KillsTest);
+            this.Controls.Add(this.label40);
+            this.Controls.Add(this.KillsAS);
+            this.Controls.Add(this.label42);
+            this.Controls.Add(this.KillsNA);
+            this.Controls.Add(this.label44);
+            this.Controls.Add(this.KillsSquad);
+            this.Controls.Add(this.label29);
+            this.Controls.Add(this.KillsTrio);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.KillsDuo);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.KillsSolo);
+            this.Controls.Add(this.label36);
             this.Controls.Add(this.ButtonRemove);
             this.Controls.Add(this.ButtonPrevious);
             this.Controls.Add(this.ButtonUpdate);
@@ -775,6 +995,26 @@
         private System.Windows.Forms.Button ButtonUpdate;
         private System.Windows.Forms.Button ButtonPrevious;
         private System.Windows.Forms.Button ButtonRemove;
+        private System.Windows.Forms.Label KillsSquad;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label KillsTrio;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label KillsDuo;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label KillsSolo;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label KillsSA;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label KillsSEA;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label KillsEU;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label KillsTest;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label KillsAS;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label KillsNA;
+        private System.Windows.Forms.Label label44;
     }
 }
 
