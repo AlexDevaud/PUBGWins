@@ -160,12 +160,12 @@ namespace PUBGWinsUI
                     // Build stats.
                     int erangelWins = 0;
                     int miramarWins = 0;
-                    int savageWins = 0;
+                    int sanhokWins = 0;
 
 
                     int erangelKills = GetKillCount("Erangel", out erangelWins, conn, trans);
                     int miramarKills = GetKillCount("Miramar", out miramarWins, conn, trans);
-                    int savageKills = GetKillCount("Savage", out savageWins, conn, trans);
+                    int sanhokKills = GetKillCount("Sanhok", out sanhokWins, conn, trans);
 
                     int totalKills = 0;
                     int totalWins = 0;
@@ -173,11 +173,11 @@ namespace PUBGWinsUI
                     // Display stats
                     WinsErangel.Text = "" + erangelWins;
                     WinsMiramar.Text = "" + miramarWins;
-                    WinsSavage.Text = "" + savageWins;
+                    WinsSanhok.Text = "" + sanhokWins;
 
                     KillsErangel.Text = "" + erangelKills;
                     KillsMiramar.Text = "" + miramarKills;
-                    KillsSavage.Text = "" + savageKills;
+                    KillsSanhok.Text = "" + sanhokKills;
 
                     NAWins.Text = "" + GetServerCount("NA", conn, trans);
                     ASWins.Text = "" + GetServerCount("AS", conn, trans);
@@ -192,8 +192,8 @@ namespace PUBGWinsUI
                     SquadWins.Text = "" + GetTeamSizeCount(3, conn, trans);
 
                     // Total stats.
-                    totalKills = erangelKills + miramarKills + savageKills;
-                    totalWins = erangelWins + miramarWins + savageKills;
+                    totalKills = erangelKills + miramarKills + sanhokKills;
+                    totalWins = erangelWins + miramarWins + sanhokKills;
 
                     WinsTotal.Text = "" + totalWins;
                     KillsTotal.Text = "" + totalKills;

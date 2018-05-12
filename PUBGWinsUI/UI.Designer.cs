@@ -58,9 +58,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.WinsMiramar = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.KillsSavage = new System.Windows.Forms.Label();
+            this.KillsSanhok = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.WinsSavage = new System.Windows.Forms.Label();
+            this.WinsSanhok = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.KillsPerWin = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -150,7 +150,7 @@
             this.MenuMap.Items.AddRange(new object[] {
             "Erangel",
             "Miramar",
-            "Savage"});
+            "Sanhok"});
             this.MenuMap.Location = new System.Drawing.Point(46, 119);
             this.MenuMap.Name = "MenuMap";
             this.MenuMap.Size = new System.Drawing.Size(108, 21);
@@ -364,41 +364,41 @@
             this.label18.TabIndex = 31;
             this.label18.Text = "Wins on Miramar: ";
             // 
-            // KillsSavage
+            // KillsSanhok
             // 
-            this.KillsSavage.AutoSize = true;
-            this.KillsSavage.Location = new System.Drawing.Point(609, 74);
-            this.KillsSavage.Name = "KillsSavage";
-            this.KillsSavage.Size = new System.Drawing.Size(13, 13);
-            this.KillsSavage.TabIndex = 38;
-            this.KillsSavage.Text = "0";
+            this.KillsSanhok.AutoSize = true;
+            this.KillsSanhok.Location = new System.Drawing.Point(609, 74);
+            this.KillsSanhok.Name = "KillsSanhok";
+            this.KillsSanhok.Size = new System.Drawing.Size(13, 13);
+            this.KillsSanhok.TabIndex = 38;
+            this.KillsSanhok.Text = "0";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(500, 74);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(86, 13);
+            this.label17.Size = new System.Drawing.Size(83, 13);
             this.label17.TabIndex = 37;
-            this.label17.Text = "Kills on Savage: ";
+            this.label17.Text = "Kills on Sanhok:";
             // 
-            // WinsSavage
+            // WinsSanhok
             // 
-            this.WinsSavage.AutoSize = true;
-            this.WinsSavage.Location = new System.Drawing.Point(458, 74);
-            this.WinsSavage.Name = "WinsSavage";
-            this.WinsSavage.Size = new System.Drawing.Size(13, 13);
-            this.WinsSavage.TabIndex = 36;
-            this.WinsSavage.Text = "0";
+            this.WinsSanhok.AutoSize = true;
+            this.WinsSanhok.Location = new System.Drawing.Point(458, 74);
+            this.WinsSanhok.Name = "WinsSanhok";
+            this.WinsSanhok.Size = new System.Drawing.Size(13, 13);
+            this.WinsSanhok.TabIndex = 36;
+            this.WinsSanhok.Text = "0";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(371, 74);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(92, 13);
+            this.label20.Size = new System.Drawing.Size(89, 13);
             this.label20.TabIndex = 35;
-            this.label20.Text = "Wins on Savage: ";
+            this.label20.Text = "Wins on Sanhok:";
             // 
             // KillsPerWin
             // 
@@ -672,9 +672,9 @@
             this.Controls.Add(this.label19);
             this.Controls.Add(this.KillsPerWin);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.KillsSavage);
+            this.Controls.Add(this.KillsSanhok);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.WinsSavage);
+            this.Controls.Add(this.WinsSanhok);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.KillsMiramar);
             this.Controls.Add(this.label16);
@@ -745,9 +745,9 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label WinsMiramar;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label KillsSavage;
+        private System.Windows.Forms.Label KillsSanhok;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label WinsSavage;
+        private System.Windows.Forms.Label WinsSanhok;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label KillsPerWin;
         private System.Windows.Forms.Label label12;
