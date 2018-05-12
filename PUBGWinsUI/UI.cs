@@ -14,16 +14,26 @@ namespace PUBGWinsUI
 {
     public partial class UI : Form, Interface
     {
-        private static string WinDB; // The connection string to the DB
-        private int lastPlayedID; // The last game entered into the database.
-        private int currentOldID; // The game we are lookin at.
-
         private List<ServerWin> serverWins; // The list of objects that represent stats based on wins on a given server.
+        private List<MapWin> mapWins;
+        private List<TeammatesWin> teammatesWins;
 
         public List<ServerWin> ServerWins
         {
             get { return serverWins; }
             set { serverWins = value; }
+        }
+
+        public List<MapWin> MapWins
+        {
+            get { return mapWins; }
+            set { mapWins = value; }
+        }
+
+        public List<TeammatesWin> TeammatesWins
+        {
+            get { return teammatesWins; }
+            set { teammatesWins = value; }
         }
 
         public event Action EventStore;
@@ -85,74 +95,7 @@ namespace PUBGWinsUI
             get { return WinsTotal.Text; }
             set { WinsTotal.Text = value; }
         }
-        public string TextWinsSolo
-        {
-            get { return SoloWins.Text; }
-            set { SoloWins.Text = value; }
-        }
-        public string TextWinsDuo
-        {
-            get { return DuoWins.Text; }
-            set { DuoWins.Text = value; }
-        }
-        public string TextWinsTrio
-        {
-            get { return TrioWins.Text; }
-            set { TrioWins.Text = value; }
-        }
-        public string TextWinsSquad
-        {
-            get { return SquadWins.Text; }
-            set { SquadWins.Text = value; }
-        }
-        /*
-        public string TextWinsNA
-        {
-            get { return NAWins.Text; }
-            set { NAWins.Text = value; }
-        }
-        
-        public string TextWinsAS
-        {
-            get { return ASWins.Text; }
-            set { ASWins.Text = value; }
-        }
-        public string TextWinsTest
-        {
-            get { return TestWins.Text; }
-            set { TestWins.Text = value; }
-        }
-        public string TextWinsEU
-        {
-            get { return EUWins.Text; }
-            set { EUWins.Text = value; }
-        }
-        public string TextWinsSEA
-        {
-            get { return SEAWins.Text; }
-            set { SEAWins.Text = value; }
-        }
-        public string TextWinsSA
-        {
-            get { return SAWins.Text; }
-            set { SAWins.Text = value; }
-        }
-        */
-        public string TextWinsErangel
-        {
-            get { return WinsErangel.Text; }
-            set { WinsErangel.Text = value; }
-        }
-        public string TextWinsMiramar
-        {
-            get { return WinsMiramar.Text; }
-            set { WinsMiramar.Text = value; }
-        }
-        public string TextWinsSanhok
-        {
-            get { return WinsSanhok.Text; }
-            set { WinsSanhok.Text = value; }
-        }
+       
 
         // Kills
         public string TextKillsTotal
@@ -165,74 +108,7 @@ namespace PUBGWinsUI
             get { return KillsPerWin.Text; }
             set { KillsPerWin.Text = value; }
         }
-        public string TextKillsSolo
-        {
-            get { return KillsSolo.Text; }
-            set { KillsSolo.Text = value; }
-        }
-        public string TextKillsDuo
-        {
-            get { return KillsDuo.Text; }
-            set { KillsDuo.Text = value; }
-        }
-        public string TextKillsTrio
-        {
-            get { return KillsTrio.Text; }
-            set { KillsTrio.Text = value; }
-        }
-        public string TextKillsSquad
-        {
-            get { return KillsSquad.Text; }
-            set { KillsSquad.Text = value; }
-        }
-        /*
-        public string TextKillsNA
-        {
-            get { return KillsNA.Text; }
-            set { KillsNA.Text = value; }
-        }
         
-        public string TextKillsAS
-        {
-            get { return KillsAS.Text; }
-            set { KillsAS.Text = value; }
-        }
-        public string TextKillsTest
-        {
-            get { return KillsTest.Text; }
-            set { KillsTest.Text = value; }
-        }
-        public string TextKillsEU
-        {
-            get { return KillsEU.Text; }
-            set { KillsEU.Text = value; }
-        }
-        public string TextKillsSEA
-        {
-            get { return KillsSEA.Text; }
-            set { KillsSEA.Text = value; }
-        }
-        public string TextKillsSA
-        {
-            get { return KillsSA.Text; }
-            set { KillsSA.Text = value; }
-        }
-        */
-        public string TextKillsErangel
-        {
-            get { return KillsErangel.Text; }
-            set { KillsErangel.Text = value; }
-        }
-        public string TextKillsMiramar
-        {
-            get { return KillsMiramar.Text; }
-            set { KillsMiramar.Text = value; }
-        }
-        public string TextKillsSanhok
-        {
-            get { return KillsSanhok.Text; }
-            set { KillsSanhok.Text = value; }
-        }
 
         // Button visibility.
         public bool ButtonPreviousVisible
@@ -251,29 +127,6 @@ namespace PUBGWinsUI
             set { ButtonUpdate.Visible = value; }
         }
 
-        // Kills per win average
-        public string TextKPWSolo
-        {
-            get { return KPWSolo.Text; }
-            set { KPWSolo.Text = value; }
-        }
-        public string TextKPWDuo
-        {
-            get { return KPWDuo.Text; }
-            set { KPWDuo.Text = value; }
-        }
-        public string TextKPWTrio
-        {
-            get { return KPWTrio.Text; }
-            set { KPWTrio.Text = value; }
-        }
-        public string TextKPWSquad
-        {
-            get { return KPWSquad.Text; }
-            set { KPWSquad.Text = value; }
-        }
-
-
         /// <summary>
         /// Constructor
         /// </summary>
@@ -281,50 +134,115 @@ namespace PUBGWinsUI
         {
             InitializeComponent();
 
-            lastPlayedID = 0;
-            currentOldID = 0;
-
-            // SQL database.
-            WinDB = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Alex\\source\\repos\\PUBGWins\\PUBGWinsUI\\WinDB.mdf; Integrated Security = True";
-
             // Hook up info for servers.
             serverWins = new List<ServerWin>();
 
-            ServerWin serverWinNA = new ServerWin("NA");
-            serverWinNA.LabelKills = KillsNA;
-            serverWinNA.LabelWins = NAWins;
-            serverWinNA.LabelAverage = KPWNA;
+            ServerWin serverWinNA = new ServerWin("NA")
+            {
+                LabelKills = KillsNA,
+                LabelWins = NAWins,
+                LabelAverage = KPWNA
+            };
             serverWins.Add(serverWinNA);
 
-            ServerWin serverWinAS = new ServerWin("AS");
-            serverWinAS.LabelKills = KillsAS;
-            serverWinAS.LabelWins = ASWins;
-            serverWinAS.LabelAverage = KPWAS;
+            ServerWin serverWinAS = new ServerWin("AS")
+            {
+                LabelKills = KillsAS,
+                LabelWins = ASWins,
+                LabelAverage = KPWAS
+            };
             serverWins.Add(serverWinAS);
 
-            ServerWin serverWinTest = new ServerWin("Test");
-            serverWinTest.LabelKills = KillsTest;
-            serverWinTest.LabelWins = TestWins;
-            serverWinTest.LabelAverage = KPWTest;
+            ServerWin serverWinTest = new ServerWin("Test")
+            {
+                LabelKills = KillsTest,
+                LabelWins = TestWins,
+                LabelAverage = KPWTest
+            };
             serverWins.Add(serverWinTest);
 
-            ServerWin serverWinEU = new ServerWin("EU");
-            serverWinEU.LabelKills = KillsEU;
-            serverWinEU.LabelWins = EUWins;
-            serverWinEU.LabelAverage = KPWEU;
+            ServerWin serverWinEU = new ServerWin("EU")
+            {
+                LabelKills = KillsEU,
+                LabelWins = EUWins,
+                LabelAverage = KPWEU
+            };
             serverWins.Add(serverWinEU);
 
-            ServerWin serverWinSEA = new ServerWin("SEA");
-            serverWinSEA.LabelKills = KillsSEA;
-            serverWinSEA.LabelWins = SEAWins;
-            serverWinSEA.LabelAverage = KPWSEA;
+            ServerWin serverWinSEA = new ServerWin("SEA")
+            {
+                LabelKills = KillsSEA,
+                LabelWins = SEAWins,
+                LabelAverage = KPWSEA
+            };
             serverWins.Add(serverWinSEA);
 
-            ServerWin serverWinSA = new ServerWin("SA");
-            serverWinSA.LabelKills = KillsSA;
-            serverWinSA.LabelWins = SAWins;
-            serverWinSA.LabelAverage = KPWSA;
+            ServerWin serverWinSA = new ServerWin("SA")
+            {
+                LabelKills = KillsSA,
+                LabelWins = SAWins,
+                LabelAverage = KPWSA
+            };
             serverWins.Add(serverWinSA);
+
+            // Hook up info for maps.
+            mapWins = new List<MapWin>();
+
+            MapWin mapWinErangel = new MapWin("Erangel")
+            {
+                LabelWins = WinsErangel,
+                LabelKills = KillsErangel,
+                LabelAverage = KPWErangel
+            };
+            mapWins.Add(mapWinErangel);
+            MapWin mapWinMiramar = new MapWin("Miramar")
+            {
+                LabelWins = WinsMiramar,
+                LabelKills = KillsMiramar,
+                LabelAverage = KPWMiramar
+            };
+            mapWins.Add(mapWinMiramar);
+            MapWin mapWinSanhok = new MapWin("Sanhok")
+            {
+                LabelWins = WinsSanhok,
+                LabelKills = KillsSanhok,
+                LabelAverage = KPWSanhok
+            };
+            mapWins.Add(mapWinSanhok);
+
+            // Hook up info for teammates.
+            teammatesWins = new List<TeammatesWin>();
+            TeammatesWin teammatesWin0 = new TeammatesWin(0)
+            {
+                LabelAverage = KPWSolo,
+                LabelKills = KillsSolo,
+                LabelWins = SoloWins
+            };
+            teammatesWins.Add(teammatesWin0);
+
+            TeammatesWin teammatesWin1 = new TeammatesWin(1)
+            {
+                LabelAverage = KPWDuo,
+                LabelKills = KillsDuo,
+                LabelWins = DuoWins
+            };
+            teammatesWins.Add(teammatesWin1);
+
+            TeammatesWin teammatesWin2 = new TeammatesWin(2)
+            {
+                LabelAverage = KPWTrio,
+                LabelKills = KillsTrio,
+                LabelWins = TrioWins
+            };
+            teammatesWins.Add(teammatesWin2);
+
+            TeammatesWin teammatesWin3 = new TeammatesWin(3)
+            {
+                LabelAverage = KPWSquad,
+                LabelKills = KillsSquad,
+                LabelWins = SquadWins
+            };
+            teammatesWins.Add(teammatesWin3);
         }
 
         /// <summary>

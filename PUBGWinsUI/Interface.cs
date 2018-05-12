@@ -24,46 +24,13 @@ namespace PUBGWinsUI
         bool ButtonUpdateVisible { get; set; }
 
         string TextWinsTotal { get; set; }
-        string TextWinsSolo { get; set; }
-        string TextWinsDuo { get; set; }
-        string TextWinsTrio { get; set; }
-        string TextWinsSquad { get; set; }
-        /*
-        string TextWinsNA { get; set; }
-        string TextWinsAS { get; set; }
-        string TextWinsTest { get; set; }
-        string TextWinsEU { get; set; }
-        string TextWinsSEA { get; set; }
-        string TextWinsSA { get; set; }
-        */
-        string TextWinsErangel { get; set; }
-        string TextWinsMiramar { get; set; }
-        string TextWinsSanhok { get; set; }
 
         string TextKillsTotal { get; set; }
         string TextKillsAverage { get; set; }
-        string TextKillsSolo { get; set; }
-        string TextKillsDuo { get; set; }
-        string TextKillsTrio { get; set; }
-        string TextKillsSquad { get; set; }
-        /*
-        string TextKillsNA { get; set; }
-        string TextKillsAS { get; set; }
-        string TextKillsTest { get; set; }
-        string TextKillsEU { get; set; }
-        string TextKillsSEA { get; set; }
-        string TextKillsSA { get; set; }
-        */
-        string TextKillsErangel { get; set; }
-        string TextKillsMiramar { get; set; }
-        string TextKillsSanhok { get; set; }
-
-        string TextKPWSolo { get; set; }
-        string TextKPWDuo { get; set; }
-        string TextKPWTrio { get; set; }
-        string TextKPWSquad { get; set; }
 
         List<ServerWin> ServerWins { get; set; }
+        List<MapWin> MapWins { get; set; }
+        List<TeammatesWin> TeammatesWins { get; set; }
 
         // Events
         event Action EventStore;
@@ -72,6 +39,5 @@ namespace PUBGWinsUI
         event Action EventRemove;
         event Action EventUpdate;
         event Action EventDefaults;
-
     }
 }

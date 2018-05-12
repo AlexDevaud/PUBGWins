@@ -9,7 +9,6 @@ namespace PUBGWinsUI
 {
     class Controller
     {
-
         Interface view;
 
         private static string WinDB; // The connection string to the DB
@@ -158,64 +157,38 @@ namespace PUBGWinsUI
                 conn.Open();
                 using (SqlTransaction trans = conn.BeginTransaction())
                 {
-                    // Build stats about wins on a certain map.
-                    int erangelWins = 0;
-                    int miramarWins = 0;
-                    int sanhokWins = 0;
-
-
-                    int erangelKills = GetMapKillCount("Erangel", out erangelWins, conn, trans);
-                    int miramarKills = GetMapKillCount("Miramar", out miramarWins, conn, trans);
-                    int sanhokKills = GetMapKillCount("Sanhok", out sanhokWins, conn, trans);
-
-                    int totalKills = 0;
                     int totalWins = 0;
+                    int totalKills = 0;
 
-                    // Display stats about wins on a certain map.
-                    view.TextWinsErangel = "" + erangelWins;
-                    view.TextWinsMiramar = "" + miramarWins;
-                    view.TextWinsSanhok = "" + sanhokWins;
+                    // Build stats about wins on a certain maps.
+                    foreach (MapWin mapWin in view.MapWins)
+                    {
+                        int winsThisMap;
+                        mapWin.Kills = GetMapKillCount(mapWin.Map, out winsThisMap, conn, trans);
+                        mapWin.Wins = winsThisMap;
 
-                    view.TextKillsErangel = "" + erangelKills;
-                    view.TextKillsMiramar = "" + miramarKills;
-                    view.TextKillsSanhok = "" + sanhokKills;
+                        if (mapWin.Wins != 0)
+                        {
+                            mapWin.KPW = 1.0 * mapWin.Kills / mapWin.Wins;
+                            string kPWString = "" + mapWin.KPW;
+                            if (kPWString.Length > 5)
+                            {
+                                kPWString = kPWString.Substring(0, 5);
+                            }
+                            mapWin.LabelAverage.Text = kPWString;
+                            mapWin.LabelKills.Text = "" + mapWin.Kills;
+                            mapWin.LabelWins.Text = "" + mapWin.Wins;
 
-                    /*
-                    List<ServerWin> serverWins = new List<ServerWin>();
-                    ServerWin winsNA = new ServerWin("NA");
+                            totalKills += mapWin.Kills;
+                            totalWins += mapWin.Wins;
+                        }
+                        else
+                        {
+                            mapWin.LabelAverage.Text = "None";
+                        }
+                    }
 
-                    winsNA.Wins = GetServerWinCount("NA", out int killsNA, conn, trans);
-                    winsNA.Kills = killsNA;
-                    view.TextWinsNA = "" + winsNA.Wins;
-                    view.TextKillsNA = "" + winsNA.Kills;
-                    */
-
-                    
-
-                    /*
-                    //int killsNA;
-                    int killsAS;
-                    int killsEU;
-                    int killsTest;
-                    int killsSEA;
-                    int killsSA;
-                    
-
-                    //view.TextWinsNA = "" + GetServerWinCount("NA", out killsNA, conn, trans);
-                    view.TextWinsAS = "" + GetServerWinCount("AS", out killsAS, conn, trans);
-                    view.TextWinsEU = "" + GetServerWinCount("EU", out killsEU, conn, trans);
-                    view.TextWinsTest = "" + GetServerWinCount("Test", out killsTest, conn, trans);
-                    view.TextWinsSEA = "" + GetServerWinCount("SEA", out killsSEA, conn, trans);
-                    view.TextWinsSA = "" + GetServerWinCount("SA", out killsSA, conn, trans);
-
-                    view.TextKillsAS = "" + killsAS;
-                    view.TextKillsEU = "" + killsEU;
-                    //view.TextKillsNA = "" + killsNA;
-                    view.TextKillsTest = "" + killsTest;
-                    view.TextKillsSEA = "" + killsSEA;
-                    view.TextKillsSA = "" + killsSA;
-                    */
-
+                    // Display stats based on the server used.
                     foreach (ServerWin serverWin in view.ServerWins)
                     {
                         int killsThisServer;
@@ -238,56 +211,39 @@ namespace PUBGWinsUI
                             serverWin.LabelAverage.Text = "None";
                         }
                         
-
                         serverWin.LabelKills.Text = "" + serverWin.Kills;
                         serverWin.LabelWins.Text = "" + serverWin.Wins;
                     }
 
 
                     // Stats based on the number of teammates.
-                    // The index is the number of teammates.
-                    int[] kills = new int[4];
-                    int[] wins = new int[4];
-                    string[] kPW = new string[4];
-
-                    for (int i = 0; i < 4; i++)
+                    foreach (TeammatesWin teammatesWin in view.TeammatesWins)
                     {
-                        wins[i] = GetTeamSizeCount(i, out kills[i], conn, trans);
-                        if (kills[i] != 0)
-                        {
-                            kPW[i] = "" + (1.0 * kills[i] / wins[i]);
+                        int killsWithTeammates;
+                        teammatesWin.Wins = GetTeamSizeCount(teammatesWin.Teammates, out killsWithTeammates, conn, trans);
+                        teammatesWin.Kills = killsWithTeammates;
 
-                            if (kPW[i].Length > 5)
+                        if (teammatesWin.Wins != 0)
+                        {
+                            teammatesWin.KPW = 1.0 * teammatesWin.Kills / teammatesWin.Wins;
+
+                            string kPWString = "" + teammatesWin.KPW;
+                            if (kPWString.Length > 5)
                             {
-                                kPW[i] = kPW[i].Substring(0, 5);
+                                kPWString = kPWString.Substring(0, 5);
                             }
+                            teammatesWin.LabelAverage.Text = kPWString;
                         }
                         else
                         {
-                            kPW[i] = "No wins";
+                            teammatesWin.LabelAverage.Text = "None";
                         }
-                       
+
+                        teammatesWin.LabelKills.Text = "" + teammatesWin.Kills;
+                        teammatesWin.LabelWins.Text = "" + teammatesWin.Wins;
                     }
 
-                    view.TextWinsSolo = "" + wins[0];
-                    view.TextWinsDuo = "" + wins[1];
-                    view.TextWinsTrio = "" + wins[2];
-                    view.TextWinsSquad = "" + wins[3];
-
-                    view.TextKillsSolo = "" + kills[0];
-                    view.TextKillsDuo = "" + kills[1];
-                    view.TextKillsTrio = "" + kills[2];
-                    view.TextKillsSquad = "" + kills[3];
-
-                    view.TextKPWSolo = kPW[0];
-                    view.TextKPWDuo = kPW[1];
-                    view.TextKPWTrio = kPW[2];
-                    view.TextKPWSquad = kPW[3];
-
                     // Total stats.
-                    totalKills = erangelKills + miramarKills + sanhokKills;
-                    totalWins = erangelWins + miramarWins + sanhokWins;
-
                     view.TextWinsTotal = "" + totalWins;
                     view.TextKillsTotal = "" + totalKills;
                     double averageKills = 1.0 * totalKills / totalWins;
