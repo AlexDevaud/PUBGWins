@@ -18,11 +18,20 @@ namespace PUBGWinsUI
         private int lastPlayedID; // The last game entered into the database.
         private int currentOldID; // The game we are lookin at.
 
+        private List<ServerWin> serverWins; // The list of objects that represent stats based on wins on a given server.
+
+        public List<ServerWin> ServerWins
+        {
+            get { return serverWins; }
+            set { serverWins = value; }
+        }
+
         public event Action EventStore;
         public event Action EventMostRecentWin;
         public event Action EventLessRecentWin;
         public event Action EventRemove;
         public event Action EventUpdate;
+        public event Action EventDefaults;
 
         // Properties.
         // Entered data.
@@ -96,11 +105,13 @@ namespace PUBGWinsUI
             get { return SquadWins.Text; }
             set { SquadWins.Text = value; }
         }
+        /*
         public string TextWinsNA
         {
             get { return NAWins.Text; }
             set { NAWins.Text = value; }
         }
+        
         public string TextWinsAS
         {
             get { return ASWins.Text; }
@@ -126,7 +137,7 @@ namespace PUBGWinsUI
             get { return SAWins.Text; }
             set { SAWins.Text = value; }
         }
-
+        */
         public string TextWinsErangel
         {
             get { return WinsErangel.Text; }
@@ -174,11 +185,13 @@ namespace PUBGWinsUI
             get { return KillsSquad.Text; }
             set { KillsSquad.Text = value; }
         }
+        /*
         public string TextKillsNA
         {
             get { return KillsNA.Text; }
             set { KillsNA.Text = value; }
         }
+        
         public string TextKillsAS
         {
             get { return KillsAS.Text; }
@@ -204,6 +217,7 @@ namespace PUBGWinsUI
             get { return KillsSA.Text; }
             set { KillsSA.Text = value; }
         }
+        */
         public string TextKillsErangel
         {
             get { return KillsErangel.Text; }
@@ -237,6 +251,28 @@ namespace PUBGWinsUI
             set { ButtonUpdate.Visible = value; }
         }
 
+        // Kills per win average
+        public string TextKPWSolo
+        {
+            get { return KPWSolo.Text; }
+            set { KPWSolo.Text = value; }
+        }
+        public string TextKPWDuo
+        {
+            get { return KPWDuo.Text; }
+            set { KPWDuo.Text = value; }
+        }
+        public string TextKPWTrio
+        {
+            get { return KPWTrio.Text; }
+            set { KPWTrio.Text = value; }
+        }
+        public string TextKPWSquad
+        {
+            get { return KPWSquad.Text; }
+            set { KPWSquad.Text = value; }
+        }
+
 
         /// <summary>
         /// Constructor
@@ -250,6 +286,45 @@ namespace PUBGWinsUI
 
             // SQL database.
             WinDB = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Alex\\source\\repos\\PUBGWins\\PUBGWinsUI\\WinDB.mdf; Integrated Security = True";
+
+            // Hook up info for servers.
+            serverWins = new List<ServerWin>();
+
+            ServerWin serverWinNA = new ServerWin("NA");
+            serverWinNA.LabelKills = KillsNA;
+            serverWinNA.LabelWins = NAWins;
+            serverWinNA.LabelAverage = KPWNA;
+            serverWins.Add(serverWinNA);
+
+            ServerWin serverWinAS = new ServerWin("AS");
+            serverWinAS.LabelKills = KillsAS;
+            serverWinAS.LabelWins = ASWins;
+            serverWinAS.LabelAverage = KPWAS;
+            serverWins.Add(serverWinAS);
+
+            ServerWin serverWinTest = new ServerWin("Test");
+            serverWinTest.LabelKills = KillsTest;
+            serverWinTest.LabelWins = TestWins;
+            serverWinTest.LabelAverage = KPWTest;
+            serverWins.Add(serverWinTest);
+
+            ServerWin serverWinEU = new ServerWin("EU");
+            serverWinEU.LabelKills = KillsEU;
+            serverWinEU.LabelWins = EUWins;
+            serverWinEU.LabelAverage = KPWEU;
+            serverWins.Add(serverWinEU);
+
+            ServerWin serverWinSEA = new ServerWin("SEA");
+            serverWinSEA.LabelKills = KillsSEA;
+            serverWinSEA.LabelWins = SEAWins;
+            serverWinSEA.LabelAverage = KPWSEA;
+            serverWins.Add(serverWinSEA);
+
+            ServerWin serverWinSA = new ServerWin("SA");
+            serverWinSA.LabelKills = KillsSA;
+            serverWinSA.LabelWins = SAWins;
+            serverWinSA.LabelAverage = KPWSA;
+            serverWins.Add(serverWinSA);
         }
 
         /// <summary>
@@ -293,6 +368,11 @@ namespace PUBGWinsUI
         private void ButtonRemove_Click(object sender, EventArgs e)
         {
             EventRemove?.Invoke();
+        }
+
+        private void ButtonDefaults_Click(object sender, EventArgs e)
+        {
+            EventDefaults?.Invoke();
         }
     }
     

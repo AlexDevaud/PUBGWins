@@ -108,6 +108,27 @@
             this.label42 = new System.Windows.Forms.Label();
             this.KillsNA = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.ButtonDefaults = new System.Windows.Forms.Button();
+            this.KPWSquad = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.KPWTrio = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.KPWDuo = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.KPWSolo = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.KPWSA = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.KPWSEA = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.KPWEU = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.KPWTest = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.KPWAS = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.KPWNA = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -664,7 +685,7 @@
             // KillsSquad
             // 
             this.KillsSquad.AutoSize = true;
-            this.KillsSquad.Location = new System.Drawing.Point(706, 462);
+            this.KillsSquad.Location = new System.Drawing.Point(820, 314);
             this.KillsSquad.Name = "KillsSquad";
             this.KillsSquad.Size = new System.Drawing.Size(13, 13);
             this.KillsSquad.TabIndex = 72;
@@ -673,7 +694,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(640, 462);
+            this.label29.Location = new System.Drawing.Point(754, 314);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(65, 13);
             this.label29.TabIndex = 71;
@@ -682,7 +703,7 @@
             // KillsTrio
             // 
             this.KillsTrio.AutoSize = true;
-            this.KillsTrio.Location = new System.Drawing.Point(706, 432);
+            this.KillsTrio.Location = new System.Drawing.Point(820, 284);
             this.KillsTrio.Name = "KillsTrio";
             this.KillsTrio.Size = new System.Drawing.Size(13, 13);
             this.KillsTrio.TabIndex = 70;
@@ -691,7 +712,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(639, 432);
+            this.label32.Location = new System.Drawing.Point(753, 284);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(52, 13);
             this.label32.TabIndex = 69;
@@ -700,7 +721,7 @@
             // KillsDuo
             // 
             this.KillsDuo.AutoSize = true;
-            this.KillsDuo.Location = new System.Drawing.Point(706, 402);
+            this.KillsDuo.Location = new System.Drawing.Point(820, 254);
             this.KillsDuo.Name = "KillsDuo";
             this.KillsDuo.Size = new System.Drawing.Size(13, 13);
             this.KillsDuo.TabIndex = 68;
@@ -709,7 +730,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(640, 402);
+            this.label34.Location = new System.Drawing.Point(754, 254);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(54, 13);
             this.label34.TabIndex = 67;
@@ -718,7 +739,7 @@
             // KillsSolo
             // 
             this.KillsSolo.AutoSize = true;
-            this.KillsSolo.Location = new System.Drawing.Point(706, 372);
+            this.KillsSolo.Location = new System.Drawing.Point(820, 224);
             this.KillsSolo.Name = "KillsSolo";
             this.KillsSolo.Size = new System.Drawing.Size(13, 13);
             this.KillsSolo.TabIndex = 66;
@@ -727,7 +748,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(640, 372);
+            this.label36.Location = new System.Drawing.Point(754, 224);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(55, 13);
             this.label36.TabIndex = 65;
@@ -841,11 +862,222 @@
             this.label44.TabIndex = 73;
             this.label44.Text = "NA Kills: ";
             // 
+            // ButtonDefaults
+            // 
+            this.ButtonDefaults.Location = new System.Drawing.Point(183, 146);
+            this.ButtonDefaults.Name = "ButtonDefaults";
+            this.ButtonDefaults.Size = new System.Drawing.Size(75, 23);
+            this.ButtonDefaults.TabIndex = 85;
+            this.ButtonDefaults.Text = "Set Defaults";
+            this.ButtonDefaults.UseVisualStyleBackColor = true;
+            this.ButtonDefaults.Click += new System.EventHandler(this.ButtonDefaults_Click);
+            // 
+            // KPWSquad
+            // 
+            this.KPWSquad.AutoSize = true;
+            this.KPWSquad.Location = new System.Drawing.Point(1002, 314);
+            this.KPWSquad.Name = "KPWSquad";
+            this.KPWSquad.Size = new System.Drawing.Size(13, 13);
+            this.KPWSquad.TabIndex = 93;
+            this.KPWSquad.Text = "0";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(896, 314);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(108, 13);
+            this.label33.TabIndex = 92;
+            this.label33.Text = "Average Squad Kills: ";
+            // 
+            // KPWTrio
+            // 
+            this.KPWTrio.AutoSize = true;
+            this.KPWTrio.Location = new System.Drawing.Point(1002, 284);
+            this.KPWTrio.Name = "KPWTrio";
+            this.KPWTrio.Size = new System.Drawing.Size(13, 13);
+            this.KPWTrio.TabIndex = 91;
+            this.KPWTrio.Text = "0";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(895, 284);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(95, 13);
+            this.label39.TabIndex = 90;
+            this.label39.Text = "Average Trio Kills: ";
+            // 
+            // KPWDuo
+            // 
+            this.KPWDuo.AutoSize = true;
+            this.KPWDuo.Location = new System.Drawing.Point(1002, 254);
+            this.KPWDuo.Name = "KPWDuo";
+            this.KPWDuo.Size = new System.Drawing.Size(13, 13);
+            this.KPWDuo.TabIndex = 89;
+            this.KPWDuo.Text = "0";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(896, 254);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(97, 13);
+            this.label43.TabIndex = 88;
+            this.label43.Text = "Average Duo Kills: ";
+            // 
+            // KPWSolo
+            // 
+            this.KPWSolo.AutoSize = true;
+            this.KPWSolo.Location = new System.Drawing.Point(1002, 224);
+            this.KPWSolo.Name = "KPWSolo";
+            this.KPWSolo.Size = new System.Drawing.Size(13, 13);
+            this.KPWSolo.TabIndex = 87;
+            this.KPWSolo.Text = "0";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(896, 224);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(98, 13);
+            this.label46.TabIndex = 86;
+            this.label46.Text = "Average Solo Kills: ";
+            // 
+            // KPWSA
+            // 
+            this.KPWSA.AutoSize = true;
+            this.KPWSA.Location = new System.Drawing.Point(991, 164);
+            this.KPWSA.Name = "KPWSA";
+            this.KPWSA.Size = new System.Drawing.Size(13, 13);
+            this.KPWSA.TabIndex = 105;
+            this.KPWSA.Text = "0";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(894, 164);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(91, 13);
+            this.label37.TabIndex = 104;
+            this.label37.Text = "Average SA Kills: ";
+            // 
+            // KPWSEA
+            // 
+            this.KPWSEA.AutoSize = true;
+            this.KPWSEA.Location = new System.Drawing.Point(991, 134);
+            this.KPWSEA.Name = "KPWSEA";
+            this.KPWSEA.Size = new System.Drawing.Size(13, 13);
+            this.KPWSEA.TabIndex = 103;
+            this.KPWSEA.Text = "0";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(894, 134);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(98, 13);
+            this.label45.TabIndex = 102;
+            this.label45.Text = "Average SEA Kills: ";
+            // 
+            // KPWEU
+            // 
+            this.KPWEU.AutoSize = true;
+            this.KPWEU.Location = new System.Drawing.Point(991, 104);
+            this.KPWEU.Name = "KPWEU";
+            this.KPWEU.Size = new System.Drawing.Size(13, 13);
+            this.KPWEU.TabIndex = 101;
+            this.KPWEU.Text = "0";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(894, 104);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(92, 13);
+            this.label48.TabIndex = 100;
+            this.label48.Text = "Average EU Kills: ";
+            // 
+            // KPWTest
+            // 
+            this.KPWTest.AutoSize = true;
+            this.KPWTest.Location = new System.Drawing.Point(991, 74);
+            this.KPWTest.Name = "KPWTest";
+            this.KPWTest.Size = new System.Drawing.Size(13, 13);
+            this.KPWTest.TabIndex = 99;
+            this.KPWTest.Text = "0";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(894, 74);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(98, 13);
+            this.label50.TabIndex = 98;
+            this.label50.Text = "Average Test Kills: ";
+            // 
+            // KPWAS
+            // 
+            this.KPWAS.AutoSize = true;
+            this.KPWAS.Location = new System.Drawing.Point(991, 44);
+            this.KPWAS.Name = "KPWAS";
+            this.KPWAS.Size = new System.Drawing.Size(13, 13);
+            this.KPWAS.TabIndex = 97;
+            this.KPWAS.Text = "0";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(895, 44);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(91, 13);
+            this.label52.TabIndex = 96;
+            this.label52.Text = "Average AS Kills: ";
+            // 
+            // KPWNA
+            // 
+            this.KPWNA.AutoSize = true;
+            this.KPWNA.Location = new System.Drawing.Point(991, 14);
+            this.KPWNA.Name = "KPWNA";
+            this.KPWNA.Size = new System.Drawing.Size(13, 13);
+            this.KPWNA.TabIndex = 95;
+            this.KPWNA.Text = "0";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(895, 14);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(92, 13);
+            this.label54.TabIndex = 94;
+            this.label54.Text = "Average NA Kills: ";
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 858);
+            this.ClientSize = new System.Drawing.Size(1067, 858);
+            this.Controls.Add(this.KPWSA);
+            this.Controls.Add(this.label37);
+            this.Controls.Add(this.KPWSEA);
+            this.Controls.Add(this.label45);
+            this.Controls.Add(this.KPWEU);
+            this.Controls.Add(this.label48);
+            this.Controls.Add(this.KPWTest);
+            this.Controls.Add(this.label50);
+            this.Controls.Add(this.KPWAS);
+            this.Controls.Add(this.label52);
+            this.Controls.Add(this.KPWNA);
+            this.Controls.Add(this.label54);
+            this.Controls.Add(this.KPWSquad);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.KPWTrio);
+            this.Controls.Add(this.label39);
+            this.Controls.Add(this.KPWDuo);
+            this.Controls.Add(this.label43);
+            this.Controls.Add(this.KPWSolo);
+            this.Controls.Add(this.label46);
+            this.Controls.Add(this.ButtonDefaults);
             this.Controls.Add(this.KillsSA);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.KillsSEA);
@@ -1015,6 +1247,27 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label KillsNA;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Button ButtonDefaults;
+        private System.Windows.Forms.Label KPWSquad;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label KPWTrio;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label KPWDuo;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label KPWSolo;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label KPWSA;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label KPWSEA;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label KPWEU;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label KPWTest;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label KPWAS;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label KPWNA;
+        private System.Windows.Forms.Label label54;
     }
 }
 

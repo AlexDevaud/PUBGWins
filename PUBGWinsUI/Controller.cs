@@ -35,6 +35,7 @@ namespace PUBGWinsUI
             view.EventMostRecentWin += HandleMostRecentWin;
             view.EventLessRecentWin += HandleLessRecentWin;
             view.EventUpdate += HandleUpdate;
+            view.EventDefaults += HandleDefaults;
 
             SetStats();
         }
@@ -145,6 +146,8 @@ namespace PUBGWinsUI
             command.Parameters.AddWithValue("@Perspective", view.TextPerspective);
         }
 
+       
+
         /// <summary>
         /// Calculate and display stats from the game info in the DB.
         /// </summary>
@@ -155,20 +158,20 @@ namespace PUBGWinsUI
                 conn.Open();
                 using (SqlTransaction trans = conn.BeginTransaction())
                 {
-                    // Build stats.
+                    // Build stats about wins on a certain map.
                     int erangelWins = 0;
                     int miramarWins = 0;
                     int sanhokWins = 0;
 
 
-                    int erangelKills = GetKillCount("Erangel", out erangelWins, conn, trans);
-                    int miramarKills = GetKillCount("Miramar", out miramarWins, conn, trans);
-                    int sanhokKills = GetKillCount("Sanhok", out sanhokWins, conn, trans);
+                    int erangelKills = GetMapKillCount("Erangel", out erangelWins, conn, trans);
+                    int miramarKills = GetMapKillCount("Miramar", out miramarWins, conn, trans);
+                    int sanhokKills = GetMapKillCount("Sanhok", out sanhokWins, conn, trans);
 
                     int totalKills = 0;
                     int totalWins = 0;
 
-                    // Display stats
+                    // Display stats about wins on a certain map.
                     view.TextWinsErangel = "" + erangelWins;
                     view.TextWinsMiramar = "" + miramarWins;
                     view.TextWinsSanhok = "" + sanhokWins;
@@ -177,17 +180,109 @@ namespace PUBGWinsUI
                     view.TextKillsMiramar = "" + miramarKills;
                     view.TextKillsSanhok = "" + sanhokKills;
 
-                    view.TextWinsNA = "" + GetServerCount("NA", conn, trans);
-                    view.TextWinsAS = "" + GetServerCount("AS", conn, trans);
-                    view.TextWinsEU = "" + GetServerCount("EU", conn, trans);
-                    view.TextWinsTest = "" + GetServerCount("Test", conn, trans);
-                    view.TextWinsSEA = "" + GetServerCount("SEA", conn, trans);
-                    view.TextWinsSA = "" + GetServerCount("SA", conn, trans);
+                    /*
+                    List<ServerWin> serverWins = new List<ServerWin>();
+                    ServerWin winsNA = new ServerWin("NA");
 
-                    view.TextWinsSolo = "" + GetTeamSizeCount(0, conn, trans);
-                    view.TextWinsDuo = "" + GetTeamSizeCount(1, conn, trans);
-                    view.TextWinsTrio = "" + GetTeamSizeCount(2, conn, trans);
-                    view.TextWinsSquad = "" + GetTeamSizeCount(3, conn, trans);
+                    winsNA.Wins = GetServerWinCount("NA", out int killsNA, conn, trans);
+                    winsNA.Kills = killsNA;
+                    view.TextWinsNA = "" + winsNA.Wins;
+                    view.TextKillsNA = "" + winsNA.Kills;
+                    */
+
+                    
+
+                    /*
+                    //int killsNA;
+                    int killsAS;
+                    int killsEU;
+                    int killsTest;
+                    int killsSEA;
+                    int killsSA;
+                    
+
+                    //view.TextWinsNA = "" + GetServerWinCount("NA", out killsNA, conn, trans);
+                    view.TextWinsAS = "" + GetServerWinCount("AS", out killsAS, conn, trans);
+                    view.TextWinsEU = "" + GetServerWinCount("EU", out killsEU, conn, trans);
+                    view.TextWinsTest = "" + GetServerWinCount("Test", out killsTest, conn, trans);
+                    view.TextWinsSEA = "" + GetServerWinCount("SEA", out killsSEA, conn, trans);
+                    view.TextWinsSA = "" + GetServerWinCount("SA", out killsSA, conn, trans);
+
+                    view.TextKillsAS = "" + killsAS;
+                    view.TextKillsEU = "" + killsEU;
+                    //view.TextKillsNA = "" + killsNA;
+                    view.TextKillsTest = "" + killsTest;
+                    view.TextKillsSEA = "" + killsSEA;
+                    view.TextKillsSA = "" + killsSA;
+                    */
+
+                    foreach (ServerWin serverWin in view.ServerWins)
+                    {
+                        int killsThisServer;
+                        serverWin.Wins = GetServerWinCount(serverWin.Server, out killsThisServer, conn, trans);
+                        serverWin.Kills = killsThisServer;
+
+                        if (serverWin.Wins != 0)
+                        {
+                            serverWin.KPW = 1.0 * serverWin.Kills / serverWin.Wins;
+
+                            string kPWString = "" + serverWin.KPW;
+                            if (kPWString.Length > 5)
+                            {
+                                kPWString = kPWString.Substring(0, 5);
+                            }
+                            serverWin.LabelAverage.Text = kPWString;
+                        }
+                        else
+                        {
+                            serverWin.LabelAverage.Text = "None";
+                        }
+                        
+
+                        serverWin.LabelKills.Text = "" + serverWin.Kills;
+                        serverWin.LabelWins.Text = "" + serverWin.Wins;
+                    }
+
+
+                    // Stats based on the number of teammates.
+                    // The index is the number of teammates.
+                    int[] kills = new int[4];
+                    int[] wins = new int[4];
+                    string[] kPW = new string[4];
+
+                    for (int i = 0; i < 4; i++)
+                    {
+                        wins[i] = GetTeamSizeCount(i, out kills[i], conn, trans);
+                        if (kills[i] != 0)
+                        {
+                            kPW[i] = "" + (1.0 * kills[i] / wins[i]);
+
+                            if (kPW[i].Length > 5)
+                            {
+                                kPW[i] = kPW[i].Substring(0, 5);
+                            }
+                        }
+                        else
+                        {
+                            kPW[i] = "No wins";
+                        }
+                       
+                    }
+
+                    view.TextWinsSolo = "" + wins[0];
+                    view.TextWinsDuo = "" + wins[1];
+                    view.TextWinsTrio = "" + wins[2];
+                    view.TextWinsSquad = "" + wins[3];
+
+                    view.TextKillsSolo = "" + kills[0];
+                    view.TextKillsDuo = "" + kills[1];
+                    view.TextKillsTrio = "" + kills[2];
+                    view.TextKillsSquad = "" + kills[3];
+
+                    view.TextKPWSolo = kPW[0];
+                    view.TextKPWDuo = kPW[1];
+                    view.TextKPWTrio = kPW[2];
+                    view.TextKPWSquad = kPW[3];
 
                     // Total stats.
                     totalKills = erangelKills + miramarKills + sanhokKills;
@@ -208,14 +303,14 @@ namespace PUBGWinsUI
 
 
         /// <summary>
-        /// Get the kill count and play count.
+        /// Get the kill count and win count for each  map.
         /// </summary>
         /// <param name="map"></param>
         /// <param name="played"></param>
         /// <param name="conn"></param>
         /// <param name="trans"></param>
         /// <returns></returns>
-        private int GetKillCount(string map, out int played, SqlConnection conn, SqlTransaction trans)
+        private int GetMapKillCount(string map, out int played, SqlConnection conn, SqlTransaction trans)
         {
             int kills = 0;
             played = 0;
@@ -236,16 +331,18 @@ namespace PUBGWinsUI
             return kills;
         }
 
+
         /// <summary>
-        /// Get games won on a server.
+        /// Get games won on a server and the kill count.
         /// </summary>
         /// <param name="server"></param>
         /// <param name="conn"></param>
         /// <param name="trans"></param>
         /// <returns></returns>
-        private int GetServerCount(string server, SqlConnection conn, SqlTransaction trans)
+        private int GetServerWinCount(string server, out int kills, SqlConnection conn, SqlTransaction trans)
         {
             int wins = 0;
+            kills = 0;
             using (SqlCommand command = new SqlCommand("SELECT Kills FROM Wins WHERE Server = @Server", conn, trans))
             {
                 command.Parameters.AddWithValue("@Server", server);
@@ -255,6 +352,7 @@ namespace PUBGWinsUI
                     while (dbReader.Read())
                     {
                         wins++;
+                        kills += (int)dbReader.GetSqlInt32(0);
                     }
                 }
                 dbReader.Close();
@@ -262,16 +360,20 @@ namespace PUBGWinsUI
             return wins;
         }
 
+      
+
         /// <summary>
         /// Returns the number of games won with the given number of teammates.
+        /// Also returns the number of kills per numer of teammates.
         /// </summary>
         /// <param name="teammates"></param>
         /// <param name="conn"></param>
         /// <param name="trans"></param>
         /// <returns></returns>
-        private int GetTeamSizeCount(int teammates, SqlConnection conn, SqlTransaction trans)
+        private int GetTeamSizeCount(int teammates, out int kills, SqlConnection conn, SqlTransaction trans)
         {
             int wins = 0;
+            kills = 0;
             using (SqlCommand command = new SqlCommand("SELECT Kills FROM Wins WHERE Teammates = @Teammates", conn, trans))
             {
                 command.Parameters.AddWithValue("Teammates", teammates);
@@ -281,6 +383,7 @@ namespace PUBGWinsUI
                     while (dbReader.Read())
                     {
                         wins++;
+                        kills += (int)dbReader.GetSqlInt32(0);
                     }
                 }
                 dbReader.Close();
@@ -288,7 +391,7 @@ namespace PUBGWinsUI
             return wins;
         }
 
-       
+
 
         /// <summary>
         /// Show the most recent win.
@@ -516,7 +619,6 @@ namespace PUBGWinsUI
                 }
             }
             SetStats();
-            view.TextDescription = "";
         }
 
         /// <summary>
@@ -546,8 +648,29 @@ namespace PUBGWinsUI
             view.TextTeammate3 = "";
             view.TextDescription = "";
 
-            // Show the newest added game.
-            HandleLessRecentWin();
+            lastPlayedID = 0;
+            currentOldID = 0;
+
+            // Clear the data entry area.
+            HandleDefaults();
+        }
+
+        /// <summary>
+        /// Show the default options in the data entry area.
+        /// </summary>
+        private void HandleDefaults()
+        {
+            view.TextKills = "";
+            view.TextDescription = "";
+            view.TextServer = "NA";
+            view.TextPerspective = "FPP";
+            view.TextTeammate1 = "";
+            view.TextTeammate2 = "";
+            view.TextTeammate3 = "";
+
+            view.ButtonPreviousVisible = false;
+            view.ButtonRemoveVisible = false;
+            view.ButtonUpdateVisible = false;
         }
     }
 }
