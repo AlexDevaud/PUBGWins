@@ -18,6 +18,7 @@ namespace PUBGWinsUI
         private List<MapWin> mapWins;
         private List<TeammatesNumberWin> teammatesWins;
         private Label[] topTeammates;
+        private List<PerspectiveNumberWin> perspectiveNumberWins;
 
         public List<ServerWin> ServerWins
         {
@@ -35,6 +36,12 @@ namespace PUBGWinsUI
         {
             get { return teammatesWins; }
             set { teammatesWins = value; }
+        }
+
+        public List<PerspectiveNumberWin> PerspectiveWins
+        {
+            get { return perspectiveNumberWins; }
+            set { perspectiveNumberWins = value; }
         }
 
         public event Action EventStore;
@@ -247,6 +254,26 @@ namespace PUBGWinsUI
             };
             teammatesWins.Add(teammatesWin3);
 
+            // Hook up perspective stats.
+            perspectiveNumberWins = new List<PerspectiveNumberWin>();
+            PerspectiveNumberWin fppWins = new PerspectiveNumberWin("FPP")
+            {
+                LabelAverage = KPWFPP,
+                LabelKills = FPPKills,
+                LabelWins = FPPWins
+            };
+            perspectiveNumberWins.Add(fppWins);
+
+            PerspectiveNumberWin tppWins = new PerspectiveNumberWin("TPP")
+            {
+                LabelAverage = KPWTPP,
+                LabelKills = TPPKills,
+                LabelWins = TPPWins
+            };
+            perspectiveNumberWins.Add(tppWins);
+
+
+            // Label to display top teammates.
             topTeammates = new Label[]
             {
                 TopTeammate1,

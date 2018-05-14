@@ -67,8 +67,25 @@ namespace PUBGWinsUI
         {
             Teammates = teammates;
         }
+    }
 
-       
+    /// <summary>
+    /// Tracking win stats with each perspective.
+    /// </summary>
+    public class PerspectiveNumberWin
+    {
+        public string Perspective { get; }
+        public int Wins { get; set; }
+        public int Kills { get; set; }
+        public double KPW { get; set; }
+        public Label LabelWins { get; set; }
+        public Label LabelKills { get; set; }
+        public Label LabelAverage { get; set; }
+
+        public PerspectiveNumberWin(string perspective)
+        {
+            Perspective = perspective;
+        }
     }
 
     /// <summary>

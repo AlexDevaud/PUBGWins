@@ -140,6 +140,18 @@
             this.TopTeammate3 = new System.Windows.Forms.Label();
             this.TopTeammate4 = new System.Windows.Forms.Label();
             this.TopTeammate5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.FPPWins = new System.Windows.Forms.Label();
+            this.TPPWins = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.KPWFPP = new System.Windows.Forms.Label();
+            this.KPWTPP = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.FPPKills = new System.Windows.Forms.Label();
+            this.TPPKills = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -473,7 +485,7 @@
             // NAWins
             // 
             this.NAWins.AutoSize = true;
-            this.NAWins.Location = new System.Drawing.Point(709, 183);
+            this.NAWins.Location = new System.Drawing.Point(709, 208);
             this.NAWins.Name = "NAWins";
             this.NAWins.Size = new System.Drawing.Size(13, 13);
             this.NAWins.TabIndex = 42;
@@ -482,7 +494,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(654, 183);
+            this.label19.Location = new System.Drawing.Point(654, 208);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(55, 13);
             this.label19.TabIndex = 41;
@@ -491,7 +503,7 @@
             // ASWins
             // 
             this.ASWins.AutoSize = true;
-            this.ASWins.Location = new System.Drawing.Point(709, 213);
+            this.ASWins.Location = new System.Drawing.Point(709, 238);
             this.ASWins.Name = "ASWins";
             this.ASWins.Size = new System.Drawing.Size(13, 13);
             this.ASWins.TabIndex = 44;
@@ -500,7 +512,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(654, 213);
+            this.label21.Location = new System.Drawing.Point(654, 238);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(54, 13);
             this.label21.TabIndex = 43;
@@ -509,7 +521,7 @@
             // TestWins
             // 
             this.TestWins.AutoSize = true;
-            this.TestWins.Location = new System.Drawing.Point(709, 243);
+            this.TestWins.Location = new System.Drawing.Point(709, 268);
             this.TestWins.Name = "TestWins";
             this.TestWins.Size = new System.Drawing.Size(13, 13);
             this.TestWins.TabIndex = 46;
@@ -518,7 +530,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(653, 243);
+            this.label22.Location = new System.Drawing.Point(653, 268);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(61, 13);
             this.label22.TabIndex = 45;
@@ -527,7 +539,7 @@
             // EUWins
             // 
             this.EUWins.AutoSize = true;
-            this.EUWins.Location = new System.Drawing.Point(709, 273);
+            this.EUWins.Location = new System.Drawing.Point(709, 298);
             this.EUWins.Name = "EUWins";
             this.EUWins.Size = new System.Drawing.Size(13, 13);
             this.EUWins.TabIndex = 48;
@@ -536,7 +548,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(653, 273);
+            this.label23.Location = new System.Drawing.Point(653, 298);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(55, 13);
             this.label23.TabIndex = 47;
@@ -545,7 +557,7 @@
             // SoloWins
             // 
             this.SoloWins.AutoSize = true;
-            this.SoloWins.Location = new System.Drawing.Point(709, 393);
+            this.SoloWins.Location = new System.Drawing.Point(709, 418);
             this.SoloWins.Name = "SoloWins";
             this.SoloWins.Size = new System.Drawing.Size(13, 13);
             this.SoloWins.TabIndex = 50;
@@ -554,7 +566,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(643, 393);
+            this.label24.Location = new System.Drawing.Point(643, 418);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(61, 13);
             this.label24.TabIndex = 49;
@@ -563,7 +575,7 @@
             // DuoWins
             // 
             this.DuoWins.AutoSize = true;
-            this.DuoWins.Location = new System.Drawing.Point(709, 423);
+            this.DuoWins.Location = new System.Drawing.Point(709, 448);
             this.DuoWins.Name = "DuoWins";
             this.DuoWins.Size = new System.Drawing.Size(13, 13);
             this.DuoWins.TabIndex = 52;
@@ -572,7 +584,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(643, 423);
+            this.label25.Location = new System.Drawing.Point(643, 448);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(60, 13);
             this.label25.TabIndex = 51;
@@ -581,7 +593,7 @@
             // TrioWins
             // 
             this.TrioWins.AutoSize = true;
-            this.TrioWins.Location = new System.Drawing.Point(709, 453);
+            this.TrioWins.Location = new System.Drawing.Point(709, 478);
             this.TrioWins.Name = "TrioWins";
             this.TrioWins.Size = new System.Drawing.Size(13, 13);
             this.TrioWins.TabIndex = 54;
@@ -590,7 +602,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(642, 453);
+            this.label26.Location = new System.Drawing.Point(642, 478);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(58, 13);
             this.label26.TabIndex = 53;
@@ -599,7 +611,7 @@
             // SquadWins
             // 
             this.SquadWins.AutoSize = true;
-            this.SquadWins.Location = new System.Drawing.Point(709, 483);
+            this.SquadWins.Location = new System.Drawing.Point(709, 508);
             this.SquadWins.Name = "SquadWins";
             this.SquadWins.Size = new System.Drawing.Size(13, 13);
             this.SquadWins.TabIndex = 56;
@@ -608,7 +620,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(643, 483);
+            this.label27.Location = new System.Drawing.Point(643, 508);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(71, 13);
             this.label27.TabIndex = 55;
@@ -617,7 +629,7 @@
             // SEAWins
             // 
             this.SEAWins.AutoSize = true;
-            this.SEAWins.Location = new System.Drawing.Point(709, 303);
+            this.SEAWins.Location = new System.Drawing.Point(709, 328);
             this.SEAWins.Name = "SEAWins";
             this.SEAWins.Size = new System.Drawing.Size(13, 13);
             this.SEAWins.TabIndex = 58;
@@ -626,7 +638,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(653, 303);
+            this.label28.Location = new System.Drawing.Point(653, 328);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(61, 13);
             this.label28.TabIndex = 57;
@@ -635,7 +647,7 @@
             // SAWins
             // 
             this.SAWins.AutoSize = true;
-            this.SAWins.Location = new System.Drawing.Point(709, 333);
+            this.SAWins.Location = new System.Drawing.Point(709, 358);
             this.SAWins.Name = "SAWins";
             this.SAWins.Size = new System.Drawing.Size(13, 13);
             this.SAWins.TabIndex = 60;
@@ -644,7 +656,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(653, 333);
+            this.label30.Location = new System.Drawing.Point(653, 358);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(54, 13);
             this.label30.TabIndex = 59;
@@ -696,7 +708,7 @@
             // KillsSquad
             // 
             this.KillsSquad.AutoSize = true;
-            this.KillsSquad.Location = new System.Drawing.Point(822, 483);
+            this.KillsSquad.Location = new System.Drawing.Point(822, 508);
             this.KillsSquad.Name = "KillsSquad";
             this.KillsSquad.Size = new System.Drawing.Size(13, 13);
             this.KillsSquad.TabIndex = 72;
@@ -705,7 +717,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(756, 483);
+            this.label29.Location = new System.Drawing.Point(756, 508);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(65, 13);
             this.label29.TabIndex = 71;
@@ -714,7 +726,7 @@
             // KillsTrio
             // 
             this.KillsTrio.AutoSize = true;
-            this.KillsTrio.Location = new System.Drawing.Point(822, 453);
+            this.KillsTrio.Location = new System.Drawing.Point(822, 478);
             this.KillsTrio.Name = "KillsTrio";
             this.KillsTrio.Size = new System.Drawing.Size(13, 13);
             this.KillsTrio.TabIndex = 70;
@@ -723,7 +735,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(755, 453);
+            this.label32.Location = new System.Drawing.Point(755, 478);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(52, 13);
             this.label32.TabIndex = 69;
@@ -732,7 +744,7 @@
             // KillsDuo
             // 
             this.KillsDuo.AutoSize = true;
-            this.KillsDuo.Location = new System.Drawing.Point(822, 423);
+            this.KillsDuo.Location = new System.Drawing.Point(822, 448);
             this.KillsDuo.Name = "KillsDuo";
             this.KillsDuo.Size = new System.Drawing.Size(13, 13);
             this.KillsDuo.TabIndex = 68;
@@ -741,7 +753,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(756, 423);
+            this.label34.Location = new System.Drawing.Point(756, 448);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(54, 13);
             this.label34.TabIndex = 67;
@@ -750,7 +762,7 @@
             // KillsSolo
             // 
             this.KillsSolo.AutoSize = true;
-            this.KillsSolo.Location = new System.Drawing.Point(822, 393);
+            this.KillsSolo.Location = new System.Drawing.Point(822, 418);
             this.KillsSolo.Name = "KillsSolo";
             this.KillsSolo.Size = new System.Drawing.Size(13, 13);
             this.KillsSolo.TabIndex = 66;
@@ -759,7 +771,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(756, 393);
+            this.label36.Location = new System.Drawing.Point(756, 418);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(55, 13);
             this.label36.TabIndex = 65;
@@ -768,7 +780,7 @@
             // KillsSA
             // 
             this.KillsSA.AutoSize = true;
-            this.KillsSA.Location = new System.Drawing.Point(819, 332);
+            this.KillsSA.Location = new System.Drawing.Point(819, 357);
             this.KillsSA.Name = "KillsSA";
             this.KillsSA.Size = new System.Drawing.Size(13, 13);
             this.KillsSA.TabIndex = 84;
@@ -777,7 +789,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(763, 332);
+            this.label31.Location = new System.Drawing.Point(763, 357);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(48, 13);
             this.label31.TabIndex = 83;
@@ -786,7 +798,7 @@
             // KillsSEA
             // 
             this.KillsSEA.AutoSize = true;
-            this.KillsSEA.Location = new System.Drawing.Point(819, 302);
+            this.KillsSEA.Location = new System.Drawing.Point(819, 327);
             this.KillsSEA.Name = "KillsSEA";
             this.KillsSEA.Size = new System.Drawing.Size(13, 13);
             this.KillsSEA.TabIndex = 82;
@@ -795,7 +807,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(763, 302);
+            this.label35.Location = new System.Drawing.Point(763, 327);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(55, 13);
             this.label35.TabIndex = 81;
@@ -804,7 +816,7 @@
             // KillsEU
             // 
             this.KillsEU.AutoSize = true;
-            this.KillsEU.Location = new System.Drawing.Point(819, 272);
+            this.KillsEU.Location = new System.Drawing.Point(819, 297);
             this.KillsEU.Name = "KillsEU";
             this.KillsEU.Size = new System.Drawing.Size(13, 13);
             this.KillsEU.TabIndex = 80;
@@ -813,7 +825,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(763, 272);
+            this.label38.Location = new System.Drawing.Point(763, 297);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(49, 13);
             this.label38.TabIndex = 79;
@@ -822,7 +834,7 @@
             // KillsTest
             // 
             this.KillsTest.AutoSize = true;
-            this.KillsTest.Location = new System.Drawing.Point(819, 242);
+            this.KillsTest.Location = new System.Drawing.Point(819, 267);
             this.KillsTest.Name = "KillsTest";
             this.KillsTest.Size = new System.Drawing.Size(13, 13);
             this.KillsTest.TabIndex = 78;
@@ -831,7 +843,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(763, 242);
+            this.label40.Location = new System.Drawing.Point(763, 267);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(55, 13);
             this.label40.TabIndex = 77;
@@ -840,7 +852,7 @@
             // KillsAS
             // 
             this.KillsAS.AutoSize = true;
-            this.KillsAS.Location = new System.Drawing.Point(819, 212);
+            this.KillsAS.Location = new System.Drawing.Point(819, 237);
             this.KillsAS.Name = "KillsAS";
             this.KillsAS.Size = new System.Drawing.Size(13, 13);
             this.KillsAS.TabIndex = 76;
@@ -849,7 +861,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(764, 212);
+            this.label42.Location = new System.Drawing.Point(764, 237);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(48, 13);
             this.label42.TabIndex = 75;
@@ -858,7 +870,7 @@
             // KillsNA
             // 
             this.KillsNA.AutoSize = true;
-            this.KillsNA.Location = new System.Drawing.Point(819, 182);
+            this.KillsNA.Location = new System.Drawing.Point(819, 207);
             this.KillsNA.Name = "KillsNA";
             this.KillsNA.Size = new System.Drawing.Size(13, 13);
             this.KillsNA.TabIndex = 74;
@@ -867,7 +879,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(764, 182);
+            this.label44.Location = new System.Drawing.Point(764, 207);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(49, 13);
             this.label44.TabIndex = 73;
@@ -886,7 +898,7 @@
             // KPWSquad
             // 
             this.KPWSquad.AutoSize = true;
-            this.KPWSquad.Location = new System.Drawing.Point(981, 483);
+            this.KPWSquad.Location = new System.Drawing.Point(981, 508);
             this.KPWSquad.Name = "KPWSquad";
             this.KPWSquad.Size = new System.Drawing.Size(13, 13);
             this.KPWSquad.TabIndex = 93;
@@ -895,7 +907,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(875, 483);
+            this.label33.Location = new System.Drawing.Point(875, 508);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(108, 13);
             this.label33.TabIndex = 92;
@@ -904,7 +916,7 @@
             // KPWTrio
             // 
             this.KPWTrio.AutoSize = true;
-            this.KPWTrio.Location = new System.Drawing.Point(981, 453);
+            this.KPWTrio.Location = new System.Drawing.Point(981, 478);
             this.KPWTrio.Name = "KPWTrio";
             this.KPWTrio.Size = new System.Drawing.Size(13, 13);
             this.KPWTrio.TabIndex = 91;
@@ -913,7 +925,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(874, 453);
+            this.label39.Location = new System.Drawing.Point(874, 478);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(95, 13);
             this.label39.TabIndex = 90;
@@ -922,7 +934,7 @@
             // KPWDuo
             // 
             this.KPWDuo.AutoSize = true;
-            this.KPWDuo.Location = new System.Drawing.Point(981, 423);
+            this.KPWDuo.Location = new System.Drawing.Point(981, 448);
             this.KPWDuo.Name = "KPWDuo";
             this.KPWDuo.Size = new System.Drawing.Size(13, 13);
             this.KPWDuo.TabIndex = 89;
@@ -931,7 +943,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(875, 423);
+            this.label43.Location = new System.Drawing.Point(875, 448);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(97, 13);
             this.label43.TabIndex = 88;
@@ -940,7 +952,7 @@
             // KPWSolo
             // 
             this.KPWSolo.AutoSize = true;
-            this.KPWSolo.Location = new System.Drawing.Point(981, 393);
+            this.KPWSolo.Location = new System.Drawing.Point(981, 418);
             this.KPWSolo.Name = "KPWSolo";
             this.KPWSolo.Size = new System.Drawing.Size(13, 13);
             this.KPWSolo.TabIndex = 87;
@@ -949,7 +961,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(875, 393);
+            this.label46.Location = new System.Drawing.Point(875, 418);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(98, 13);
             this.label46.TabIndex = 86;
@@ -958,7 +970,7 @@
             // KPWSA
             // 
             this.KPWSA.AutoSize = true;
-            this.KPWSA.Location = new System.Drawing.Point(970, 333);
+            this.KPWSA.Location = new System.Drawing.Point(970, 358);
             this.KPWSA.Name = "KPWSA";
             this.KPWSA.Size = new System.Drawing.Size(13, 13);
             this.KPWSA.TabIndex = 105;
@@ -967,7 +979,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(873, 333);
+            this.label37.Location = new System.Drawing.Point(873, 358);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(91, 13);
             this.label37.TabIndex = 104;
@@ -976,7 +988,7 @@
             // KPWSEA
             // 
             this.KPWSEA.AutoSize = true;
-            this.KPWSEA.Location = new System.Drawing.Point(970, 303);
+            this.KPWSEA.Location = new System.Drawing.Point(970, 328);
             this.KPWSEA.Name = "KPWSEA";
             this.KPWSEA.Size = new System.Drawing.Size(13, 13);
             this.KPWSEA.TabIndex = 103;
@@ -985,7 +997,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(873, 303);
+            this.label45.Location = new System.Drawing.Point(873, 328);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(98, 13);
             this.label45.TabIndex = 102;
@@ -994,7 +1006,7 @@
             // KPWEU
             // 
             this.KPWEU.AutoSize = true;
-            this.KPWEU.Location = new System.Drawing.Point(970, 273);
+            this.KPWEU.Location = new System.Drawing.Point(970, 298);
             this.KPWEU.Name = "KPWEU";
             this.KPWEU.Size = new System.Drawing.Size(13, 13);
             this.KPWEU.TabIndex = 101;
@@ -1003,7 +1015,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(873, 273);
+            this.label48.Location = new System.Drawing.Point(873, 298);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(92, 13);
             this.label48.TabIndex = 100;
@@ -1012,7 +1024,7 @@
             // KPWTest
             // 
             this.KPWTest.AutoSize = true;
-            this.KPWTest.Location = new System.Drawing.Point(970, 243);
+            this.KPWTest.Location = new System.Drawing.Point(970, 268);
             this.KPWTest.Name = "KPWTest";
             this.KPWTest.Size = new System.Drawing.Size(13, 13);
             this.KPWTest.TabIndex = 99;
@@ -1021,7 +1033,7 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(873, 243);
+            this.label50.Location = new System.Drawing.Point(873, 268);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(98, 13);
             this.label50.TabIndex = 98;
@@ -1030,7 +1042,7 @@
             // KPWAS
             // 
             this.KPWAS.AutoSize = true;
-            this.KPWAS.Location = new System.Drawing.Point(970, 213);
+            this.KPWAS.Location = new System.Drawing.Point(970, 238);
             this.KPWAS.Name = "KPWAS";
             this.KPWAS.Size = new System.Drawing.Size(13, 13);
             this.KPWAS.TabIndex = 97;
@@ -1039,7 +1051,7 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(874, 213);
+            this.label52.Location = new System.Drawing.Point(874, 238);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(91, 13);
             this.label52.TabIndex = 96;
@@ -1048,7 +1060,7 @@
             // KPWNA
             // 
             this.KPWNA.AutoSize = true;
-            this.KPWNA.Location = new System.Drawing.Point(970, 183);
+            this.KPWNA.Location = new System.Drawing.Point(970, 208);
             this.KPWNA.Name = "KPWNA";
             this.KPWNA.Size = new System.Drawing.Size(13, 13);
             this.KPWNA.TabIndex = 95;
@@ -1057,7 +1069,7 @@
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(874, 183);
+            this.label54.Location = new System.Drawing.Point(874, 208);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(92, 13);
             this.label54.TabIndex = 94;
@@ -1129,7 +1141,7 @@
             // TopTeammate2
             // 
             this.TopTeammate2.AutoSize = true;
-            this.TopTeammate2.Location = new System.Drawing.Point(836, 34);
+            this.TopTeammate2.Location = new System.Drawing.Point(836, 37);
             this.TopTeammate2.Name = "TopTeammate2";
             this.TopTeammate2.Size = new System.Drawing.Size(82, 13);
             this.TopTeammate2.TabIndex = 113;
@@ -1138,7 +1150,7 @@
             // TopTeammate3
             // 
             this.TopTeammate3.AutoSize = true;
-            this.TopTeammate3.Location = new System.Drawing.Point(836, 54);
+            this.TopTeammate3.Location = new System.Drawing.Point(836, 60);
             this.TopTeammate3.Name = "TopTeammate3";
             this.TopTeammate3.Size = new System.Drawing.Size(82, 13);
             this.TopTeammate3.TabIndex = 114;
@@ -1147,7 +1159,7 @@
             // TopTeammate4
             // 
             this.TopTeammate4.AutoSize = true;
-            this.TopTeammate4.Location = new System.Drawing.Point(836, 74);
+            this.TopTeammate4.Location = new System.Drawing.Point(836, 83);
             this.TopTeammate4.Name = "TopTeammate4";
             this.TopTeammate4.Size = new System.Drawing.Size(82, 13);
             this.TopTeammate4.TabIndex = 115;
@@ -1156,17 +1168,137 @@
             // TopTeammate5
             // 
             this.TopTeammate5.AutoSize = true;
-            this.TopTeammate5.Location = new System.Drawing.Point(836, 94);
+            this.TopTeammate5.Location = new System.Drawing.Point(836, 106);
             this.TopTeammate5.Name = "TopTeammate5";
             this.TopTeammate5.Size = new System.Drawing.Size(82, 13);
             this.TopTeammate5.TabIndex = 116;
             this.TopTeammate5.Text = "TopTeammate5";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(662, 142);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.TabIndex = 117;
+            this.label4.Text = "FPP Wins: ";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(662, 167);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(61, 13);
+            this.label47.TabIndex = 118;
+            this.label47.Text = "TPP Wins: ";
+            // 
+            // FPPWins
+            // 
+            this.FPPWins.AutoSize = true;
+            this.FPPWins.Location = new System.Drawing.Point(720, 142);
+            this.FPPWins.Name = "FPPWins";
+            this.FPPWins.Size = new System.Drawing.Size(13, 13);
+            this.FPPWins.TabIndex = 119;
+            this.FPPWins.Text = "0";
+            // 
+            // TPPWins
+            // 
+            this.TPPWins.AutoSize = true;
+            this.TPPWins.Location = new System.Drawing.Point(720, 167);
+            this.TPPWins.Name = "TPPWins";
+            this.TPPWins.Size = new System.Drawing.Size(13, 13);
+            this.TPPWins.TabIndex = 120;
+            this.TPPWins.Text = "0";
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(857, 142);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(108, 13);
+            this.label.TabIndex = 121;
+            this.label.Text = "Average Kills in FPP: ";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(858, 167);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(109, 13);
+            this.label51.TabIndex = 122;
+            this.label51.Text = "Average Kills in TPP: ";
+            // 
+            // KPWFPP
+            // 
+            this.KPWFPP.AutoSize = true;
+            this.KPWFPP.Location = new System.Drawing.Point(968, 142);
+            this.KPWFPP.Name = "KPWFPP";
+            this.KPWFPP.Size = new System.Drawing.Size(13, 13);
+            this.KPWFPP.TabIndex = 123;
+            this.KPWFPP.Text = "0";
+            // 
+            // KPWTPP
+            // 
+            this.KPWTPP.AutoSize = true;
+            this.KPWTPP.Location = new System.Drawing.Point(968, 167);
+            this.KPWTPP.Name = "KPWTPP";
+            this.KPWTPP.Size = new System.Drawing.Size(13, 13);
+            this.KPWTPP.TabIndex = 124;
+            this.KPWTPP.Text = "0";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(761, 142);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(54, 13);
+            this.label55.TabIndex = 125;
+            this.label55.Text = "FPP Kills: ";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(761, 167);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(55, 13);
+            this.label56.TabIndex = 126;
+            this.label56.Text = "TPP Kills: ";
+            // 
+            // FPPKills
+            // 
+            this.FPPKills.AutoSize = true;
+            this.FPPKills.Location = new System.Drawing.Point(816, 142);
+            this.FPPKills.Name = "FPPKills";
+            this.FPPKills.Size = new System.Drawing.Size(13, 13);
+            this.FPPKills.TabIndex = 127;
+            this.FPPKills.Text = "0";
+            // 
+            // TPPKills
+            // 
+            this.TPPKills.AutoSize = true;
+            this.TPPKills.Location = new System.Drawing.Point(816, 167);
+            this.TPPKills.Name = "TPPKills";
+            this.TPPKills.Size = new System.Drawing.Size(13, 13);
+            this.TPPKills.TabIndex = 128;
+            this.TPPKills.Text = "0";
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1039, 535);
+            this.ClientSize = new System.Drawing.Size(1039, 547);
+            this.Controls.Add(this.TPPKills);
+            this.Controls.Add(this.FPPKills);
+            this.Controls.Add(this.label56);
+            this.Controls.Add(this.label55);
+            this.Controls.Add(this.KPWTPP);
+            this.Controls.Add(this.KPWFPP);
+            this.Controls.Add(this.label51);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.TPPWins);
+            this.Controls.Add(this.FPPWins);
+            this.Controls.Add(this.label47);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.TopTeammate5);
             this.Controls.Add(this.TopTeammate4);
             this.Controls.Add(this.TopTeammate3);
@@ -1400,6 +1532,18 @@
         private System.Windows.Forms.Label TopTeammate3;
         private System.Windows.Forms.Label TopTeammate4;
         private System.Windows.Forms.Label TopTeammate5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label FPPWins;
+        private System.Windows.Forms.Label TPPWins;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label KPWFPP;
+        private System.Windows.Forms.Label KPWTPP;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label FPPKills;
+        private System.Windows.Forms.Label TPPKills;
     }
 }
 

@@ -284,8 +284,6 @@ namespace PUBGWinsUI
                     specificTeammateWins.Sort();
                     specificTeammateWins.Reverse();
 
-                    Console.WriteLine("asda");
-
                     int teammatesPosted = 0;
                     foreach (SpecificTeammateWins thisTeammate in specificTeammateWins)
                     {
@@ -300,6 +298,31 @@ namespace PUBGWinsUI
                         }
                     }
 
+
+                    // Get stats on each perspective.
+                    foreach (PerspectiveNumberWin perspectiveNumberWin in view.PerspectiveWins)
+                    {
+                        int perspectiveKills = 0;
+                        perspectiveNumberWin.Wins = GetPerspectiveWinCount(perspectiveNumberWin.Perspective, out perspectiveKills, conn, trans);
+                        perspectiveNumberWin.Kills = perspectiveKills;
+
+                        if (perspectiveNumberWin.Wins != 0)
+                        {
+                            perspectiveNumberWin.KPW = 1.0 * perspectiveNumberWin.Kills / perspectiveNumberWin.Wins;
+                            string kPWString = "" + perspectiveNumberWin.KPW;
+                            if (kPWString.Length > 5)
+                            {
+                                kPWString = kPWString.Substring(0, 5);
+                            }
+                            perspectiveNumberWin.LabelAverage.Text = kPWString;
+                        }
+                        else
+                        {
+                            perspectiveNumberWin.LabelAverage.Text = "None";
+                        }
+                        perspectiveNumberWin.LabelKills.Text = "" + perspectiveNumberWin.Kills;
+                        perspectiveNumberWin.LabelWins.Text = "" + perspectiveNumberWin.Wins;
+                    }
                 }
             }
         }
@@ -422,6 +445,35 @@ namespace PUBGWinsUI
             return wins;
         }
 
+        /// <summary>
+        /// Returns the number of games won in each perspective.
+        /// Also returns the number of kills with that perspective.
+        /// </summary>
+        /// <param name="perspective"></param>
+        /// <param name="kills"></param>
+        /// <param name="conn"></param>
+        /// <param name="trans"></param>
+        /// <returns></returns>
+        public int GetPerspectiveWinCount(string perspective, out int kills, SqlConnection conn, SqlTransaction trans)
+        {
+            int wins = 0;
+            kills = 0;
+            using (SqlCommand command = new SqlCommand("SELECT Kills FROM Wins WHERE Perspective = @Perspective", conn, trans))
+            {
+                command.Parameters.AddWithValue("Perspective", perspective);
+                SqlDataReader dbReader = command.ExecuteReader();
+                if (dbReader.HasRows)
+                {
+                    while (dbReader.Read())
+                    {
+                        wins++;
+                        kills += (int)dbReader.GetSqlInt32(0);
+                    }
+                }
+                dbReader.Close();
+            }
+            return wins;
+        }
 
 
         /// <summary>

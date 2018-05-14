@@ -32,6 +32,7 @@ namespace PUBGWinsUI
         List<ServerWin> ServerWins { get; set; }
         List<MapWin> MapWins { get; set; }
         List<TeammatesNumberWin> TeammatesWins { get; set; }
+        List<PerspectiveNumberWin> PerspectiveWins { get; set; }
 
         Label[] TopTeammates { get; set; }
 
