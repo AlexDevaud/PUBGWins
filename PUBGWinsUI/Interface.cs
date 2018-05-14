@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PUBGWinsUI
 {
@@ -30,7 +31,9 @@ namespace PUBGWinsUI
 
         List<ServerWin> ServerWins { get; set; }
         List<MapWin> MapWins { get; set; }
-        List<TeammatesWin> TeammatesWins { get; set; }
+        List<TeammatesNumberWin> TeammatesWins { get; set; }
+
+        Label[] TopTeammates { get; set; }
 
         // Events
         event Action EventStore;

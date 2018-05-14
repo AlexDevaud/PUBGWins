@@ -16,7 +16,8 @@ namespace PUBGWinsUI
     {
         private List<ServerWin> serverWins; // The list of objects that represent stats based on wins on a given server.
         private List<MapWin> mapWins;
-        private List<TeammatesWin> teammatesWins;
+        private List<TeammatesNumberWin> teammatesWins;
+        private Label[] topTeammates;
 
         public List<ServerWin> ServerWins
         {
@@ -30,7 +31,7 @@ namespace PUBGWinsUI
             set { mapWins = value; }
         }
 
-        public List<TeammatesWin> TeammatesWins
+        public List<TeammatesNumberWin> TeammatesWins
         {
             get { return teammatesWins; }
             set { teammatesWins = value; }
@@ -127,6 +128,8 @@ namespace PUBGWinsUI
             set { ButtonUpdate.Visible = value; }
         }
 
+        public Label[] TopTeammates { get; set; }
+
         /// <summary>
         /// Constructor
         /// </summary>
@@ -211,8 +214,8 @@ namespace PUBGWinsUI
             mapWins.Add(mapWinSanhok);
 
             // Hook up info for teammates.
-            teammatesWins = new List<TeammatesWin>();
-            TeammatesWin teammatesWin0 = new TeammatesWin(0)
+            teammatesWins = new List<TeammatesNumberWin>();
+            TeammatesNumberWin teammatesWin0 = new TeammatesNumberWin(0)
             {
                 LabelAverage = KPWSolo,
                 LabelKills = KillsSolo,
@@ -220,7 +223,7 @@ namespace PUBGWinsUI
             };
             teammatesWins.Add(teammatesWin0);
 
-            TeammatesWin teammatesWin1 = new TeammatesWin(1)
+            TeammatesNumberWin teammatesWin1 = new TeammatesNumberWin(1)
             {
                 LabelAverage = KPWDuo,
                 LabelKills = KillsDuo,
@@ -228,7 +231,7 @@ namespace PUBGWinsUI
             };
             teammatesWins.Add(teammatesWin1);
 
-            TeammatesWin teammatesWin2 = new TeammatesWin(2)
+            TeammatesNumberWin teammatesWin2 = new TeammatesNumberWin(2)
             {
                 LabelAverage = KPWTrio,
                 LabelKills = KillsTrio,
@@ -236,13 +239,23 @@ namespace PUBGWinsUI
             };
             teammatesWins.Add(teammatesWin2);
 
-            TeammatesWin teammatesWin3 = new TeammatesWin(3)
+            TeammatesNumberWin teammatesWin3 = new TeammatesNumberWin(3)
             {
                 LabelAverage = KPWSquad,
                 LabelKills = KillsSquad,
                 LabelWins = SquadWins
             };
             teammatesWins.Add(teammatesWin3);
+
+            topTeammates = new Label[]
+            {
+                TopTeammate1,
+                TopTeammate2,
+                TopTeammate3,
+                TopTeammate4,
+                TopTeammate5
+            };
+            TopTeammates = topTeammates;
         }
 
         /// <summary>

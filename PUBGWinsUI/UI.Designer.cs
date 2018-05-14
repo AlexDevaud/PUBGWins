@@ -135,6 +135,11 @@
             this.label49 = new System.Windows.Forms.Label();
             this.KPWErangel = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
+            this.TopTeammate1 = new System.Windows.Forms.Label();
+            this.TopTeammate2 = new System.Windows.Forms.Label();
+            this.TopTeammate3 = new System.Windows.Forms.Label();
+            this.TopTeammate4 = new System.Windows.Forms.Label();
+            this.TopTeammate5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -881,7 +886,7 @@
             // KPWSquad
             // 
             this.KPWSquad.AutoSize = true;
-            this.KPWSquad.Location = new System.Drawing.Point(1004, 483);
+            this.KPWSquad.Location = new System.Drawing.Point(981, 483);
             this.KPWSquad.Name = "KPWSquad";
             this.KPWSquad.Size = new System.Drawing.Size(13, 13);
             this.KPWSquad.TabIndex = 93;
@@ -890,7 +895,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(898, 483);
+            this.label33.Location = new System.Drawing.Point(875, 483);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(108, 13);
             this.label33.TabIndex = 92;
@@ -899,7 +904,7 @@
             // KPWTrio
             // 
             this.KPWTrio.AutoSize = true;
-            this.KPWTrio.Location = new System.Drawing.Point(1004, 453);
+            this.KPWTrio.Location = new System.Drawing.Point(981, 453);
             this.KPWTrio.Name = "KPWTrio";
             this.KPWTrio.Size = new System.Drawing.Size(13, 13);
             this.KPWTrio.TabIndex = 91;
@@ -908,7 +913,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(897, 453);
+            this.label39.Location = new System.Drawing.Point(874, 453);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(95, 13);
             this.label39.TabIndex = 90;
@@ -917,7 +922,7 @@
             // KPWDuo
             // 
             this.KPWDuo.AutoSize = true;
-            this.KPWDuo.Location = new System.Drawing.Point(1004, 423);
+            this.KPWDuo.Location = new System.Drawing.Point(981, 423);
             this.KPWDuo.Name = "KPWDuo";
             this.KPWDuo.Size = new System.Drawing.Size(13, 13);
             this.KPWDuo.TabIndex = 89;
@@ -926,7 +931,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(898, 423);
+            this.label43.Location = new System.Drawing.Point(875, 423);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(97, 13);
             this.label43.TabIndex = 88;
@@ -935,7 +940,7 @@
             // KPWSolo
             // 
             this.KPWSolo.AutoSize = true;
-            this.KPWSolo.Location = new System.Drawing.Point(1004, 393);
+            this.KPWSolo.Location = new System.Drawing.Point(981, 393);
             this.KPWSolo.Name = "KPWSolo";
             this.KPWSolo.Size = new System.Drawing.Size(13, 13);
             this.KPWSolo.TabIndex = 87;
@@ -944,7 +949,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(898, 393);
+            this.label46.Location = new System.Drawing.Point(875, 393);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(98, 13);
             this.label46.TabIndex = 86;
@@ -953,7 +958,7 @@
             // KPWSA
             // 
             this.KPWSA.AutoSize = true;
-            this.KPWSA.Location = new System.Drawing.Point(993, 333);
+            this.KPWSA.Location = new System.Drawing.Point(970, 333);
             this.KPWSA.Name = "KPWSA";
             this.KPWSA.Size = new System.Drawing.Size(13, 13);
             this.KPWSA.TabIndex = 105;
@@ -962,7 +967,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(896, 333);
+            this.label37.Location = new System.Drawing.Point(873, 333);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(91, 13);
             this.label37.TabIndex = 104;
@@ -971,7 +976,7 @@
             // KPWSEA
             // 
             this.KPWSEA.AutoSize = true;
-            this.KPWSEA.Location = new System.Drawing.Point(993, 303);
+            this.KPWSEA.Location = new System.Drawing.Point(970, 303);
             this.KPWSEA.Name = "KPWSEA";
             this.KPWSEA.Size = new System.Drawing.Size(13, 13);
             this.KPWSEA.TabIndex = 103;
@@ -980,7 +985,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(896, 303);
+            this.label45.Location = new System.Drawing.Point(873, 303);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(98, 13);
             this.label45.TabIndex = 102;
@@ -989,7 +994,7 @@
             // KPWEU
             // 
             this.KPWEU.AutoSize = true;
-            this.KPWEU.Location = new System.Drawing.Point(993, 273);
+            this.KPWEU.Location = new System.Drawing.Point(970, 273);
             this.KPWEU.Name = "KPWEU";
             this.KPWEU.Size = new System.Drawing.Size(13, 13);
             this.KPWEU.TabIndex = 101;
@@ -998,7 +1003,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(896, 273);
+            this.label48.Location = new System.Drawing.Point(873, 273);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(92, 13);
             this.label48.TabIndex = 100;
@@ -1007,7 +1012,7 @@
             // KPWTest
             // 
             this.KPWTest.AutoSize = true;
-            this.KPWTest.Location = new System.Drawing.Point(993, 243);
+            this.KPWTest.Location = new System.Drawing.Point(970, 243);
             this.KPWTest.Name = "KPWTest";
             this.KPWTest.Size = new System.Drawing.Size(13, 13);
             this.KPWTest.TabIndex = 99;
@@ -1016,7 +1021,7 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(896, 243);
+            this.label50.Location = new System.Drawing.Point(873, 243);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(98, 13);
             this.label50.TabIndex = 98;
@@ -1025,7 +1030,7 @@
             // KPWAS
             // 
             this.KPWAS.AutoSize = true;
-            this.KPWAS.Location = new System.Drawing.Point(993, 213);
+            this.KPWAS.Location = new System.Drawing.Point(970, 213);
             this.KPWAS.Name = "KPWAS";
             this.KPWAS.Size = new System.Drawing.Size(13, 13);
             this.KPWAS.TabIndex = 97;
@@ -1034,7 +1039,7 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(897, 213);
+            this.label52.Location = new System.Drawing.Point(874, 213);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(91, 13);
             this.label52.TabIndex = 96;
@@ -1043,7 +1048,7 @@
             // KPWNA
             // 
             this.KPWNA.AutoSize = true;
-            this.KPWNA.Location = new System.Drawing.Point(993, 183);
+            this.KPWNA.Location = new System.Drawing.Point(970, 183);
             this.KPWNA.Name = "KPWNA";
             this.KPWNA.Size = new System.Drawing.Size(13, 13);
             this.KPWNA.TabIndex = 95;
@@ -1052,7 +1057,7 @@
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(897, 183);
+            this.label54.Location = new System.Drawing.Point(874, 183);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(92, 13);
             this.label54.TabIndex = 94;
@@ -1112,11 +1117,61 @@
             this.label53.TabIndex = 106;
             this.label53.Text = "Average Kills on Erangel: ";
             // 
+            // TopTeammate1
+            // 
+            this.TopTeammate1.AutoSize = true;
+            this.TopTeammate1.Location = new System.Drawing.Point(836, 14);
+            this.TopTeammate1.Name = "TopTeammate1";
+            this.TopTeammate1.Size = new System.Drawing.Size(82, 13);
+            this.TopTeammate1.TabIndex = 112;
+            this.TopTeammate1.Text = "TopTeammate1";
+            // 
+            // TopTeammate2
+            // 
+            this.TopTeammate2.AutoSize = true;
+            this.TopTeammate2.Location = new System.Drawing.Point(836, 34);
+            this.TopTeammate2.Name = "TopTeammate2";
+            this.TopTeammate2.Size = new System.Drawing.Size(82, 13);
+            this.TopTeammate2.TabIndex = 113;
+            this.TopTeammate2.Text = "TopTeammate2";
+            // 
+            // TopTeammate3
+            // 
+            this.TopTeammate3.AutoSize = true;
+            this.TopTeammate3.Location = new System.Drawing.Point(836, 54);
+            this.TopTeammate3.Name = "TopTeammate3";
+            this.TopTeammate3.Size = new System.Drawing.Size(82, 13);
+            this.TopTeammate3.TabIndex = 114;
+            this.TopTeammate3.Text = "TopTeammate3";
+            // 
+            // TopTeammate4
+            // 
+            this.TopTeammate4.AutoSize = true;
+            this.TopTeammate4.Location = new System.Drawing.Point(836, 74);
+            this.TopTeammate4.Name = "TopTeammate4";
+            this.TopTeammate4.Size = new System.Drawing.Size(82, 13);
+            this.TopTeammate4.TabIndex = 115;
+            this.TopTeammate4.Text = "TopTeammate4";
+            // 
+            // TopTeammate5
+            // 
+            this.TopTeammate5.AutoSize = true;
+            this.TopTeammate5.Location = new System.Drawing.Point(836, 94);
+            this.TopTeammate5.Name = "TopTeammate5";
+            this.TopTeammate5.Size = new System.Drawing.Size(82, 13);
+            this.TopTeammate5.TabIndex = 116;
+            this.TopTeammate5.Text = "TopTeammate5";
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 858);
+            this.ClientSize = new System.Drawing.Size(1039, 535);
+            this.Controls.Add(this.TopTeammate5);
+            this.Controls.Add(this.TopTeammate4);
+            this.Controls.Add(this.TopTeammate3);
+            this.Controls.Add(this.TopTeammate2);
+            this.Controls.Add(this.TopTeammate1);
             this.Controls.Add(this.KPWSanhok);
             this.Controls.Add(this.label41);
             this.Controls.Add(this.KPWMiramar);
@@ -1340,6 +1395,11 @@
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label KPWErangel;
         private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label TopTeammate1;
+        private System.Windows.Forms.Label TopTeammate2;
+        private System.Windows.Forms.Label TopTeammate3;
+        private System.Windows.Forms.Label TopTeammate4;
+        private System.Windows.Forms.Label TopTeammate5;
     }
 }
 

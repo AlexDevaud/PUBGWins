@@ -53,7 +53,7 @@ namespace PUBGWinsUI
     /// Object to track calculating and displaying stats.
     /// For wins with a given number of teammates.
     /// </summary>
-    public class TeammatesWin
+    public class TeammatesNumberWin
     {
         public int Teammates { get; }
         public int Wins { get; set; }
@@ -63,10 +63,39 @@ namespace PUBGWinsUI
         public Label LabelWins { get; set; }
         public Label LabelKills { get; set; }
         public Label LabelAverage { get; set; }
-        public TeammatesWin(int teammates)
+        public TeammatesNumberWin(int teammates)
         {
             Teammates = teammates;
         }
 
+       
     }
+
+    /// <summary>
+    /// Tracking how many games I have won with a given teammate.
+    /// </summary>
+    public class SpecificTeammateWins : IComparable<SpecificTeammateWins>
+    {
+        public string Name { get; }
+        public int Wins { get; set; }
+
+        public SpecificTeammateWins(string name)
+        {
+            Name = name;
+            Wins = 1;
+        }
+
+        public int CompareTo(SpecificTeammateWins specificTeammateWins)
+        {
+            if (specificTeammateWins == null)
+            {
+                return 1;
+            }
+            else
+            {
+                return this.Wins.CompareTo(specificTeammateWins.Wins);
+            }
+        }
+    }
+
 }

@@ -217,7 +217,7 @@ namespace PUBGWinsUI
 
 
                     // Stats based on the number of teammates.
-                    foreach (TeammatesWin teammatesWin in view.TeammatesWins)
+                    foreach (TeammatesNumberWin teammatesWin in view.TeammatesWins)
                     {
                         int killsWithTeammates;
                         teammatesWin.Wins = GetTeamSizeCount(teammatesWin.Teammates, out killsWithTeammates, conn, trans);
@@ -253,10 +253,85 @@ namespace PUBGWinsUI
                         averageString = averageString.Substring(0, 5);
                     }
                     view.TextKillsAverage = averageString;
+
+
+                    // Find the teammates that I have won the most games with.
+                    List<SpecificTeammateWins> specificTeammateWins = new List<SpecificTeammateWins>();
+                    using (SqlCommand command = new SqlCommand("SELECT Teammate1, Teammate2, Teammate3 FROM Wins", conn, trans))
+                    {
+                        SqlDataReader reader = command.ExecuteReader();
+                        while(reader.Read())
+                        {
+                            if (!reader.IsDBNull(0))
+                            {
+                                string teammate = (string)reader.GetSqlString(0);
+                                CountTeammate(teammate, specificTeammateWins);
+                            }
+                            if (!reader.IsDBNull(1))
+                            {
+                                string teammate = (string)reader.GetSqlString(1);
+                                CountTeammate(teammate, specificTeammateWins);
+                            }
+                            if (!reader.IsDBNull(2))
+                            {
+                                string teammate = (string)reader.GetSqlString(2);
+                                CountTeammate(teammate, specificTeammateWins);
+                            }
+                        }
+                        reader.Close();
+                    }
+
+                    specificTeammateWins.Sort();
+                    specificTeammateWins.Reverse();
+
+                    Console.WriteLine("asda");
+
+                    int teammatesPosted = 0;
+                    foreach (SpecificTeammateWins thisTeammate in specificTeammateWins)
+                    {
+                        if (teammatesPosted < 5)
+                        {
+                            view.TopTeammates[teammatesPosted].Text = "With " + thisTeammate.Name + " you won " + thisTeammate.Wins + " games.";
+                            teammatesPosted++;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+
                 }
             }
         }
 
+        /// <summary>
+        /// Checks if we have won a game with this teammate before and updates the list.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="specificTeammateWins"></param>
+        public void CountTeammate(string name, List<SpecificTeammateWins> specificTeammateWins)
+        {
+            bool newTeammate = true;
+            foreach (SpecificTeammateWins teammate in specificTeammateWins)
+            {
+                string foundName = teammate.Name.ToLower();
+                
+                if (name.ToLower() == foundName)
+                {
+                    // This teammate has been won with before.
+                    newTeammate = false;
+                    teammate.Wins++;
+                    break;
+                }
+            }
+
+            if (newTeammate)
+            {
+                // This is a new teammate.
+                SpecificTeammateWins newTeammateObject = new SpecificTeammateWins(name);
+                specificTeammateWins.Add(newTeammateObject);
+            }
+        }
 
         /// <summary>
         /// Get the kill count and win count for each  map.
