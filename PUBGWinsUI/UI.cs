@@ -219,6 +219,13 @@ namespace PUBGWinsUI
                 LabelAverage = KPWSanhok
             };
             mapWins.Add(mapWinSanhok);
+            MapWin mapWinVikendi = new MapWin("Vikendi")
+            {
+                LabelWins = WinsVikendi,
+                LabelKills = KillsVikendi,
+                LabelAverage = KPWVikendi
+            };
+            mapWins.Add(mapWinVikendi);
 
             // Hook up info for teammates.
             teammatesWins = new List<TeammatesNumberWin>();

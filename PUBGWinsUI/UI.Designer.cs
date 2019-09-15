@@ -152,6 +152,12 @@
             this.label56 = new System.Windows.Forms.Label();
             this.FPPKills = new System.Windows.Forms.Label();
             this.TPPKills = new System.Windows.Forms.Label();
+            this.KPWVikendi = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.WinsVikendi = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.KillsVikendi = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -214,7 +220,8 @@
             this.MenuMap.Items.AddRange(new object[] {
             "Erangel",
             "Miramar",
-            "Sanhok"});
+            "Sanhok",
+            "Vikendi"});
             this.MenuMap.Location = new System.Drawing.Point(46, 119);
             this.MenuMap.Name = "MenuMap";
             this.MenuMap.Size = new System.Drawing.Size(108, 21);
@@ -359,7 +366,7 @@
             // KillsTotal
             // 
             this.KillsTotal.AutoSize = true;
-            this.KillsTotal.Location = new System.Drawing.Point(609, 104);
+            this.KillsTotal.Location = new System.Drawing.Point(611, 119);
             this.KillsTotal.Name = "KillsTotal";
             this.KillsTotal.Size = new System.Drawing.Size(13, 13);
             this.KillsTotal.TabIndex = 28;
@@ -368,7 +375,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(500, 104);
+            this.label14.Location = new System.Drawing.Point(502, 119);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 13);
             this.label14.TabIndex = 27;
@@ -377,7 +384,7 @@
             // WinsTotal
             // 
             this.WinsTotal.AutoSize = true;
-            this.WinsTotal.Location = new System.Drawing.Point(458, 104);
+            this.WinsTotal.Location = new System.Drawing.Point(458, 119);
             this.WinsTotal.Name = "WinsTotal";
             this.WinsTotal.Size = new System.Drawing.Size(13, 13);
             this.WinsTotal.TabIndex = 30;
@@ -386,7 +393,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(371, 104);
+            this.label15.Location = new System.Drawing.Point(371, 119);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(64, 13);
             this.label15.TabIndex = 29;
@@ -395,7 +402,7 @@
             // KillsMiramar
             // 
             this.KillsMiramar.AutoSize = true;
-            this.KillsMiramar.Location = new System.Drawing.Point(609, 44);
+            this.KillsMiramar.Location = new System.Drawing.Point(608, 37);
             this.KillsMiramar.Name = "KillsMiramar";
             this.KillsMiramar.Size = new System.Drawing.Size(13, 13);
             this.KillsMiramar.TabIndex = 34;
@@ -404,7 +411,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(500, 44);
+            this.label16.Location = new System.Drawing.Point(499, 37);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(86, 13);
             this.label16.TabIndex = 33;
@@ -413,7 +420,7 @@
             // WinsMiramar
             // 
             this.WinsMiramar.AutoSize = true;
-            this.WinsMiramar.Location = new System.Drawing.Point(458, 44);
+            this.WinsMiramar.Location = new System.Drawing.Point(457, 37);
             this.WinsMiramar.Name = "WinsMiramar";
             this.WinsMiramar.Size = new System.Drawing.Size(13, 13);
             this.WinsMiramar.TabIndex = 32;
@@ -422,7 +429,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(371, 44);
+            this.label18.Location = new System.Drawing.Point(370, 37);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(92, 13);
             this.label18.TabIndex = 31;
@@ -431,7 +438,7 @@
             // KillsSanhok
             // 
             this.KillsSanhok.AutoSize = true;
-            this.KillsSanhok.Location = new System.Drawing.Point(609, 74);
+            this.KillsSanhok.Location = new System.Drawing.Point(608, 59);
             this.KillsSanhok.Name = "KillsSanhok";
             this.KillsSanhok.Size = new System.Drawing.Size(13, 13);
             this.KillsSanhok.TabIndex = 38;
@@ -440,7 +447,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(500, 74);
+            this.label17.Location = new System.Drawing.Point(499, 59);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(83, 13);
             this.label17.TabIndex = 37;
@@ -449,7 +456,7 @@
             // WinsSanhok
             // 
             this.WinsSanhok.AutoSize = true;
-            this.WinsSanhok.Location = new System.Drawing.Point(458, 74);
+            this.WinsSanhok.Location = new System.Drawing.Point(457, 59);
             this.WinsSanhok.Name = "WinsSanhok";
             this.WinsSanhok.Size = new System.Drawing.Size(13, 13);
             this.WinsSanhok.TabIndex = 36;
@@ -458,7 +465,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(371, 74);
+            this.label20.Location = new System.Drawing.Point(370, 59);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(89, 13);
             this.label20.TabIndex = 35;
@@ -467,7 +474,7 @@
             // KillsPerWin
             // 
             this.KillsPerWin.AutoSize = true;
-            this.KillsPerWin.Location = new System.Drawing.Point(609, 134);
+            this.KillsPerWin.Location = new System.Drawing.Point(609, 146);
             this.KillsPerWin.Name = "KillsPerWin";
             this.KillsPerWin.Size = new System.Drawing.Size(13, 13);
             this.KillsPerWin.TabIndex = 40;
@@ -476,7 +483,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(500, 134);
+            this.label12.Location = new System.Drawing.Point(500, 146);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(114, 13);
             this.label12.TabIndex = 39;
@@ -1078,7 +1085,7 @@
             // KPWSanhok
             // 
             this.KPWSanhok.AutoSize = true;
-            this.KPWSanhok.Location = new System.Drawing.Point(780, 74);
+            this.KPWSanhok.Location = new System.Drawing.Point(780, 67);
             this.KPWSanhok.Name = "KPWSanhok";
             this.KPWSanhok.Size = new System.Drawing.Size(13, 13);
             this.KPWSanhok.TabIndex = 111;
@@ -1087,7 +1094,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(653, 74);
+            this.label41.Location = new System.Drawing.Point(653, 67);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(126, 13);
             this.label41.TabIndex = 110;
@@ -1282,11 +1289,71 @@
             this.TPPKills.TabIndex = 128;
             this.TPPKills.Text = "0";
             // 
+            // KPWVikendi
+            // 
+            this.KPWVikendi.AutoSize = true;
+            this.KPWVikendi.Location = new System.Drawing.Point(781, 90);
+            this.KPWVikendi.Name = "KPWVikendi";
+            this.KPWVikendi.Size = new System.Drawing.Size(13, 13);
+            this.KPWVikendi.TabIndex = 130;
+            this.KPWVikendi.Text = "0";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(654, 90);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(124, 13);
+            this.label58.TabIndex = 129;
+            this.label58.Text = "Average Kills on Vikendi:";
+            // 
+            // WinsVikendi
+            // 
+            this.WinsVikendi.AutoSize = true;
+            this.WinsVikendi.Location = new System.Drawing.Point(458, 83);
+            this.WinsVikendi.Name = "WinsVikendi";
+            this.WinsVikendi.Size = new System.Drawing.Size(13, 13);
+            this.WinsVikendi.TabIndex = 132;
+            this.WinsVikendi.Text = "0";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(371, 83);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(87, 13);
+            this.label60.TabIndex = 131;
+            this.label60.Text = "Wins on Vikendi:";
+            // 
+            // KillsVikendi
+            // 
+            this.KillsVikendi.AutoSize = true;
+            this.KillsVikendi.Location = new System.Drawing.Point(608, 83);
+            this.KillsVikendi.Name = "KillsVikendi";
+            this.KillsVikendi.Size = new System.Drawing.Size(13, 13);
+            this.KillsVikendi.TabIndex = 134;
+            this.KillsVikendi.Text = "0";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(502, 83);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(81, 13);
+            this.label61.TabIndex = 133;
+            this.label61.Text = "Kills on Vikendi:";
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1039, 547);
+            this.Controls.Add(this.KillsVikendi);
+            this.Controls.Add(this.label61);
+            this.Controls.Add(this.WinsVikendi);
+            this.Controls.Add(this.label60);
+            this.Controls.Add(this.KPWVikendi);
+            this.Controls.Add(this.label58);
             this.Controls.Add(this.TPPKills);
             this.Controls.Add(this.FPPKills);
             this.Controls.Add(this.label56);
@@ -1544,6 +1611,12 @@
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label FPPKills;
         private System.Windows.Forms.Label TPPKills;
+        private System.Windows.Forms.Label KPWVikendi;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label WinsVikendi;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label KillsVikendi;
+        private System.Windows.Forms.Label label61;
     }
 }
 
