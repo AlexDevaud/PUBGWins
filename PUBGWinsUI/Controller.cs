@@ -26,7 +26,7 @@ namespace PUBGWinsUI
             currentOldID = 0;
 
             // SQL database.
-            WinDB = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Alex\\source\\repos\\PUBGWins\\PUBGWinsUI\\WinDB.mdf; Integrated Security = True";
+            WinDB = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\gn1k\\source\\repos\\PUBGWins\\PUBGWinsUI\\WinDB.mdf; Integrated Security = True";
 
             // Hooking
             view.EventStore += HandleStore;
