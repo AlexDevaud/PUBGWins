@@ -189,6 +189,77 @@ namespace PUBGWinsUI
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.flowLayoutPanel20 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel24 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel25 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel26 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel27 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel28 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel29 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel31 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel32 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel33 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel34 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel35 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel36 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel37 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel38 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel39 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel40 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel41 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel42 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel43 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel44 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel45 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel46 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel47 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel48 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel49 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel50 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel51 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel52 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel88 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel87 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel82 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel78 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel79 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel80 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel81 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel77 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel74 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel75 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel76 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel86 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel83 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel84 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel85 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel93 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel92 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel89 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel91 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel90 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel30 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel53 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel54 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel55 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel57 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel58 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel59 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel60 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel61 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel62 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel63 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel64 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel65 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel66 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel67 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel68 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel69 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel70 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel71 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel72 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel73 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -209,13 +280,84 @@ namespace PUBGWinsUI
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.flowLayoutPanel20.SuspendLayout();
             this.flowLayoutPanel21.SuspendLayout();
+            this.flowLayoutPanel22.SuspendLayout();
+            this.flowLayoutPanel23.SuspendLayout();
+            this.flowLayoutPanel24.SuspendLayout();
+            this.flowLayoutPanel25.SuspendLayout();
+            this.flowLayoutPanel26.SuspendLayout();
+            this.flowLayoutPanel27.SuspendLayout();
+            this.flowLayoutPanel28.SuspendLayout();
+            this.flowLayoutPanel29.SuspendLayout();
+            this.flowLayoutPanel31.SuspendLayout();
+            this.flowLayoutPanel32.SuspendLayout();
+            this.flowLayoutPanel33.SuspendLayout();
+            this.flowLayoutPanel34.SuspendLayout();
+            this.flowLayoutPanel35.SuspendLayout();
+            this.flowLayoutPanel36.SuspendLayout();
+            this.flowLayoutPanel37.SuspendLayout();
+            this.flowLayoutPanel38.SuspendLayout();
+            this.flowLayoutPanel39.SuspendLayout();
+            this.flowLayoutPanel40.SuspendLayout();
+            this.flowLayoutPanel41.SuspendLayout();
+            this.flowLayoutPanel42.SuspendLayout();
+            this.flowLayoutPanel43.SuspendLayout();
+            this.flowLayoutPanel44.SuspendLayout();
+            this.flowLayoutPanel45.SuspendLayout();
+            this.flowLayoutPanel46.SuspendLayout();
+            this.flowLayoutPanel47.SuspendLayout();
+            this.flowLayoutPanel48.SuspendLayout();
+            this.flowLayoutPanel49.SuspendLayout();
+            this.flowLayoutPanel50.SuspendLayout();
+            this.flowLayoutPanel51.SuspendLayout();
+            this.flowLayoutPanel52.SuspendLayout();
+            this.flowLayoutPanel88.SuspendLayout();
+            this.flowLayoutPanel87.SuspendLayout();
+            this.flowLayoutPanel82.SuspendLayout();
+            this.flowLayoutPanel78.SuspendLayout();
+            this.flowLayoutPanel79.SuspendLayout();
+            this.flowLayoutPanel80.SuspendLayout();
+            this.flowLayoutPanel81.SuspendLayout();
+            this.flowLayoutPanel77.SuspendLayout();
+            this.flowLayoutPanel74.SuspendLayout();
+            this.flowLayoutPanel75.SuspendLayout();
+            this.flowLayoutPanel76.SuspendLayout();
+            this.flowLayoutPanel86.SuspendLayout();
+            this.flowLayoutPanel83.SuspendLayout();
+            this.flowLayoutPanel84.SuspendLayout();
+            this.flowLayoutPanel85.SuspendLayout();
+            this.flowLayoutPanel93.SuspendLayout();
+            this.flowLayoutPanel92.SuspendLayout();
+            this.flowLayoutPanel89.SuspendLayout();
+            this.flowLayoutPanel91.SuspendLayout();
+            this.flowLayoutPanel90.SuspendLayout();
+            this.flowLayoutPanel30.SuspendLayout();
+            this.flowLayoutPanel53.SuspendLayout();
+            this.flowLayoutPanel54.SuspendLayout();
+            this.flowLayoutPanel55.SuspendLayout();
+            this.flowLayoutPanel57.SuspendLayout();
+            this.flowLayoutPanel58.SuspendLayout();
+            this.flowLayoutPanel59.SuspendLayout();
+            this.flowLayoutPanel60.SuspendLayout();
+            this.flowLayoutPanel61.SuspendLayout();
+            this.flowLayoutPanel62.SuspendLayout();
+            this.flowLayoutPanel63.SuspendLayout();
+            this.flowLayoutPanel64.SuspendLayout();
+            this.flowLayoutPanel65.SuspendLayout();
+            this.flowLayoutPanel66.SuspendLayout();
+            this.flowLayoutPanel67.SuspendLayout();
+            this.flowLayoutPanel68.SuspendLayout();
+            this.flowLayoutPanel69.SuspendLayout();
+            this.flowLayoutPanel70.SuspendLayout();
+            this.flowLayoutPanel71.SuspendLayout();
+            this.flowLayoutPanel72.SuspendLayout();
+            this.flowLayoutPanel73.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 6);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 20);
             this.label1.TabIndex = 0;
@@ -223,8 +365,9 @@ namespace PUBGWinsUI
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 67);
+            this.label2.Location = new System.Drawing.Point(3, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 1;
@@ -236,7 +379,7 @@ namespace PUBGWinsUI
             this.MenuPerspective.Items.AddRange(new object[] {
             "FPP",
             "TPP"});
-            this.MenuPerspective.Location = new System.Drawing.Point(82, 59);
+            this.MenuPerspective.Location = new System.Drawing.Point(78, 3);
             this.MenuPerspective.Name = "MenuPerspective";
             this.MenuPerspective.Size = new System.Drawing.Size(72, 21);
             this.MenuPerspective.TabIndex = 3;
@@ -251,15 +394,16 @@ namespace PUBGWinsUI
             "EU",
             "SEA",
             "SA"});
-            this.MenuServer.Location = new System.Drawing.Point(57, 89);
+            this.MenuServer.Location = new System.Drawing.Point(53, 3);
             this.MenuServer.Name = "MenuServer";
             this.MenuServer.Size = new System.Drawing.Size(97, 21);
             this.MenuServer.TabIndex = 5;
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 97);
+            this.label3.Location = new System.Drawing.Point(3, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 4;
@@ -274,15 +418,16 @@ namespace PUBGWinsUI
             "Sanhok",
             "Vikendi",
             "Karakin"});
-            this.MenuMap.Location = new System.Drawing.Point(46, 119);
+            this.MenuMap.Location = new System.Drawing.Point(43, 3);
             this.MenuMap.Name = "MenuMap";
             this.MenuMap.Size = new System.Drawing.Size(108, 21);
             this.MenuMap.TabIndex = 7;
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 127);
+            this.label5.Location = new System.Drawing.Point(3, 7);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 13);
             this.label5.TabIndex = 6;
@@ -290,8 +435,9 @@ namespace PUBGWinsUI
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 37);
+            this.label6.Location = new System.Drawing.Point(3, 6);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 10;
@@ -299,7 +445,7 @@ namespace PUBGWinsUI
             // 
             // BoxKills
             // 
-            this.BoxKills.Location = new System.Drawing.Point(40, 30);
+            this.BoxKills.Location = new System.Drawing.Point(40, 3);
             this.BoxKills.Name = "BoxKills";
             this.BoxKills.Size = new System.Drawing.Size(114, 20);
             this.BoxKills.TabIndex = 11;
@@ -307,7 +453,7 @@ namespace PUBGWinsUI
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 159);
+            this.label7.Location = new System.Drawing.Point(3, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 12;
@@ -315,7 +461,7 @@ namespace PUBGWinsUI
             // 
             // BoxDescription
             // 
-            this.BoxDescription.Location = new System.Drawing.Point(14, 180);
+            this.BoxDescription.Location = new System.Drawing.Point(3, 16);
             this.BoxDescription.Multiline = true;
             this.BoxDescription.Name = "BoxDescription";
             this.BoxDescription.Size = new System.Drawing.Size(608, 314);
@@ -323,7 +469,7 @@ namespace PUBGWinsUI
             // 
             // ButtonStore
             // 
-            this.ButtonStore.Location = new System.Drawing.Point(284, 146);
+            this.ButtonStore.Location = new System.Drawing.Point(84, 3);
             this.ButtonStore.Name = "ButtonStore";
             this.ButtonStore.Size = new System.Drawing.Size(74, 23);
             this.ButtonStore.TabIndex = 14;
@@ -333,15 +479,16 @@ namespace PUBGWinsUI
             // 
             // BoxTeammate1
             // 
-            this.BoxTeammate1.Location = new System.Drawing.Point(250, 60);
+            this.BoxTeammate1.Location = new System.Drawing.Point(81, 3);
             this.BoxTeammate1.Name = "BoxTeammate1";
             this.BoxTeammate1.Size = new System.Drawing.Size(108, 20);
             this.BoxTeammate1.TabIndex = 16;
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(180, 67);
+            this.label8.Location = new System.Drawing.Point(3, 6);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 13);
             this.label8.TabIndex = 15;
@@ -349,15 +496,16 @@ namespace PUBGWinsUI
             // 
             // BoxTeammate2
             // 
-            this.BoxTeammate2.Location = new System.Drawing.Point(250, 90);
+            this.BoxTeammate2.Location = new System.Drawing.Point(81, 3);
             this.BoxTeammate2.Name = "BoxTeammate2";
             this.BoxTeammate2.Size = new System.Drawing.Size(108, 20);
             this.BoxTeammate2.TabIndex = 18;
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(180, 97);
+            this.label9.Location = new System.Drawing.Point(3, 6);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(72, 13);
             this.label9.TabIndex = 17;
@@ -365,15 +513,16 @@ namespace PUBGWinsUI
             // 
             // BoxTeammate3
             // 
-            this.BoxTeammate3.Location = new System.Drawing.Point(250, 120);
+            this.BoxTeammate3.Location = new System.Drawing.Point(81, 3);
             this.BoxTeammate3.Name = "BoxTeammate3";
             this.BoxTeammate3.Size = new System.Drawing.Size(108, 20);
             this.BoxTeammate3.TabIndex = 20;
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(180, 127);
+            this.label10.Location = new System.Drawing.Point(3, 6);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(72, 13);
             this.label10.TabIndex = 19;
@@ -418,7 +567,7 @@ namespace PUBGWinsUI
             // KillsTotal
             // 
             this.KillsTotal.AutoSize = true;
-            this.KillsTotal.Location = new System.Drawing.Point(566, 127);
+            this.KillsTotal.Location = new System.Drawing.Point(67, 0);
             this.KillsTotal.Name = "KillsTotal";
             this.KillsTotal.Size = new System.Drawing.Size(13, 13);
             this.KillsTotal.TabIndex = 28;
@@ -427,7 +576,7 @@ namespace PUBGWinsUI
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(502, 127);
+            this.label14.Location = new System.Drawing.Point(3, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 13);
             this.label14.TabIndex = 27;
@@ -436,7 +585,7 @@ namespace PUBGWinsUI
             // WinsTotal
             // 
             this.WinsTotal.AutoSize = true;
-            this.WinsTotal.Location = new System.Drawing.Point(458, 119);
+            this.WinsTotal.Location = new System.Drawing.Point(73, 0);
             this.WinsTotal.Name = "WinsTotal";
             this.WinsTotal.Size = new System.Drawing.Size(13, 13);
             this.WinsTotal.TabIndex = 30;
@@ -445,7 +594,7 @@ namespace PUBGWinsUI
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(371, 119);
+            this.label15.Location = new System.Drawing.Point(3, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(64, 13);
             this.label15.TabIndex = 29;
@@ -527,7 +676,7 @@ namespace PUBGWinsUI
             // KillsPerWin
             // 
             this.KillsPerWin.AutoSize = true;
-            this.KillsPerWin.Location = new System.Drawing.Point(608, 146);
+            this.KillsPerWin.Location = new System.Drawing.Point(123, 0);
             this.KillsPerWin.Name = "KillsPerWin";
             this.KillsPerWin.Size = new System.Drawing.Size(13, 13);
             this.KillsPerWin.TabIndex = 40;
@@ -536,7 +685,7 @@ namespace PUBGWinsUI
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(500, 146);
+            this.label12.Location = new System.Drawing.Point(3, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(114, 13);
             this.label12.TabIndex = 39;
@@ -545,7 +694,7 @@ namespace PUBGWinsUI
             // NAWins
             // 
             this.NAWins.AutoSize = true;
-            this.NAWins.Location = new System.Drawing.Point(709, 208);
+            this.NAWins.Location = new System.Drawing.Point(64, 0);
             this.NAWins.Name = "NAWins";
             this.NAWins.Size = new System.Drawing.Size(13, 13);
             this.NAWins.TabIndex = 42;
@@ -554,7 +703,7 @@ namespace PUBGWinsUI
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(654, 208);
+            this.label19.Location = new System.Drawing.Point(3, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(55, 13);
             this.label19.TabIndex = 41;
@@ -563,7 +712,7 @@ namespace PUBGWinsUI
             // ASWins
             // 
             this.ASWins.AutoSize = true;
-            this.ASWins.Location = new System.Drawing.Point(709, 238);
+            this.ASWins.Location = new System.Drawing.Point(63, 0);
             this.ASWins.Name = "ASWins";
             this.ASWins.Size = new System.Drawing.Size(13, 13);
             this.ASWins.TabIndex = 44;
@@ -572,7 +721,7 @@ namespace PUBGWinsUI
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(654, 238);
+            this.label21.Location = new System.Drawing.Point(3, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(54, 13);
             this.label21.TabIndex = 43;
@@ -581,7 +730,7 @@ namespace PUBGWinsUI
             // TestWins
             // 
             this.TestWins.AutoSize = true;
-            this.TestWins.Location = new System.Drawing.Point(709, 268);
+            this.TestWins.Location = new System.Drawing.Point(70, 0);
             this.TestWins.Name = "TestWins";
             this.TestWins.Size = new System.Drawing.Size(13, 13);
             this.TestWins.TabIndex = 46;
@@ -590,7 +739,7 @@ namespace PUBGWinsUI
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(653, 268);
+            this.label22.Location = new System.Drawing.Point(3, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(61, 13);
             this.label22.TabIndex = 45;
@@ -599,7 +748,7 @@ namespace PUBGWinsUI
             // EUWins
             // 
             this.EUWins.AutoSize = true;
-            this.EUWins.Location = new System.Drawing.Point(709, 298);
+            this.EUWins.Location = new System.Drawing.Point(64, 0);
             this.EUWins.Name = "EUWins";
             this.EUWins.Size = new System.Drawing.Size(13, 13);
             this.EUWins.TabIndex = 48;
@@ -608,7 +757,7 @@ namespace PUBGWinsUI
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(653, 298);
+            this.label23.Location = new System.Drawing.Point(3, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(55, 13);
             this.label23.TabIndex = 47;
@@ -617,7 +766,7 @@ namespace PUBGWinsUI
             // SoloWins
             // 
             this.SoloWins.AutoSize = true;
-            this.SoloWins.Location = new System.Drawing.Point(709, 418);
+            this.SoloWins.Location = new System.Drawing.Point(70, 0);
             this.SoloWins.Name = "SoloWins";
             this.SoloWins.Size = new System.Drawing.Size(13, 13);
             this.SoloWins.TabIndex = 50;
@@ -626,7 +775,7 @@ namespace PUBGWinsUI
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(643, 418);
+            this.label24.Location = new System.Drawing.Point(3, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(61, 13);
             this.label24.TabIndex = 49;
@@ -635,7 +784,7 @@ namespace PUBGWinsUI
             // DuoWins
             // 
             this.DuoWins.AutoSize = true;
-            this.DuoWins.Location = new System.Drawing.Point(709, 448);
+            this.DuoWins.Location = new System.Drawing.Point(69, 0);
             this.DuoWins.Name = "DuoWins";
             this.DuoWins.Size = new System.Drawing.Size(13, 13);
             this.DuoWins.TabIndex = 52;
@@ -644,7 +793,7 @@ namespace PUBGWinsUI
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(643, 448);
+            this.label25.Location = new System.Drawing.Point(3, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(60, 13);
             this.label25.TabIndex = 51;
@@ -653,7 +802,7 @@ namespace PUBGWinsUI
             // TrioWins
             // 
             this.TrioWins.AutoSize = true;
-            this.TrioWins.Location = new System.Drawing.Point(709, 478);
+            this.TrioWins.Location = new System.Drawing.Point(67, 0);
             this.TrioWins.Name = "TrioWins";
             this.TrioWins.Size = new System.Drawing.Size(13, 13);
             this.TrioWins.TabIndex = 54;
@@ -662,7 +811,7 @@ namespace PUBGWinsUI
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(642, 478);
+            this.label26.Location = new System.Drawing.Point(3, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(58, 13);
             this.label26.TabIndex = 53;
@@ -671,7 +820,7 @@ namespace PUBGWinsUI
             // SquadWins
             // 
             this.SquadWins.AutoSize = true;
-            this.SquadWins.Location = new System.Drawing.Point(709, 508);
+            this.SquadWins.Location = new System.Drawing.Point(80, 0);
             this.SquadWins.Name = "SquadWins";
             this.SquadWins.Size = new System.Drawing.Size(13, 13);
             this.SquadWins.TabIndex = 56;
@@ -680,7 +829,7 @@ namespace PUBGWinsUI
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(643, 508);
+            this.label27.Location = new System.Drawing.Point(3, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(71, 13);
             this.label27.TabIndex = 55;
@@ -689,7 +838,7 @@ namespace PUBGWinsUI
             // SEAWins
             // 
             this.SEAWins.AutoSize = true;
-            this.SEAWins.Location = new System.Drawing.Point(709, 328);
+            this.SEAWins.Location = new System.Drawing.Point(70, 0);
             this.SEAWins.Name = "SEAWins";
             this.SEAWins.Size = new System.Drawing.Size(13, 13);
             this.SEAWins.TabIndex = 58;
@@ -698,7 +847,7 @@ namespace PUBGWinsUI
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(653, 328);
+            this.label28.Location = new System.Drawing.Point(3, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(61, 13);
             this.label28.TabIndex = 57;
@@ -707,7 +856,7 @@ namespace PUBGWinsUI
             // SAWins
             // 
             this.SAWins.AutoSize = true;
-            this.SAWins.Location = new System.Drawing.Point(709, 358);
+            this.SAWins.Location = new System.Drawing.Point(63, 0);
             this.SAWins.Name = "SAWins";
             this.SAWins.Size = new System.Drawing.Size(13, 13);
             this.SAWins.TabIndex = 60;
@@ -716,7 +865,7 @@ namespace PUBGWinsUI
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(653, 358);
+            this.label30.Location = new System.Drawing.Point(3, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(54, 13);
             this.label30.TabIndex = 59;
@@ -724,7 +873,7 @@ namespace PUBGWinsUI
             // 
             // ButtonLast
             // 
-            this.ButtonLast.Location = new System.Drawing.Point(17, 500);
+            this.ButtonLast.Location = new System.Drawing.Point(3, 3);
             this.ButtonLast.Name = "ButtonLast";
             this.ButtonLast.Size = new System.Drawing.Size(127, 23);
             this.ButtonLast.TabIndex = 61;
@@ -734,7 +883,7 @@ namespace PUBGWinsUI
             // 
             // ButtonUpdate
             // 
-            this.ButtonUpdate.Location = new System.Drawing.Point(545, 500);
+            this.ButtonUpdate.Location = new System.Drawing.Point(348, 3);
             this.ButtonUpdate.Name = "ButtonUpdate";
             this.ButtonUpdate.Size = new System.Drawing.Size(75, 23);
             this.ButtonUpdate.TabIndex = 62;
@@ -745,7 +894,7 @@ namespace PUBGWinsUI
             // 
             // ButtonPrevious
             // 
-            this.ButtonPrevious.Location = new System.Drawing.Point(211, 500);
+            this.ButtonPrevious.Location = new System.Drawing.Point(136, 3);
             this.ButtonPrevious.Name = "ButtonPrevious";
             this.ButtonPrevious.Size = new System.Drawing.Size(118, 23);
             this.ButtonPrevious.TabIndex = 63;
@@ -756,7 +905,7 @@ namespace PUBGWinsUI
             // 
             // ButtonRemove
             // 
-            this.ButtonRemove.Location = new System.Drawing.Point(396, 500);
+            this.ButtonRemove.Location = new System.Drawing.Point(260, 3);
             this.ButtonRemove.Name = "ButtonRemove";
             this.ButtonRemove.Size = new System.Drawing.Size(82, 23);
             this.ButtonRemove.TabIndex = 64;
@@ -768,7 +917,7 @@ namespace PUBGWinsUI
             // KillsSquad
             // 
             this.KillsSquad.AutoSize = true;
-            this.KillsSquad.Location = new System.Drawing.Point(822, 508);
+            this.KillsSquad.Location = new System.Drawing.Point(74, 0);
             this.KillsSquad.Name = "KillsSquad";
             this.KillsSquad.Size = new System.Drawing.Size(13, 13);
             this.KillsSquad.TabIndex = 72;
@@ -777,7 +926,7 @@ namespace PUBGWinsUI
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(756, 508);
+            this.label29.Location = new System.Drawing.Point(3, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(65, 13);
             this.label29.TabIndex = 71;
@@ -786,7 +935,7 @@ namespace PUBGWinsUI
             // KillsTrio
             // 
             this.KillsTrio.AutoSize = true;
-            this.KillsTrio.Location = new System.Drawing.Point(822, 478);
+            this.KillsTrio.Location = new System.Drawing.Point(61, 0);
             this.KillsTrio.Name = "KillsTrio";
             this.KillsTrio.Size = new System.Drawing.Size(13, 13);
             this.KillsTrio.TabIndex = 70;
@@ -795,7 +944,7 @@ namespace PUBGWinsUI
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(755, 478);
+            this.label32.Location = new System.Drawing.Point(3, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(52, 13);
             this.label32.TabIndex = 69;
@@ -804,7 +953,7 @@ namespace PUBGWinsUI
             // KillsDuo
             // 
             this.KillsDuo.AutoSize = true;
-            this.KillsDuo.Location = new System.Drawing.Point(822, 448);
+            this.KillsDuo.Location = new System.Drawing.Point(63, 0);
             this.KillsDuo.Name = "KillsDuo";
             this.KillsDuo.Size = new System.Drawing.Size(13, 13);
             this.KillsDuo.TabIndex = 68;
@@ -813,7 +962,7 @@ namespace PUBGWinsUI
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(756, 448);
+            this.label34.Location = new System.Drawing.Point(3, 0);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(54, 13);
             this.label34.TabIndex = 67;
@@ -822,7 +971,7 @@ namespace PUBGWinsUI
             // KillsSolo
             // 
             this.KillsSolo.AutoSize = true;
-            this.KillsSolo.Location = new System.Drawing.Point(822, 418);
+            this.KillsSolo.Location = new System.Drawing.Point(64, 0);
             this.KillsSolo.Name = "KillsSolo";
             this.KillsSolo.Size = new System.Drawing.Size(13, 13);
             this.KillsSolo.TabIndex = 66;
@@ -831,7 +980,7 @@ namespace PUBGWinsUI
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(756, 418);
+            this.label36.Location = new System.Drawing.Point(3, 0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(55, 13);
             this.label36.TabIndex = 65;
@@ -840,7 +989,7 @@ namespace PUBGWinsUI
             // KillsSA
             // 
             this.KillsSA.AutoSize = true;
-            this.KillsSA.Location = new System.Drawing.Point(819, 357);
+            this.KillsSA.Location = new System.Drawing.Point(57, 0);
             this.KillsSA.Name = "KillsSA";
             this.KillsSA.Size = new System.Drawing.Size(13, 13);
             this.KillsSA.TabIndex = 84;
@@ -849,7 +998,7 @@ namespace PUBGWinsUI
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(763, 357);
+            this.label31.Location = new System.Drawing.Point(3, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(48, 13);
             this.label31.TabIndex = 83;
@@ -858,7 +1007,7 @@ namespace PUBGWinsUI
             // KillsSEA
             // 
             this.KillsSEA.AutoSize = true;
-            this.KillsSEA.Location = new System.Drawing.Point(819, 327);
+            this.KillsSEA.Location = new System.Drawing.Point(64, 0);
             this.KillsSEA.Name = "KillsSEA";
             this.KillsSEA.Size = new System.Drawing.Size(13, 13);
             this.KillsSEA.TabIndex = 82;
@@ -867,7 +1016,7 @@ namespace PUBGWinsUI
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(763, 327);
+            this.label35.Location = new System.Drawing.Point(3, 0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(55, 13);
             this.label35.TabIndex = 81;
@@ -876,7 +1025,7 @@ namespace PUBGWinsUI
             // KillsEU
             // 
             this.KillsEU.AutoSize = true;
-            this.KillsEU.Location = new System.Drawing.Point(819, 297);
+            this.KillsEU.Location = new System.Drawing.Point(58, 0);
             this.KillsEU.Name = "KillsEU";
             this.KillsEU.Size = new System.Drawing.Size(13, 13);
             this.KillsEU.TabIndex = 80;
@@ -885,7 +1034,7 @@ namespace PUBGWinsUI
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(763, 297);
+            this.label38.Location = new System.Drawing.Point(3, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(49, 13);
             this.label38.TabIndex = 79;
@@ -894,7 +1043,7 @@ namespace PUBGWinsUI
             // KillsTest
             // 
             this.KillsTest.AutoSize = true;
-            this.KillsTest.Location = new System.Drawing.Point(819, 267);
+            this.KillsTest.Location = new System.Drawing.Point(64, 0);
             this.KillsTest.Name = "KillsTest";
             this.KillsTest.Size = new System.Drawing.Size(13, 13);
             this.KillsTest.TabIndex = 78;
@@ -903,7 +1052,7 @@ namespace PUBGWinsUI
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(763, 267);
+            this.label40.Location = new System.Drawing.Point(3, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(55, 13);
             this.label40.TabIndex = 77;
@@ -912,7 +1061,7 @@ namespace PUBGWinsUI
             // KillsAS
             // 
             this.KillsAS.AutoSize = true;
-            this.KillsAS.Location = new System.Drawing.Point(819, 237);
+            this.KillsAS.Location = new System.Drawing.Point(57, 0);
             this.KillsAS.Name = "KillsAS";
             this.KillsAS.Size = new System.Drawing.Size(13, 13);
             this.KillsAS.TabIndex = 76;
@@ -921,7 +1070,7 @@ namespace PUBGWinsUI
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(764, 237);
+            this.label42.Location = new System.Drawing.Point(3, 0);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(48, 13);
             this.label42.TabIndex = 75;
@@ -930,7 +1079,7 @@ namespace PUBGWinsUI
             // KillsNA
             // 
             this.KillsNA.AutoSize = true;
-            this.KillsNA.Location = new System.Drawing.Point(819, 207);
+            this.KillsNA.Location = new System.Drawing.Point(58, 0);
             this.KillsNA.Name = "KillsNA";
             this.KillsNA.Size = new System.Drawing.Size(13, 13);
             this.KillsNA.TabIndex = 74;
@@ -939,7 +1088,7 @@ namespace PUBGWinsUI
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(764, 207);
+            this.label44.Location = new System.Drawing.Point(3, 0);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(49, 13);
             this.label44.TabIndex = 73;
@@ -947,7 +1096,7 @@ namespace PUBGWinsUI
             // 
             // ButtonDefaults
             // 
-            this.ButtonDefaults.Location = new System.Drawing.Point(183, 146);
+            this.ButtonDefaults.Location = new System.Drawing.Point(3, 3);
             this.ButtonDefaults.Name = "ButtonDefaults";
             this.ButtonDefaults.Size = new System.Drawing.Size(75, 23);
             this.ButtonDefaults.TabIndex = 85;
@@ -958,7 +1107,7 @@ namespace PUBGWinsUI
             // KPWSquad
             // 
             this.KPWSquad.AutoSize = true;
-            this.KPWSquad.Location = new System.Drawing.Point(981, 508);
+            this.KPWSquad.Location = new System.Drawing.Point(117, 0);
             this.KPWSquad.Name = "KPWSquad";
             this.KPWSquad.Size = new System.Drawing.Size(13, 13);
             this.KPWSquad.TabIndex = 93;
@@ -967,7 +1116,7 @@ namespace PUBGWinsUI
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(875, 508);
+            this.label33.Location = new System.Drawing.Point(3, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(108, 13);
             this.label33.TabIndex = 92;
@@ -976,7 +1125,7 @@ namespace PUBGWinsUI
             // KPWTrio
             // 
             this.KPWTrio.AutoSize = true;
-            this.KPWTrio.Location = new System.Drawing.Point(981, 478);
+            this.KPWTrio.Location = new System.Drawing.Point(104, 0);
             this.KPWTrio.Name = "KPWTrio";
             this.KPWTrio.Size = new System.Drawing.Size(13, 13);
             this.KPWTrio.TabIndex = 91;
@@ -985,7 +1134,7 @@ namespace PUBGWinsUI
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(874, 478);
+            this.label39.Location = new System.Drawing.Point(3, 0);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(95, 13);
             this.label39.TabIndex = 90;
@@ -994,7 +1143,7 @@ namespace PUBGWinsUI
             // KPWDuo
             // 
             this.KPWDuo.AutoSize = true;
-            this.KPWDuo.Location = new System.Drawing.Point(981, 448);
+            this.KPWDuo.Location = new System.Drawing.Point(106, 0);
             this.KPWDuo.Name = "KPWDuo";
             this.KPWDuo.Size = new System.Drawing.Size(13, 13);
             this.KPWDuo.TabIndex = 89;
@@ -1003,7 +1152,7 @@ namespace PUBGWinsUI
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(875, 448);
+            this.label43.Location = new System.Drawing.Point(3, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(97, 13);
             this.label43.TabIndex = 88;
@@ -1012,7 +1161,7 @@ namespace PUBGWinsUI
             // KPWSolo
             // 
             this.KPWSolo.AutoSize = true;
-            this.KPWSolo.Location = new System.Drawing.Point(981, 418);
+            this.KPWSolo.Location = new System.Drawing.Point(107, 0);
             this.KPWSolo.Name = "KPWSolo";
             this.KPWSolo.Size = new System.Drawing.Size(13, 13);
             this.KPWSolo.TabIndex = 87;
@@ -1021,7 +1170,7 @@ namespace PUBGWinsUI
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(875, 418);
+            this.label46.Location = new System.Drawing.Point(3, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(98, 13);
             this.label46.TabIndex = 86;
@@ -1030,7 +1179,7 @@ namespace PUBGWinsUI
             // KPWSA
             // 
             this.KPWSA.AutoSize = true;
-            this.KPWSA.Location = new System.Drawing.Point(970, 358);
+            this.KPWSA.Location = new System.Drawing.Point(100, 0);
             this.KPWSA.Name = "KPWSA";
             this.KPWSA.Size = new System.Drawing.Size(13, 13);
             this.KPWSA.TabIndex = 105;
@@ -1039,7 +1188,7 @@ namespace PUBGWinsUI
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(873, 358);
+            this.label37.Location = new System.Drawing.Point(3, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(91, 13);
             this.label37.TabIndex = 104;
@@ -1048,7 +1197,7 @@ namespace PUBGWinsUI
             // KPWSEA
             // 
             this.KPWSEA.AutoSize = true;
-            this.KPWSEA.Location = new System.Drawing.Point(970, 328);
+            this.KPWSEA.Location = new System.Drawing.Point(107, 0);
             this.KPWSEA.Name = "KPWSEA";
             this.KPWSEA.Size = new System.Drawing.Size(13, 13);
             this.KPWSEA.TabIndex = 103;
@@ -1057,7 +1206,7 @@ namespace PUBGWinsUI
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(873, 328);
+            this.label45.Location = new System.Drawing.Point(3, 0);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(98, 13);
             this.label45.TabIndex = 102;
@@ -1066,7 +1215,7 @@ namespace PUBGWinsUI
             // KPWEU
             // 
             this.KPWEU.AutoSize = true;
-            this.KPWEU.Location = new System.Drawing.Point(970, 298);
+            this.KPWEU.Location = new System.Drawing.Point(101, 0);
             this.KPWEU.Name = "KPWEU";
             this.KPWEU.Size = new System.Drawing.Size(13, 13);
             this.KPWEU.TabIndex = 101;
@@ -1075,7 +1224,7 @@ namespace PUBGWinsUI
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(873, 298);
+            this.label48.Location = new System.Drawing.Point(3, 0);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(92, 13);
             this.label48.TabIndex = 100;
@@ -1084,7 +1233,7 @@ namespace PUBGWinsUI
             // KPWTest
             // 
             this.KPWTest.AutoSize = true;
-            this.KPWTest.Location = new System.Drawing.Point(970, 268);
+            this.KPWTest.Location = new System.Drawing.Point(107, 0);
             this.KPWTest.Name = "KPWTest";
             this.KPWTest.Size = new System.Drawing.Size(13, 13);
             this.KPWTest.TabIndex = 99;
@@ -1093,7 +1242,7 @@ namespace PUBGWinsUI
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(873, 268);
+            this.label50.Location = new System.Drawing.Point(3, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(98, 13);
             this.label50.TabIndex = 98;
@@ -1102,7 +1251,7 @@ namespace PUBGWinsUI
             // KPWAS
             // 
             this.KPWAS.AutoSize = true;
-            this.KPWAS.Location = new System.Drawing.Point(970, 238);
+            this.KPWAS.Location = new System.Drawing.Point(100, 0);
             this.KPWAS.Name = "KPWAS";
             this.KPWAS.Size = new System.Drawing.Size(13, 13);
             this.KPWAS.TabIndex = 97;
@@ -1111,7 +1260,7 @@ namespace PUBGWinsUI
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(874, 238);
+            this.label52.Location = new System.Drawing.Point(3, 0);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(91, 13);
             this.label52.TabIndex = 96;
@@ -1120,7 +1269,7 @@ namespace PUBGWinsUI
             // KPWNA
             // 
             this.KPWNA.AutoSize = true;
-            this.KPWNA.Location = new System.Drawing.Point(970, 208);
+            this.KPWNA.Location = new System.Drawing.Point(101, 0);
             this.KPWNA.Name = "KPWNA";
             this.KPWNA.Size = new System.Drawing.Size(13, 13);
             this.KPWNA.TabIndex = 95;
@@ -1129,7 +1278,7 @@ namespace PUBGWinsUI
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(874, 208);
+            this.label54.Location = new System.Drawing.Point(3, 0);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(92, 13);
             this.label54.TabIndex = 94;
@@ -1192,7 +1341,7 @@ namespace PUBGWinsUI
             // TopTeammate1
             // 
             this.TopTeammate1.AutoSize = true;
-            this.TopTeammate1.Location = new System.Drawing.Point(836, 14);
+            this.TopTeammate1.Location = new System.Drawing.Point(3, 0);
             this.TopTeammate1.Name = "TopTeammate1";
             this.TopTeammate1.Size = new System.Drawing.Size(82, 13);
             this.TopTeammate1.TabIndex = 112;
@@ -1201,7 +1350,7 @@ namespace PUBGWinsUI
             // TopTeammate2
             // 
             this.TopTeammate2.AutoSize = true;
-            this.TopTeammate2.Location = new System.Drawing.Point(836, 37);
+            this.TopTeammate2.Location = new System.Drawing.Point(3, 13);
             this.TopTeammate2.Name = "TopTeammate2";
             this.TopTeammate2.Size = new System.Drawing.Size(82, 13);
             this.TopTeammate2.TabIndex = 113;
@@ -1210,7 +1359,7 @@ namespace PUBGWinsUI
             // TopTeammate3
             // 
             this.TopTeammate3.AutoSize = true;
-            this.TopTeammate3.Location = new System.Drawing.Point(836, 60);
+            this.TopTeammate3.Location = new System.Drawing.Point(3, 26);
             this.TopTeammate3.Name = "TopTeammate3";
             this.TopTeammate3.Size = new System.Drawing.Size(82, 13);
             this.TopTeammate3.TabIndex = 114;
@@ -1219,7 +1368,7 @@ namespace PUBGWinsUI
             // TopTeammate4
             // 
             this.TopTeammate4.AutoSize = true;
-            this.TopTeammate4.Location = new System.Drawing.Point(836, 83);
+            this.TopTeammate4.Location = new System.Drawing.Point(3, 39);
             this.TopTeammate4.Name = "TopTeammate4";
             this.TopTeammate4.Size = new System.Drawing.Size(82, 13);
             this.TopTeammate4.TabIndex = 115;
@@ -1228,7 +1377,7 @@ namespace PUBGWinsUI
             // TopTeammate5
             // 
             this.TopTeammate5.AutoSize = true;
-            this.TopTeammate5.Location = new System.Drawing.Point(836, 106);
+            this.TopTeammate5.Location = new System.Drawing.Point(3, 52);
             this.TopTeammate5.Name = "TopTeammate5";
             this.TopTeammate5.Size = new System.Drawing.Size(82, 13);
             this.TopTeammate5.TabIndex = 116;
@@ -1237,7 +1386,7 @@ namespace PUBGWinsUI
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(662, 142);
+            this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 13);
             this.label4.TabIndex = 117;
@@ -1246,7 +1395,7 @@ namespace PUBGWinsUI
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(662, 167);
+            this.label47.Location = new System.Drawing.Point(3, 0);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(61, 13);
             this.label47.TabIndex = 118;
@@ -1255,7 +1404,7 @@ namespace PUBGWinsUI
             // FPPWins
             // 
             this.FPPWins.AutoSize = true;
-            this.FPPWins.Location = new System.Drawing.Point(720, 142);
+            this.FPPWins.Location = new System.Drawing.Point(69, 0);
             this.FPPWins.Name = "FPPWins";
             this.FPPWins.Size = new System.Drawing.Size(13, 13);
             this.FPPWins.TabIndex = 119;
@@ -1264,7 +1413,7 @@ namespace PUBGWinsUI
             // TPPWins
             // 
             this.TPPWins.AutoSize = true;
-            this.TPPWins.Location = new System.Drawing.Point(720, 167);
+            this.TPPWins.Location = new System.Drawing.Point(70, 0);
             this.TPPWins.Name = "TPPWins";
             this.TPPWins.Size = new System.Drawing.Size(13, 13);
             this.TPPWins.TabIndex = 120;
@@ -1273,7 +1422,7 @@ namespace PUBGWinsUI
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(857, 142);
+            this.label.Location = new System.Drawing.Point(3, 0);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(108, 13);
             this.label.TabIndex = 121;
@@ -1282,7 +1431,7 @@ namespace PUBGWinsUI
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(858, 167);
+            this.label51.Location = new System.Drawing.Point(3, 0);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(109, 13);
             this.label51.TabIndex = 122;
@@ -1291,7 +1440,7 @@ namespace PUBGWinsUI
             // KPWFPP
             // 
             this.KPWFPP.AutoSize = true;
-            this.KPWFPP.Location = new System.Drawing.Point(968, 142);
+            this.KPWFPP.Location = new System.Drawing.Point(117, 0);
             this.KPWFPP.Name = "KPWFPP";
             this.KPWFPP.Size = new System.Drawing.Size(13, 13);
             this.KPWFPP.TabIndex = 123;
@@ -1300,7 +1449,7 @@ namespace PUBGWinsUI
             // KPWTPP
             // 
             this.KPWTPP.AutoSize = true;
-            this.KPWTPP.Location = new System.Drawing.Point(968, 167);
+            this.KPWTPP.Location = new System.Drawing.Point(118, 0);
             this.KPWTPP.Name = "KPWTPP";
             this.KPWTPP.Size = new System.Drawing.Size(13, 13);
             this.KPWTPP.TabIndex = 124;
@@ -1309,7 +1458,7 @@ namespace PUBGWinsUI
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(761, 142);
+            this.label55.Location = new System.Drawing.Point(3, 0);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(54, 13);
             this.label55.TabIndex = 125;
@@ -1318,7 +1467,7 @@ namespace PUBGWinsUI
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(761, 167);
+            this.label56.Location = new System.Drawing.Point(3, 0);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(55, 13);
             this.label56.TabIndex = 126;
@@ -1327,7 +1476,7 @@ namespace PUBGWinsUI
             // FPPKills
             // 
             this.FPPKills.AutoSize = true;
-            this.FPPKills.Location = new System.Drawing.Point(816, 142);
+            this.FPPKills.Location = new System.Drawing.Point(63, 0);
             this.FPPKills.Name = "FPPKills";
             this.FPPKills.Size = new System.Drawing.Size(13, 13);
             this.FPPKills.TabIndex = 127;
@@ -1336,7 +1485,7 @@ namespace PUBGWinsUI
             // TPPKills
             // 
             this.TPPKills.AutoSize = true;
-            this.TPPKills.Location = new System.Drawing.Point(816, 167);
+            this.TPPKills.Location = new System.Drawing.Point(64, 0);
             this.TPPKills.Name = "TPPKills";
             this.TPPKills.Size = new System.Drawing.Size(13, 13);
             this.TPPKills.TabIndex = 128;
@@ -1556,7 +1705,7 @@ namespace PUBGWinsUI
             this.flowLayoutPanel15.AutoSize = true;
             this.flowLayoutPanel15.Controls.Add(this.label59);
             this.flowLayoutPanel15.Controls.Add(this.KillsKarakin);
-            this.flowLayoutPanel15.Location = new System.Drawing.Point(3, 60);
+            this.flowLayoutPanel15.Location = new System.Drawing.Point(3, 79);
             this.flowLayoutPanel15.Name = "flowLayoutPanel15";
             this.flowLayoutPanel15.Size = new System.Drawing.Size(107, 13);
             this.flowLayoutPanel15.TabIndex = 152;
@@ -1573,7 +1722,7 @@ namespace PUBGWinsUI
             this.flowLayoutPanel13.AutoSize = true;
             this.flowLayoutPanel13.Controls.Add(this.label61);
             this.flowLayoutPanel13.Controls.Add(this.KillsVikendi);
-            this.flowLayoutPanel13.Location = new System.Drawing.Point(3, 79);
+            this.flowLayoutPanel13.Location = new System.Drawing.Point(3, 60);
             this.flowLayoutPanel13.Name = "flowLayoutPanel13";
             this.flowLayoutPanel13.Size = new System.Drawing.Size(106, 13);
             this.flowLayoutPanel13.TabIndex = 151;
@@ -1586,8 +1735,8 @@ namespace PUBGWinsUI
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel7);
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel9);
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel12);
-            this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel15);
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel13);
+            this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel15);
             this.flowLayoutPanel16.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel16.Location = new System.Drawing.Point(132, 3);
             this.flowLayoutPanel16.Name = "flowLayoutPanel16";
@@ -1664,123 +1813,783 @@ namespace PUBGWinsUI
             this.flowLayoutPanel21.Controls.Add(this.flowLayoutPanel20);
             this.flowLayoutPanel21.Controls.Add(this.flowLayoutPanel16);
             this.flowLayoutPanel21.Controls.Add(this.flowLayoutPanel6);
-            this.flowLayoutPanel21.Location = new System.Drawing.Point(250, 688);
+            this.flowLayoutPanel21.Location = new System.Drawing.Point(533, 3);
             this.flowLayoutPanel21.Name = "flowLayoutPanel21";
             this.flowLayoutPanel21.Size = new System.Drawing.Size(418, 101);
             this.flowLayoutPanel21.TabIndex = 161;
+            // 
+            // flowLayoutPanel22
+            // 
+            this.flowLayoutPanel22.AutoSize = true;
+            this.flowLayoutPanel22.Controls.Add(this.TopTeammate1);
+            this.flowLayoutPanel22.Controls.Add(this.TopTeammate2);
+            this.flowLayoutPanel22.Controls.Add(this.TopTeammate3);
+            this.flowLayoutPanel22.Controls.Add(this.TopTeammate4);
+            this.flowLayoutPanel22.Controls.Add(this.TopTeammate5);
+            this.flowLayoutPanel22.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel22.Location = new System.Drawing.Point(3, 267);
+            this.flowLayoutPanel22.Name = "flowLayoutPanel22";
+            this.flowLayoutPanel22.Size = new System.Drawing.Size(88, 65);
+            this.flowLayoutPanel22.TabIndex = 162;
+            // 
+            // flowLayoutPanel23
+            // 
+            this.flowLayoutPanel23.AutoSize = true;
+            this.flowLayoutPanel23.Controls.Add(this.label4);
+            this.flowLayoutPanel23.Controls.Add(this.FPPWins);
+            this.flowLayoutPanel23.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel23.Name = "flowLayoutPanel23";
+            this.flowLayoutPanel23.Size = new System.Drawing.Size(85, 13);
+            this.flowLayoutPanel23.TabIndex = 163;
+            // 
+            // flowLayoutPanel24
+            // 
+            this.flowLayoutPanel24.AutoSize = true;
+            this.flowLayoutPanel24.Controls.Add(this.label47);
+            this.flowLayoutPanel24.Controls.Add(this.TPPWins);
+            this.flowLayoutPanel24.Location = new System.Drawing.Point(3, 22);
+            this.flowLayoutPanel24.Name = "flowLayoutPanel24";
+            this.flowLayoutPanel24.Size = new System.Drawing.Size(86, 13);
+            this.flowLayoutPanel24.TabIndex = 164;
+            // 
+            // flowLayoutPanel25
+            // 
+            this.flowLayoutPanel25.AutoSize = true;
+            this.flowLayoutPanel25.Controls.Add(this.label55);
+            this.flowLayoutPanel25.Controls.Add(this.FPPKills);
+            this.flowLayoutPanel25.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel25.Name = "flowLayoutPanel25";
+            this.flowLayoutPanel25.Size = new System.Drawing.Size(79, 13);
+            this.flowLayoutPanel25.TabIndex = 165;
+            // 
+            // flowLayoutPanel26
+            // 
+            this.flowLayoutPanel26.AutoSize = true;
+            this.flowLayoutPanel26.Controls.Add(this.label56);
+            this.flowLayoutPanel26.Controls.Add(this.TPPKills);
+            this.flowLayoutPanel26.Location = new System.Drawing.Point(3, 22);
+            this.flowLayoutPanel26.Name = "flowLayoutPanel26";
+            this.flowLayoutPanel26.Size = new System.Drawing.Size(80, 13);
+            this.flowLayoutPanel26.TabIndex = 166;
+            // 
+            // flowLayoutPanel27
+            // 
+            this.flowLayoutPanel27.AutoSize = true;
+            this.flowLayoutPanel27.Controls.Add(this.label);
+            this.flowLayoutPanel27.Controls.Add(this.KPWFPP);
+            this.flowLayoutPanel27.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel27.Name = "flowLayoutPanel27";
+            this.flowLayoutPanel27.Size = new System.Drawing.Size(133, 13);
+            this.flowLayoutPanel27.TabIndex = 167;
+            // 
+            // flowLayoutPanel28
+            // 
+            this.flowLayoutPanel28.AutoSize = true;
+            this.flowLayoutPanel28.Controls.Add(this.label51);
+            this.flowLayoutPanel28.Controls.Add(this.KPWTPP);
+            this.flowLayoutPanel28.Location = new System.Drawing.Point(3, 22);
+            this.flowLayoutPanel28.Name = "flowLayoutPanel28";
+            this.flowLayoutPanel28.Size = new System.Drawing.Size(134, 13);
+            this.flowLayoutPanel28.TabIndex = 168;
+            // 
+            // flowLayoutPanel29
+            // 
+            this.flowLayoutPanel29.AutoSize = true;
+            this.flowLayoutPanel29.Controls.Add(this.flowLayoutPanel31);
+            this.flowLayoutPanel29.Controls.Add(this.flowLayoutPanel32);
+            this.flowLayoutPanel29.Controls.Add(this.flowLayoutPanel33);
+            this.flowLayoutPanel29.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel29.Name = "flowLayoutPanel29";
+            this.flowLayoutPanel29.Size = new System.Drawing.Size(336, 44);
+            this.flowLayoutPanel29.TabIndex = 169;
+            // 
+            // flowLayoutPanel31
+            // 
+            this.flowLayoutPanel31.AutoSize = true;
+            this.flowLayoutPanel31.Controls.Add(this.flowLayoutPanel23);
+            this.flowLayoutPanel31.Controls.Add(this.flowLayoutPanel24);
+            this.flowLayoutPanel31.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel31.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel31.Name = "flowLayoutPanel31";
+            this.flowLayoutPanel31.Size = new System.Drawing.Size(92, 38);
+            this.flowLayoutPanel31.TabIndex = 171;
+            // 
+            // flowLayoutPanel32
+            // 
+            this.flowLayoutPanel32.AutoSize = true;
+            this.flowLayoutPanel32.Controls.Add(this.flowLayoutPanel25);
+            this.flowLayoutPanel32.Controls.Add(this.flowLayoutPanel26);
+            this.flowLayoutPanel32.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel32.Location = new System.Drawing.Point(101, 3);
+            this.flowLayoutPanel32.Name = "flowLayoutPanel32";
+            this.flowLayoutPanel32.Size = new System.Drawing.Size(86, 38);
+            this.flowLayoutPanel32.TabIndex = 172;
+            // 
+            // flowLayoutPanel33
+            // 
+            this.flowLayoutPanel33.AutoSize = true;
+            this.flowLayoutPanel33.Controls.Add(this.flowLayoutPanel27);
+            this.flowLayoutPanel33.Controls.Add(this.flowLayoutPanel28);
+            this.flowLayoutPanel33.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel33.Location = new System.Drawing.Point(193, 3);
+            this.flowLayoutPanel33.Name = "flowLayoutPanel33";
+            this.flowLayoutPanel33.Size = new System.Drawing.Size(140, 38);
+            this.flowLayoutPanel33.TabIndex = 173;
+            // 
+            // flowLayoutPanel34
+            // 
+            this.flowLayoutPanel34.AutoSize = true;
+            this.flowLayoutPanel34.Controls.Add(this.label19);
+            this.flowLayoutPanel34.Controls.Add(this.NAWins);
+            this.flowLayoutPanel34.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel34.Name = "flowLayoutPanel34";
+            this.flowLayoutPanel34.Size = new System.Drawing.Size(80, 13);
+            this.flowLayoutPanel34.TabIndex = 171;
+            // 
+            // flowLayoutPanel35
+            // 
+            this.flowLayoutPanel35.AutoSize = true;
+            this.flowLayoutPanel35.Controls.Add(this.label44);
+            this.flowLayoutPanel35.Controls.Add(this.KillsNA);
+            this.flowLayoutPanel35.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel35.Name = "flowLayoutPanel35";
+            this.flowLayoutPanel35.Size = new System.Drawing.Size(74, 13);
+            this.flowLayoutPanel35.TabIndex = 172;
+            // 
+            // flowLayoutPanel36
+            // 
+            this.flowLayoutPanel36.AutoSize = true;
+            this.flowLayoutPanel36.Controls.Add(this.label54);
+            this.flowLayoutPanel36.Controls.Add(this.KPWNA);
+            this.flowLayoutPanel36.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel36.Name = "flowLayoutPanel36";
+            this.flowLayoutPanel36.Size = new System.Drawing.Size(117, 13);
+            this.flowLayoutPanel36.TabIndex = 173;
+            // 
+            // flowLayoutPanel37
+            // 
+            this.flowLayoutPanel37.AutoSize = true;
+            this.flowLayoutPanel37.Controls.Add(this.label21);
+            this.flowLayoutPanel37.Controls.Add(this.ASWins);
+            this.flowLayoutPanel37.Location = new System.Drawing.Point(3, 22);
+            this.flowLayoutPanel37.Name = "flowLayoutPanel37";
+            this.flowLayoutPanel37.Size = new System.Drawing.Size(79, 13);
+            this.flowLayoutPanel37.TabIndex = 174;
+            // 
+            // flowLayoutPanel38
+            // 
+            this.flowLayoutPanel38.AutoSize = true;
+            this.flowLayoutPanel38.Controls.Add(this.label42);
+            this.flowLayoutPanel38.Controls.Add(this.KillsAS);
+            this.flowLayoutPanel38.Location = new System.Drawing.Point(3, 22);
+            this.flowLayoutPanel38.Name = "flowLayoutPanel38";
+            this.flowLayoutPanel38.Size = new System.Drawing.Size(73, 13);
+            this.flowLayoutPanel38.TabIndex = 175;
+            // 
+            // flowLayoutPanel39
+            // 
+            this.flowLayoutPanel39.AutoSize = true;
+            this.flowLayoutPanel39.Controls.Add(this.label52);
+            this.flowLayoutPanel39.Controls.Add(this.KPWAS);
+            this.flowLayoutPanel39.Location = new System.Drawing.Point(3, 22);
+            this.flowLayoutPanel39.Name = "flowLayoutPanel39";
+            this.flowLayoutPanel39.Size = new System.Drawing.Size(116, 13);
+            this.flowLayoutPanel39.TabIndex = 176;
+            // 
+            // flowLayoutPanel40
+            // 
+            this.flowLayoutPanel40.AutoSize = true;
+            this.flowLayoutPanel40.Controls.Add(this.label22);
+            this.flowLayoutPanel40.Controls.Add(this.TestWins);
+            this.flowLayoutPanel40.Location = new System.Drawing.Point(3, 41);
+            this.flowLayoutPanel40.Name = "flowLayoutPanel40";
+            this.flowLayoutPanel40.Size = new System.Drawing.Size(86, 13);
+            this.flowLayoutPanel40.TabIndex = 177;
+            // 
+            // flowLayoutPanel41
+            // 
+            this.flowLayoutPanel41.AutoSize = true;
+            this.flowLayoutPanel41.Controls.Add(this.label40);
+            this.flowLayoutPanel41.Controls.Add(this.KillsTest);
+            this.flowLayoutPanel41.Location = new System.Drawing.Point(3, 41);
+            this.flowLayoutPanel41.Name = "flowLayoutPanel41";
+            this.flowLayoutPanel41.Size = new System.Drawing.Size(80, 13);
+            this.flowLayoutPanel41.TabIndex = 178;
+            // 
+            // flowLayoutPanel42
+            // 
+            this.flowLayoutPanel42.AutoSize = true;
+            this.flowLayoutPanel42.Controls.Add(this.label50);
+            this.flowLayoutPanel42.Controls.Add(this.KPWTest);
+            this.flowLayoutPanel42.Location = new System.Drawing.Point(3, 41);
+            this.flowLayoutPanel42.Name = "flowLayoutPanel42";
+            this.flowLayoutPanel42.Size = new System.Drawing.Size(123, 13);
+            this.flowLayoutPanel42.TabIndex = 179;
+            // 
+            // flowLayoutPanel43
+            // 
+            this.flowLayoutPanel43.AutoSize = true;
+            this.flowLayoutPanel43.Controls.Add(this.label23);
+            this.flowLayoutPanel43.Controls.Add(this.EUWins);
+            this.flowLayoutPanel43.Location = new System.Drawing.Point(3, 60);
+            this.flowLayoutPanel43.Name = "flowLayoutPanel43";
+            this.flowLayoutPanel43.Size = new System.Drawing.Size(80, 13);
+            this.flowLayoutPanel43.TabIndex = 180;
+            // 
+            // flowLayoutPanel44
+            // 
+            this.flowLayoutPanel44.AutoSize = true;
+            this.flowLayoutPanel44.Controls.Add(this.label38);
+            this.flowLayoutPanel44.Controls.Add(this.KillsEU);
+            this.flowLayoutPanel44.Location = new System.Drawing.Point(3, 60);
+            this.flowLayoutPanel44.Name = "flowLayoutPanel44";
+            this.flowLayoutPanel44.Size = new System.Drawing.Size(74, 13);
+            this.flowLayoutPanel44.TabIndex = 181;
+            // 
+            // flowLayoutPanel45
+            // 
+            this.flowLayoutPanel45.AutoSize = true;
+            this.flowLayoutPanel45.Controls.Add(this.label48);
+            this.flowLayoutPanel45.Controls.Add(this.KPWEU);
+            this.flowLayoutPanel45.Location = new System.Drawing.Point(3, 60);
+            this.flowLayoutPanel45.Name = "flowLayoutPanel45";
+            this.flowLayoutPanel45.Size = new System.Drawing.Size(117, 13);
+            this.flowLayoutPanel45.TabIndex = 182;
+            // 
+            // flowLayoutPanel46
+            // 
+            this.flowLayoutPanel46.AutoSize = true;
+            this.flowLayoutPanel46.Controls.Add(this.label28);
+            this.flowLayoutPanel46.Controls.Add(this.SEAWins);
+            this.flowLayoutPanel46.Location = new System.Drawing.Point(3, 79);
+            this.flowLayoutPanel46.Name = "flowLayoutPanel46";
+            this.flowLayoutPanel46.Size = new System.Drawing.Size(86, 13);
+            this.flowLayoutPanel46.TabIndex = 183;
+            // 
+            // flowLayoutPanel47
+            // 
+            this.flowLayoutPanel47.AutoSize = true;
+            this.flowLayoutPanel47.Controls.Add(this.label35);
+            this.flowLayoutPanel47.Controls.Add(this.KillsSEA);
+            this.flowLayoutPanel47.Location = new System.Drawing.Point(3, 79);
+            this.flowLayoutPanel47.Name = "flowLayoutPanel47";
+            this.flowLayoutPanel47.Size = new System.Drawing.Size(80, 13);
+            this.flowLayoutPanel47.TabIndex = 184;
+            // 
+            // flowLayoutPanel48
+            // 
+            this.flowLayoutPanel48.AutoSize = true;
+            this.flowLayoutPanel48.Controls.Add(this.label45);
+            this.flowLayoutPanel48.Controls.Add(this.KPWSEA);
+            this.flowLayoutPanel48.Location = new System.Drawing.Point(3, 79);
+            this.flowLayoutPanel48.Name = "flowLayoutPanel48";
+            this.flowLayoutPanel48.Size = new System.Drawing.Size(123, 13);
+            this.flowLayoutPanel48.TabIndex = 185;
+            // 
+            // flowLayoutPanel49
+            // 
+            this.flowLayoutPanel49.AutoSize = true;
+            this.flowLayoutPanel49.Controls.Add(this.label30);
+            this.flowLayoutPanel49.Controls.Add(this.SAWins);
+            this.flowLayoutPanel49.Location = new System.Drawing.Point(3, 98);
+            this.flowLayoutPanel49.Name = "flowLayoutPanel49";
+            this.flowLayoutPanel49.Size = new System.Drawing.Size(79, 13);
+            this.flowLayoutPanel49.TabIndex = 186;
+            // 
+            // flowLayoutPanel50
+            // 
+            this.flowLayoutPanel50.AutoSize = true;
+            this.flowLayoutPanel50.Controls.Add(this.label31);
+            this.flowLayoutPanel50.Controls.Add(this.KillsSA);
+            this.flowLayoutPanel50.Location = new System.Drawing.Point(3, 98);
+            this.flowLayoutPanel50.Name = "flowLayoutPanel50";
+            this.flowLayoutPanel50.Size = new System.Drawing.Size(73, 13);
+            this.flowLayoutPanel50.TabIndex = 187;
+            // 
+            // flowLayoutPanel51
+            // 
+            this.flowLayoutPanel51.AutoSize = true;
+            this.flowLayoutPanel51.Controls.Add(this.label37);
+            this.flowLayoutPanel51.Controls.Add(this.KPWSA);
+            this.flowLayoutPanel51.Location = new System.Drawing.Point(3, 98);
+            this.flowLayoutPanel51.Name = "flowLayoutPanel51";
+            this.flowLayoutPanel51.Size = new System.Drawing.Size(116, 13);
+            this.flowLayoutPanel51.TabIndex = 188;
+            // 
+            // flowLayoutPanel52
+            // 
+            this.flowLayoutPanel52.AutoSize = true;
+            this.flowLayoutPanel52.Controls.Add(this.label1);
+            this.flowLayoutPanel52.Controls.Add(this.flowLayoutPanel88);
+            this.flowLayoutPanel52.Controls.Add(this.flowLayoutPanel93);
+            this.flowLayoutPanel52.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel52.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel52.Name = "flowLayoutPanel52";
+            this.flowLayoutPanel52.Size = new System.Drawing.Size(999, 590);
+            this.flowLayoutPanel52.TabIndex = 189;
+            // 
+            // flowLayoutPanel88
+            // 
+            this.flowLayoutPanel88.AutoSize = true;
+            this.flowLayoutPanel88.Controls.Add(this.flowLayoutPanel87);
+            this.flowLayoutPanel88.Controls.Add(this.flowLayoutPanel86);
+            this.flowLayoutPanel88.Controls.Add(this.flowLayoutPanel21);
+            this.flowLayoutPanel88.Location = new System.Drawing.Point(3, 23);
+            this.flowLayoutPanel88.Name = "flowLayoutPanel88";
+            this.flowLayoutPanel88.Size = new System.Drawing.Size(954, 143);
+            this.flowLayoutPanel88.TabIndex = 226;
+            // 
+            // flowLayoutPanel87
+            // 
+            this.flowLayoutPanel87.AutoSize = true;
+            this.flowLayoutPanel87.Controls.Add(this.flowLayoutPanel82);
+            this.flowLayoutPanel87.Controls.Add(this.flowLayoutPanel77);
+            this.flowLayoutPanel87.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel87.Name = "flowLayoutPanel87";
+            this.flowLayoutPanel87.Size = new System.Drawing.Size(373, 137);
+            this.flowLayoutPanel87.TabIndex = 225;
+            // 
+            // flowLayoutPanel82
+            // 
+            this.flowLayoutPanel82.AutoSize = true;
+            this.flowLayoutPanel82.Controls.Add(this.flowLayoutPanel78);
+            this.flowLayoutPanel82.Controls.Add(this.flowLayoutPanel79);
+            this.flowLayoutPanel82.Controls.Add(this.flowLayoutPanel80);
+            this.flowLayoutPanel82.Controls.Add(this.flowLayoutPanel81);
+            this.flowLayoutPanel82.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel82.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel82.Name = "flowLayoutPanel82";
+            this.flowLayoutPanel82.Size = new System.Drawing.Size(163, 131);
+            this.flowLayoutPanel82.TabIndex = 220;
+            // 
+            // flowLayoutPanel78
+            // 
+            this.flowLayoutPanel78.AutoSize = true;
+            this.flowLayoutPanel78.Controls.Add(this.label6);
+            this.flowLayoutPanel78.Controls.Add(this.BoxKills);
+            this.flowLayoutPanel78.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel78.Name = "flowLayoutPanel78";
+            this.flowLayoutPanel78.Size = new System.Drawing.Size(157, 26);
+            this.flowLayoutPanel78.TabIndex = 216;
+            // 
+            // flowLayoutPanel79
+            // 
+            this.flowLayoutPanel79.AutoSize = true;
+            this.flowLayoutPanel79.Controls.Add(this.label2);
+            this.flowLayoutPanel79.Controls.Add(this.MenuPerspective);
+            this.flowLayoutPanel79.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel79.Name = "flowLayoutPanel79";
+            this.flowLayoutPanel79.Size = new System.Drawing.Size(153, 27);
+            this.flowLayoutPanel79.TabIndex = 217;
+            // 
+            // flowLayoutPanel80
+            // 
+            this.flowLayoutPanel80.AutoSize = true;
+            this.flowLayoutPanel80.Controls.Add(this.label3);
+            this.flowLayoutPanel80.Controls.Add(this.MenuServer);
+            this.flowLayoutPanel80.Location = new System.Drawing.Point(3, 68);
+            this.flowLayoutPanel80.Name = "flowLayoutPanel80";
+            this.flowLayoutPanel80.Size = new System.Drawing.Size(153, 27);
+            this.flowLayoutPanel80.TabIndex = 218;
+            // 
+            // flowLayoutPanel81
+            // 
+            this.flowLayoutPanel81.AutoSize = true;
+            this.flowLayoutPanel81.Controls.Add(this.label5);
+            this.flowLayoutPanel81.Controls.Add(this.MenuMap);
+            this.flowLayoutPanel81.Location = new System.Drawing.Point(3, 101);
+            this.flowLayoutPanel81.Name = "flowLayoutPanel81";
+            this.flowLayoutPanel81.Size = new System.Drawing.Size(154, 27);
+            this.flowLayoutPanel81.TabIndex = 219;
+            // 
+            // flowLayoutPanel77
+            // 
+            this.flowLayoutPanel77.AutoSize = true;
+            this.flowLayoutPanel77.Controls.Add(this.flowLayoutPanel74);
+            this.flowLayoutPanel77.Controls.Add(this.flowLayoutPanel75);
+            this.flowLayoutPanel77.Controls.Add(this.flowLayoutPanel76);
+            this.flowLayoutPanel77.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel77.Location = new System.Drawing.Point(172, 3);
+            this.flowLayoutPanel77.Name = "flowLayoutPanel77";
+            this.flowLayoutPanel77.Size = new System.Drawing.Size(198, 96);
+            this.flowLayoutPanel77.TabIndex = 215;
+            // 
+            // flowLayoutPanel74
+            // 
+            this.flowLayoutPanel74.AutoSize = true;
+            this.flowLayoutPanel74.Controls.Add(this.label8);
+            this.flowLayoutPanel74.Controls.Add(this.BoxTeammate1);
+            this.flowLayoutPanel74.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel74.Name = "flowLayoutPanel74";
+            this.flowLayoutPanel74.Size = new System.Drawing.Size(192, 26);
+            this.flowLayoutPanel74.TabIndex = 212;
+            // 
+            // flowLayoutPanel75
+            // 
+            this.flowLayoutPanel75.AutoSize = true;
+            this.flowLayoutPanel75.Controls.Add(this.label9);
+            this.flowLayoutPanel75.Controls.Add(this.BoxTeammate2);
+            this.flowLayoutPanel75.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel75.Name = "flowLayoutPanel75";
+            this.flowLayoutPanel75.Size = new System.Drawing.Size(192, 26);
+            this.flowLayoutPanel75.TabIndex = 213;
+            // 
+            // flowLayoutPanel76
+            // 
+            this.flowLayoutPanel76.AutoSize = true;
+            this.flowLayoutPanel76.Controls.Add(this.label10);
+            this.flowLayoutPanel76.Controls.Add(this.BoxTeammate3);
+            this.flowLayoutPanel76.Location = new System.Drawing.Point(3, 67);
+            this.flowLayoutPanel76.Name = "flowLayoutPanel76";
+            this.flowLayoutPanel76.Size = new System.Drawing.Size(192, 26);
+            this.flowLayoutPanel76.TabIndex = 214;
+            // 
+            // flowLayoutPanel86
+            // 
+            this.flowLayoutPanel86.AutoSize = true;
+            this.flowLayoutPanel86.Controls.Add(this.flowLayoutPanel83);
+            this.flowLayoutPanel86.Controls.Add(this.flowLayoutPanel84);
+            this.flowLayoutPanel86.Controls.Add(this.flowLayoutPanel85);
+            this.flowLayoutPanel86.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel86.Location = new System.Drawing.Point(382, 3);
+            this.flowLayoutPanel86.Name = "flowLayoutPanel86";
+            this.flowLayoutPanel86.Size = new System.Drawing.Size(145, 57);
+            this.flowLayoutPanel86.TabIndex = 224;
+            // 
+            // flowLayoutPanel83
+            // 
+            this.flowLayoutPanel83.AutoSize = true;
+            this.flowLayoutPanel83.Controls.Add(this.label15);
+            this.flowLayoutPanel83.Controls.Add(this.WinsTotal);
+            this.flowLayoutPanel83.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel83.Name = "flowLayoutPanel83";
+            this.flowLayoutPanel83.Size = new System.Drawing.Size(89, 13);
+            this.flowLayoutPanel83.TabIndex = 221;
+            // 
+            // flowLayoutPanel84
+            // 
+            this.flowLayoutPanel84.AutoSize = true;
+            this.flowLayoutPanel84.Controls.Add(this.label14);
+            this.flowLayoutPanel84.Controls.Add(this.KillsTotal);
+            this.flowLayoutPanel84.Location = new System.Drawing.Point(3, 22);
+            this.flowLayoutPanel84.Name = "flowLayoutPanel84";
+            this.flowLayoutPanel84.Size = new System.Drawing.Size(83, 13);
+            this.flowLayoutPanel84.TabIndex = 222;
+            // 
+            // flowLayoutPanel85
+            // 
+            this.flowLayoutPanel85.AutoSize = true;
+            this.flowLayoutPanel85.Controls.Add(this.label12);
+            this.flowLayoutPanel85.Controls.Add(this.KillsPerWin);
+            this.flowLayoutPanel85.Location = new System.Drawing.Point(3, 41);
+            this.flowLayoutPanel85.Name = "flowLayoutPanel85";
+            this.flowLayoutPanel85.Size = new System.Drawing.Size(139, 13);
+            this.flowLayoutPanel85.TabIndex = 223;
+            // 
+            // flowLayoutPanel93
+            // 
+            this.flowLayoutPanel93.AutoSize = true;
+            this.flowLayoutPanel93.Controls.Add(this.flowLayoutPanel92);
+            this.flowLayoutPanel93.Controls.Add(this.flowLayoutPanel73);
+            this.flowLayoutPanel93.Location = new System.Drawing.Point(3, 172);
+            this.flowLayoutPanel93.Name = "flowLayoutPanel93";
+            this.flowLayoutPanel93.Size = new System.Drawing.Size(993, 415);
+            this.flowLayoutPanel93.TabIndex = 231;
+            // 
+            // flowLayoutPanel92
+            // 
+            this.flowLayoutPanel92.AutoSize = true;
+            this.flowLayoutPanel92.Controls.Add(this.flowLayoutPanel89);
+            this.flowLayoutPanel92.Controls.Add(this.flowLayoutPanel91);
+            this.flowLayoutPanel92.Controls.Add(this.flowLayoutPanel90);
+            this.flowLayoutPanel92.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel92.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel92.Name = "flowLayoutPanel92";
+            this.flowLayoutPanel92.Size = new System.Drawing.Size(620, 409);
+            this.flowLayoutPanel92.TabIndex = 230;
+            // 
+            // flowLayoutPanel89
+            // 
+            this.flowLayoutPanel89.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel89.AutoSize = true;
+            this.flowLayoutPanel89.Controls.Add(this.ButtonDefaults);
+            this.flowLayoutPanel89.Controls.Add(this.ButtonStore);
+            this.flowLayoutPanel89.Location = new System.Drawing.Point(456, 3);
+            this.flowLayoutPanel89.Name = "flowLayoutPanel89";
+            this.flowLayoutPanel89.Size = new System.Drawing.Size(161, 29);
+            this.flowLayoutPanel89.TabIndex = 227;
+            // 
+            // flowLayoutPanel91
+            // 
+            this.flowLayoutPanel91.AutoSize = true;
+            this.flowLayoutPanel91.Controls.Add(this.label7);
+            this.flowLayoutPanel91.Controls.Add(this.BoxDescription);
+            this.flowLayoutPanel91.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel91.Location = new System.Drawing.Point(3, 38);
+            this.flowLayoutPanel91.Name = "flowLayoutPanel91";
+            this.flowLayoutPanel91.Size = new System.Drawing.Size(614, 333);
+            this.flowLayoutPanel91.TabIndex = 229;
+            // 
+            // flowLayoutPanel90
+            // 
+            this.flowLayoutPanel90.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel90.AutoSize = true;
+            this.flowLayoutPanel90.Controls.Add(this.ButtonLast);
+            this.flowLayoutPanel90.Controls.Add(this.ButtonPrevious);
+            this.flowLayoutPanel90.Controls.Add(this.ButtonRemove);
+            this.flowLayoutPanel90.Controls.Add(this.ButtonUpdate);
+            this.flowLayoutPanel90.Location = new System.Drawing.Point(191, 377);
+            this.flowLayoutPanel90.Name = "flowLayoutPanel90";
+            this.flowLayoutPanel90.Size = new System.Drawing.Size(426, 29);
+            this.flowLayoutPanel90.TabIndex = 228;
+            // 
+            // flowLayoutPanel30
+            // 
+            this.flowLayoutPanel30.AutoSize = true;
+            this.flowLayoutPanel30.Controls.Add(this.flowLayoutPanel34);
+            this.flowLayoutPanel30.Controls.Add(this.flowLayoutPanel37);
+            this.flowLayoutPanel30.Controls.Add(this.flowLayoutPanel40);
+            this.flowLayoutPanel30.Controls.Add(this.flowLayoutPanel43);
+            this.flowLayoutPanel30.Controls.Add(this.flowLayoutPanel46);
+            this.flowLayoutPanel30.Controls.Add(this.flowLayoutPanel49);
+            this.flowLayoutPanel30.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel30.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel30.Name = "flowLayoutPanel30";
+            this.flowLayoutPanel30.Size = new System.Drawing.Size(92, 114);
+            this.flowLayoutPanel30.TabIndex = 190;
+            // 
+            // flowLayoutPanel53
+            // 
+            this.flowLayoutPanel53.AutoSize = true;
+            this.flowLayoutPanel53.Controls.Add(this.flowLayoutPanel35);
+            this.flowLayoutPanel53.Controls.Add(this.flowLayoutPanel38);
+            this.flowLayoutPanel53.Controls.Add(this.flowLayoutPanel41);
+            this.flowLayoutPanel53.Controls.Add(this.flowLayoutPanel44);
+            this.flowLayoutPanel53.Controls.Add(this.flowLayoutPanel47);
+            this.flowLayoutPanel53.Controls.Add(this.flowLayoutPanel50);
+            this.flowLayoutPanel53.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel53.Location = new System.Drawing.Point(101, 3);
+            this.flowLayoutPanel53.Name = "flowLayoutPanel53";
+            this.flowLayoutPanel53.Size = new System.Drawing.Size(86, 114);
+            this.flowLayoutPanel53.TabIndex = 191;
+            // 
+            // flowLayoutPanel54
+            // 
+            this.flowLayoutPanel54.AutoSize = true;
+            this.flowLayoutPanel54.Controls.Add(this.flowLayoutPanel36);
+            this.flowLayoutPanel54.Controls.Add(this.flowLayoutPanel39);
+            this.flowLayoutPanel54.Controls.Add(this.flowLayoutPanel42);
+            this.flowLayoutPanel54.Controls.Add(this.flowLayoutPanel45);
+            this.flowLayoutPanel54.Controls.Add(this.flowLayoutPanel48);
+            this.flowLayoutPanel54.Controls.Add(this.flowLayoutPanel51);
+            this.flowLayoutPanel54.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel54.Location = new System.Drawing.Point(193, 3);
+            this.flowLayoutPanel54.Name = "flowLayoutPanel54";
+            this.flowLayoutPanel54.Size = new System.Drawing.Size(129, 114);
+            this.flowLayoutPanel54.TabIndex = 192;
+            // 
+            // flowLayoutPanel55
+            // 
+            this.flowLayoutPanel55.AutoSize = true;
+            this.flowLayoutPanel55.Controls.Add(this.flowLayoutPanel30);
+            this.flowLayoutPanel55.Controls.Add(this.flowLayoutPanel53);
+            this.flowLayoutPanel55.Controls.Add(this.flowLayoutPanel54);
+            this.flowLayoutPanel55.Location = new System.Drawing.Point(3, 53);
+            this.flowLayoutPanel55.Name = "flowLayoutPanel55";
+            this.flowLayoutPanel55.Size = new System.Drawing.Size(325, 120);
+            this.flowLayoutPanel55.TabIndex = 193;
+            // 
+            // flowLayoutPanel57
+            // 
+            this.flowLayoutPanel57.AutoSize = true;
+            this.flowLayoutPanel57.Controls.Add(this.label24);
+            this.flowLayoutPanel57.Controls.Add(this.SoloWins);
+            this.flowLayoutPanel57.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel57.Name = "flowLayoutPanel57";
+            this.flowLayoutPanel57.Size = new System.Drawing.Size(86, 13);
+            this.flowLayoutPanel57.TabIndex = 195;
+            // 
+            // flowLayoutPanel58
+            // 
+            this.flowLayoutPanel58.AutoSize = true;
+            this.flowLayoutPanel58.Controls.Add(this.label36);
+            this.flowLayoutPanel58.Controls.Add(this.KillsSolo);
+            this.flowLayoutPanel58.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel58.Name = "flowLayoutPanel58";
+            this.flowLayoutPanel58.Size = new System.Drawing.Size(80, 13);
+            this.flowLayoutPanel58.TabIndex = 196;
+            // 
+            // flowLayoutPanel59
+            // 
+            this.flowLayoutPanel59.AutoSize = true;
+            this.flowLayoutPanel59.Controls.Add(this.label46);
+            this.flowLayoutPanel59.Controls.Add(this.KPWSolo);
+            this.flowLayoutPanel59.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel59.Name = "flowLayoutPanel59";
+            this.flowLayoutPanel59.Size = new System.Drawing.Size(123, 13);
+            this.flowLayoutPanel59.TabIndex = 197;
+            // 
+            // flowLayoutPanel60
+            // 
+            this.flowLayoutPanel60.AutoSize = true;
+            this.flowLayoutPanel60.Controls.Add(this.label25);
+            this.flowLayoutPanel60.Controls.Add(this.DuoWins);
+            this.flowLayoutPanel60.Location = new System.Drawing.Point(3, 22);
+            this.flowLayoutPanel60.Name = "flowLayoutPanel60";
+            this.flowLayoutPanel60.Size = new System.Drawing.Size(85, 13);
+            this.flowLayoutPanel60.TabIndex = 198;
+            // 
+            // flowLayoutPanel61
+            // 
+            this.flowLayoutPanel61.AutoSize = true;
+            this.flowLayoutPanel61.Controls.Add(this.label34);
+            this.flowLayoutPanel61.Controls.Add(this.KillsDuo);
+            this.flowLayoutPanel61.Location = new System.Drawing.Point(3, 22);
+            this.flowLayoutPanel61.Name = "flowLayoutPanel61";
+            this.flowLayoutPanel61.Size = new System.Drawing.Size(79, 13);
+            this.flowLayoutPanel61.TabIndex = 199;
+            // 
+            // flowLayoutPanel62
+            // 
+            this.flowLayoutPanel62.AutoSize = true;
+            this.flowLayoutPanel62.Controls.Add(this.label43);
+            this.flowLayoutPanel62.Controls.Add(this.KPWDuo);
+            this.flowLayoutPanel62.Location = new System.Drawing.Point(3, 22);
+            this.flowLayoutPanel62.Name = "flowLayoutPanel62";
+            this.flowLayoutPanel62.Size = new System.Drawing.Size(122, 13);
+            this.flowLayoutPanel62.TabIndex = 200;
+            // 
+            // flowLayoutPanel63
+            // 
+            this.flowLayoutPanel63.AutoSize = true;
+            this.flowLayoutPanel63.Controls.Add(this.label26);
+            this.flowLayoutPanel63.Controls.Add(this.TrioWins);
+            this.flowLayoutPanel63.Location = new System.Drawing.Point(3, 41);
+            this.flowLayoutPanel63.Name = "flowLayoutPanel63";
+            this.flowLayoutPanel63.Size = new System.Drawing.Size(83, 13);
+            this.flowLayoutPanel63.TabIndex = 201;
+            // 
+            // flowLayoutPanel64
+            // 
+            this.flowLayoutPanel64.AutoSize = true;
+            this.flowLayoutPanel64.Controls.Add(this.label32);
+            this.flowLayoutPanel64.Controls.Add(this.KillsTrio);
+            this.flowLayoutPanel64.Location = new System.Drawing.Point(3, 41);
+            this.flowLayoutPanel64.Name = "flowLayoutPanel64";
+            this.flowLayoutPanel64.Size = new System.Drawing.Size(77, 13);
+            this.flowLayoutPanel64.TabIndex = 202;
+            // 
+            // flowLayoutPanel65
+            // 
+            this.flowLayoutPanel65.AutoSize = true;
+            this.flowLayoutPanel65.Controls.Add(this.label39);
+            this.flowLayoutPanel65.Controls.Add(this.KPWTrio);
+            this.flowLayoutPanel65.Location = new System.Drawing.Point(3, 41);
+            this.flowLayoutPanel65.Name = "flowLayoutPanel65";
+            this.flowLayoutPanel65.Size = new System.Drawing.Size(120, 13);
+            this.flowLayoutPanel65.TabIndex = 203;
+            // 
+            // flowLayoutPanel66
+            // 
+            this.flowLayoutPanel66.AutoSize = true;
+            this.flowLayoutPanel66.Controls.Add(this.label27);
+            this.flowLayoutPanel66.Controls.Add(this.SquadWins);
+            this.flowLayoutPanel66.Location = new System.Drawing.Point(3, 60);
+            this.flowLayoutPanel66.Name = "flowLayoutPanel66";
+            this.flowLayoutPanel66.Size = new System.Drawing.Size(96, 13);
+            this.flowLayoutPanel66.TabIndex = 204;
+            // 
+            // flowLayoutPanel67
+            // 
+            this.flowLayoutPanel67.AutoSize = true;
+            this.flowLayoutPanel67.Controls.Add(this.label29);
+            this.flowLayoutPanel67.Controls.Add(this.KillsSquad);
+            this.flowLayoutPanel67.Location = new System.Drawing.Point(3, 60);
+            this.flowLayoutPanel67.Name = "flowLayoutPanel67";
+            this.flowLayoutPanel67.Size = new System.Drawing.Size(90, 13);
+            this.flowLayoutPanel67.TabIndex = 205;
+            // 
+            // flowLayoutPanel68
+            // 
+            this.flowLayoutPanel68.AutoSize = true;
+            this.flowLayoutPanel68.Controls.Add(this.label33);
+            this.flowLayoutPanel68.Controls.Add(this.KPWSquad);
+            this.flowLayoutPanel68.Location = new System.Drawing.Point(3, 60);
+            this.flowLayoutPanel68.Name = "flowLayoutPanel68";
+            this.flowLayoutPanel68.Size = new System.Drawing.Size(133, 13);
+            this.flowLayoutPanel68.TabIndex = 206;
+            // 
+            // flowLayoutPanel69
+            // 
+            this.flowLayoutPanel69.AutoSize = true;
+            this.flowLayoutPanel69.Controls.Add(this.flowLayoutPanel57);
+            this.flowLayoutPanel69.Controls.Add(this.flowLayoutPanel60);
+            this.flowLayoutPanel69.Controls.Add(this.flowLayoutPanel63);
+            this.flowLayoutPanel69.Controls.Add(this.flowLayoutPanel66);
+            this.flowLayoutPanel69.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel69.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel69.Name = "flowLayoutPanel69";
+            this.flowLayoutPanel69.Size = new System.Drawing.Size(102, 76);
+            this.flowLayoutPanel69.TabIndex = 207;
+            // 
+            // flowLayoutPanel70
+            // 
+            this.flowLayoutPanel70.AutoSize = true;
+            this.flowLayoutPanel70.Controls.Add(this.flowLayoutPanel58);
+            this.flowLayoutPanel70.Controls.Add(this.flowLayoutPanel61);
+            this.flowLayoutPanel70.Controls.Add(this.flowLayoutPanel64);
+            this.flowLayoutPanel70.Controls.Add(this.flowLayoutPanel67);
+            this.flowLayoutPanel70.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel70.Location = new System.Drawing.Point(111, 3);
+            this.flowLayoutPanel70.Name = "flowLayoutPanel70";
+            this.flowLayoutPanel70.Size = new System.Drawing.Size(96, 76);
+            this.flowLayoutPanel70.TabIndex = 208;
+            // 
+            // flowLayoutPanel71
+            // 
+            this.flowLayoutPanel71.AutoSize = true;
+            this.flowLayoutPanel71.Controls.Add(this.flowLayoutPanel59);
+            this.flowLayoutPanel71.Controls.Add(this.flowLayoutPanel62);
+            this.flowLayoutPanel71.Controls.Add(this.flowLayoutPanel65);
+            this.flowLayoutPanel71.Controls.Add(this.flowLayoutPanel68);
+            this.flowLayoutPanel71.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel71.Location = new System.Drawing.Point(213, 3);
+            this.flowLayoutPanel71.Name = "flowLayoutPanel71";
+            this.flowLayoutPanel71.Size = new System.Drawing.Size(139, 76);
+            this.flowLayoutPanel71.TabIndex = 209;
+            // 
+            // flowLayoutPanel72
+            // 
+            this.flowLayoutPanel72.AutoSize = true;
+            this.flowLayoutPanel72.Controls.Add(this.flowLayoutPanel69);
+            this.flowLayoutPanel72.Controls.Add(this.flowLayoutPanel70);
+            this.flowLayoutPanel72.Controls.Add(this.flowLayoutPanel71);
+            this.flowLayoutPanel72.Location = new System.Drawing.Point(3, 179);
+            this.flowLayoutPanel72.Name = "flowLayoutPanel72";
+            this.flowLayoutPanel72.Size = new System.Drawing.Size(355, 82);
+            this.flowLayoutPanel72.TabIndex = 210;
+            // 
+            // flowLayoutPanel73
+            // 
+            this.flowLayoutPanel73.AutoSize = true;
+            this.flowLayoutPanel73.Controls.Add(this.flowLayoutPanel29);
+            this.flowLayoutPanel73.Controls.Add(this.flowLayoutPanel55);
+            this.flowLayoutPanel73.Controls.Add(this.flowLayoutPanel72);
+            this.flowLayoutPanel73.Controls.Add(this.flowLayoutPanel22);
+            this.flowLayoutPanel73.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel73.Location = new System.Drawing.Point(629, 3);
+            this.flowLayoutPanel73.Name = "flowLayoutPanel73";
+            this.flowLayoutPanel73.Size = new System.Drawing.Size(361, 335);
+            this.flowLayoutPanel73.TabIndex = 211;
             // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1291, 903);
-            this.Controls.Add(this.flowLayoutPanel21);
-            this.Controls.Add(this.TPPKills);
-            this.Controls.Add(this.FPPKills);
-            this.Controls.Add(this.KillsTotal);
-            this.Controls.Add(this.label56);
-            this.Controls.Add(this.label55);
-            this.Controls.Add(this.KPWTPP);
-            this.Controls.Add(this.KPWFPP);
-            this.Controls.Add(this.label51);
-            this.Controls.Add(this.label);
-            this.Controls.Add(this.TPPWins);
-            this.Controls.Add(this.FPPWins);
-            this.Controls.Add(this.label47);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.TopTeammate5);
-            this.Controls.Add(this.TopTeammate4);
-            this.Controls.Add(this.TopTeammate3);
-            this.Controls.Add(this.TopTeammate2);
-            this.Controls.Add(this.TopTeammate1);
-            this.Controls.Add(this.KPWSA);
-            this.Controls.Add(this.label37);
-            this.Controls.Add(this.KPWSEA);
-            this.Controls.Add(this.label45);
-            this.Controls.Add(this.KPWEU);
-            this.Controls.Add(this.label48);
-            this.Controls.Add(this.KPWTest);
-            this.Controls.Add(this.label50);
-            this.Controls.Add(this.KPWAS);
-            this.Controls.Add(this.label52);
-            this.Controls.Add(this.KPWNA);
-            this.Controls.Add(this.label54);
-            this.Controls.Add(this.KPWSquad);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.KPWTrio);
-            this.Controls.Add(this.label39);
-            this.Controls.Add(this.KPWDuo);
-            this.Controls.Add(this.label43);
-            this.Controls.Add(this.KPWSolo);
-            this.Controls.Add(this.label46);
-            this.Controls.Add(this.ButtonDefaults);
-            this.Controls.Add(this.KillsSA);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.KillsSEA);
-            this.Controls.Add(this.label35);
-            this.Controls.Add(this.KillsEU);
-            this.Controls.Add(this.label38);
-            this.Controls.Add(this.KillsTest);
-            this.Controls.Add(this.label40);
-            this.Controls.Add(this.KillsAS);
-            this.Controls.Add(this.label42);
-            this.Controls.Add(this.KillsNA);
-            this.Controls.Add(this.label44);
-            this.Controls.Add(this.KillsSquad);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.KillsTrio);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.KillsDuo);
-            this.Controls.Add(this.label34);
-            this.Controls.Add(this.KillsSolo);
-            this.Controls.Add(this.label36);
-            this.Controls.Add(this.ButtonRemove);
-            this.Controls.Add(this.ButtonPrevious);
-            this.Controls.Add(this.ButtonUpdate);
-            this.Controls.Add(this.ButtonLast);
-            this.Controls.Add(this.SAWins);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.SEAWins);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.SquadWins);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.TrioWins);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.DuoWins);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.SoloWins);
-            this.Controls.Add(this.label24);
-            this.Controls.Add(this.EUWins);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.TestWins);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.ASWins);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.NAWins);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.KillsPerWin);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.WinsTotal);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.BoxTeammate3);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.BoxTeammate2);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.BoxTeammate1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.ButtonStore);
-            this.Controls.Add(this.BoxDescription);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.BoxKills);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.MenuMap);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.MenuServer);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.MenuPerspective);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1038, 621);
+            this.Controls.Add(this.flowLayoutPanel52);
             this.Name = "UI";
             this.Text = "PUBG Wins Database";
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -1822,6 +2631,146 @@ namespace PUBGWinsUI
             this.flowLayoutPanel20.PerformLayout();
             this.flowLayoutPanel21.ResumeLayout(false);
             this.flowLayoutPanel21.PerformLayout();
+            this.flowLayoutPanel22.ResumeLayout(false);
+            this.flowLayoutPanel22.PerformLayout();
+            this.flowLayoutPanel23.ResumeLayout(false);
+            this.flowLayoutPanel23.PerformLayout();
+            this.flowLayoutPanel24.ResumeLayout(false);
+            this.flowLayoutPanel24.PerformLayout();
+            this.flowLayoutPanel25.ResumeLayout(false);
+            this.flowLayoutPanel25.PerformLayout();
+            this.flowLayoutPanel26.ResumeLayout(false);
+            this.flowLayoutPanel26.PerformLayout();
+            this.flowLayoutPanel27.ResumeLayout(false);
+            this.flowLayoutPanel27.PerformLayout();
+            this.flowLayoutPanel28.ResumeLayout(false);
+            this.flowLayoutPanel28.PerformLayout();
+            this.flowLayoutPanel29.ResumeLayout(false);
+            this.flowLayoutPanel29.PerformLayout();
+            this.flowLayoutPanel31.ResumeLayout(false);
+            this.flowLayoutPanel31.PerformLayout();
+            this.flowLayoutPanel32.ResumeLayout(false);
+            this.flowLayoutPanel32.PerformLayout();
+            this.flowLayoutPanel33.ResumeLayout(false);
+            this.flowLayoutPanel33.PerformLayout();
+            this.flowLayoutPanel34.ResumeLayout(false);
+            this.flowLayoutPanel34.PerformLayout();
+            this.flowLayoutPanel35.ResumeLayout(false);
+            this.flowLayoutPanel35.PerformLayout();
+            this.flowLayoutPanel36.ResumeLayout(false);
+            this.flowLayoutPanel36.PerformLayout();
+            this.flowLayoutPanel37.ResumeLayout(false);
+            this.flowLayoutPanel37.PerformLayout();
+            this.flowLayoutPanel38.ResumeLayout(false);
+            this.flowLayoutPanel38.PerformLayout();
+            this.flowLayoutPanel39.ResumeLayout(false);
+            this.flowLayoutPanel39.PerformLayout();
+            this.flowLayoutPanel40.ResumeLayout(false);
+            this.flowLayoutPanel40.PerformLayout();
+            this.flowLayoutPanel41.ResumeLayout(false);
+            this.flowLayoutPanel41.PerformLayout();
+            this.flowLayoutPanel42.ResumeLayout(false);
+            this.flowLayoutPanel42.PerformLayout();
+            this.flowLayoutPanel43.ResumeLayout(false);
+            this.flowLayoutPanel43.PerformLayout();
+            this.flowLayoutPanel44.ResumeLayout(false);
+            this.flowLayoutPanel44.PerformLayout();
+            this.flowLayoutPanel45.ResumeLayout(false);
+            this.flowLayoutPanel45.PerformLayout();
+            this.flowLayoutPanel46.ResumeLayout(false);
+            this.flowLayoutPanel46.PerformLayout();
+            this.flowLayoutPanel47.ResumeLayout(false);
+            this.flowLayoutPanel47.PerformLayout();
+            this.flowLayoutPanel48.ResumeLayout(false);
+            this.flowLayoutPanel48.PerformLayout();
+            this.flowLayoutPanel49.ResumeLayout(false);
+            this.flowLayoutPanel49.PerformLayout();
+            this.flowLayoutPanel50.ResumeLayout(false);
+            this.flowLayoutPanel50.PerformLayout();
+            this.flowLayoutPanel51.ResumeLayout(false);
+            this.flowLayoutPanel51.PerformLayout();
+            this.flowLayoutPanel52.ResumeLayout(false);
+            this.flowLayoutPanel52.PerformLayout();
+            this.flowLayoutPanel88.ResumeLayout(false);
+            this.flowLayoutPanel88.PerformLayout();
+            this.flowLayoutPanel87.ResumeLayout(false);
+            this.flowLayoutPanel87.PerformLayout();
+            this.flowLayoutPanel82.ResumeLayout(false);
+            this.flowLayoutPanel82.PerformLayout();
+            this.flowLayoutPanel78.ResumeLayout(false);
+            this.flowLayoutPanel78.PerformLayout();
+            this.flowLayoutPanel79.ResumeLayout(false);
+            this.flowLayoutPanel79.PerformLayout();
+            this.flowLayoutPanel80.ResumeLayout(false);
+            this.flowLayoutPanel80.PerformLayout();
+            this.flowLayoutPanel81.ResumeLayout(false);
+            this.flowLayoutPanel81.PerformLayout();
+            this.flowLayoutPanel77.ResumeLayout(false);
+            this.flowLayoutPanel77.PerformLayout();
+            this.flowLayoutPanel74.ResumeLayout(false);
+            this.flowLayoutPanel74.PerformLayout();
+            this.flowLayoutPanel75.ResumeLayout(false);
+            this.flowLayoutPanel75.PerformLayout();
+            this.flowLayoutPanel76.ResumeLayout(false);
+            this.flowLayoutPanel76.PerformLayout();
+            this.flowLayoutPanel86.ResumeLayout(false);
+            this.flowLayoutPanel86.PerformLayout();
+            this.flowLayoutPanel83.ResumeLayout(false);
+            this.flowLayoutPanel83.PerformLayout();
+            this.flowLayoutPanel84.ResumeLayout(false);
+            this.flowLayoutPanel84.PerformLayout();
+            this.flowLayoutPanel85.ResumeLayout(false);
+            this.flowLayoutPanel85.PerformLayout();
+            this.flowLayoutPanel93.ResumeLayout(false);
+            this.flowLayoutPanel93.PerformLayout();
+            this.flowLayoutPanel92.ResumeLayout(false);
+            this.flowLayoutPanel92.PerformLayout();
+            this.flowLayoutPanel89.ResumeLayout(false);
+            this.flowLayoutPanel91.ResumeLayout(false);
+            this.flowLayoutPanel91.PerformLayout();
+            this.flowLayoutPanel90.ResumeLayout(false);
+            this.flowLayoutPanel30.ResumeLayout(false);
+            this.flowLayoutPanel30.PerformLayout();
+            this.flowLayoutPanel53.ResumeLayout(false);
+            this.flowLayoutPanel53.PerformLayout();
+            this.flowLayoutPanel54.ResumeLayout(false);
+            this.flowLayoutPanel54.PerformLayout();
+            this.flowLayoutPanel55.ResumeLayout(false);
+            this.flowLayoutPanel55.PerformLayout();
+            this.flowLayoutPanel57.ResumeLayout(false);
+            this.flowLayoutPanel57.PerformLayout();
+            this.flowLayoutPanel58.ResumeLayout(false);
+            this.flowLayoutPanel58.PerformLayout();
+            this.flowLayoutPanel59.ResumeLayout(false);
+            this.flowLayoutPanel59.PerformLayout();
+            this.flowLayoutPanel60.ResumeLayout(false);
+            this.flowLayoutPanel60.PerformLayout();
+            this.flowLayoutPanel61.ResumeLayout(false);
+            this.flowLayoutPanel61.PerformLayout();
+            this.flowLayoutPanel62.ResumeLayout(false);
+            this.flowLayoutPanel62.PerformLayout();
+            this.flowLayoutPanel63.ResumeLayout(false);
+            this.flowLayoutPanel63.PerformLayout();
+            this.flowLayoutPanel64.ResumeLayout(false);
+            this.flowLayoutPanel64.PerformLayout();
+            this.flowLayoutPanel65.ResumeLayout(false);
+            this.flowLayoutPanel65.PerformLayout();
+            this.flowLayoutPanel66.ResumeLayout(false);
+            this.flowLayoutPanel66.PerformLayout();
+            this.flowLayoutPanel67.ResumeLayout(false);
+            this.flowLayoutPanel67.PerformLayout();
+            this.flowLayoutPanel68.ResumeLayout(false);
+            this.flowLayoutPanel68.PerformLayout();
+            this.flowLayoutPanel69.ResumeLayout(false);
+            this.flowLayoutPanel69.PerformLayout();
+            this.flowLayoutPanel70.ResumeLayout(false);
+            this.flowLayoutPanel70.PerformLayout();
+            this.flowLayoutPanel71.ResumeLayout(false);
+            this.flowLayoutPanel71.PerformLayout();
+            this.flowLayoutPanel72.ResumeLayout(false);
+            this.flowLayoutPanel72.PerformLayout();
+            this.flowLayoutPanel73.ResumeLayout(false);
+            this.flowLayoutPanel73.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1987,6 +2936,77 @@ namespace PUBGWinsUI
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel20;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel21;
         private BindingSource bindingSource1;
+        private FlowLayoutPanel flowLayoutPanel22;
+        private FlowLayoutPanel flowLayoutPanel23;
+        private FlowLayoutPanel flowLayoutPanel24;
+        private FlowLayoutPanel flowLayoutPanel25;
+        private FlowLayoutPanel flowLayoutPanel26;
+        private FlowLayoutPanel flowLayoutPanel27;
+        private FlowLayoutPanel flowLayoutPanel28;
+        private FlowLayoutPanel flowLayoutPanel29;
+        private FlowLayoutPanel flowLayoutPanel31;
+        private FlowLayoutPanel flowLayoutPanel32;
+        private FlowLayoutPanel flowLayoutPanel33;
+        private FlowLayoutPanel flowLayoutPanel34;
+        private FlowLayoutPanel flowLayoutPanel35;
+        private FlowLayoutPanel flowLayoutPanel36;
+        private FlowLayoutPanel flowLayoutPanel37;
+        private FlowLayoutPanel flowLayoutPanel38;
+        private FlowLayoutPanel flowLayoutPanel39;
+        private FlowLayoutPanel flowLayoutPanel40;
+        private FlowLayoutPanel flowLayoutPanel41;
+        private FlowLayoutPanel flowLayoutPanel42;
+        private FlowLayoutPanel flowLayoutPanel43;
+        private FlowLayoutPanel flowLayoutPanel44;
+        private FlowLayoutPanel flowLayoutPanel45;
+        private FlowLayoutPanel flowLayoutPanel46;
+        private FlowLayoutPanel flowLayoutPanel47;
+        private FlowLayoutPanel flowLayoutPanel48;
+        private FlowLayoutPanel flowLayoutPanel49;
+        private FlowLayoutPanel flowLayoutPanel50;
+        private FlowLayoutPanel flowLayoutPanel51;
+        private FlowLayoutPanel flowLayoutPanel52;
+        private FlowLayoutPanel flowLayoutPanel30;
+        private FlowLayoutPanel flowLayoutPanel53;
+        private FlowLayoutPanel flowLayoutPanel54;
+        private FlowLayoutPanel flowLayoutPanel55;
+        private FlowLayoutPanel flowLayoutPanel57;
+        private FlowLayoutPanel flowLayoutPanel58;
+        private FlowLayoutPanel flowLayoutPanel59;
+        private FlowLayoutPanel flowLayoutPanel60;
+        private FlowLayoutPanel flowLayoutPanel61;
+        private FlowLayoutPanel flowLayoutPanel62;
+        private FlowLayoutPanel flowLayoutPanel63;
+        private FlowLayoutPanel flowLayoutPanel64;
+        private FlowLayoutPanel flowLayoutPanel65;
+        private FlowLayoutPanel flowLayoutPanel66;
+        private FlowLayoutPanel flowLayoutPanel67;
+        private FlowLayoutPanel flowLayoutPanel68;
+        private FlowLayoutPanel flowLayoutPanel69;
+        private FlowLayoutPanel flowLayoutPanel70;
+        private FlowLayoutPanel flowLayoutPanel71;
+        private FlowLayoutPanel flowLayoutPanel72;
+        private FlowLayoutPanel flowLayoutPanel73;
+        private FlowLayoutPanel flowLayoutPanel88;
+        private FlowLayoutPanel flowLayoutPanel87;
+        private FlowLayoutPanel flowLayoutPanel82;
+        private FlowLayoutPanel flowLayoutPanel78;
+        private FlowLayoutPanel flowLayoutPanel79;
+        private FlowLayoutPanel flowLayoutPanel80;
+        private FlowLayoutPanel flowLayoutPanel81;
+        private FlowLayoutPanel flowLayoutPanel77;
+        private FlowLayoutPanel flowLayoutPanel74;
+        private FlowLayoutPanel flowLayoutPanel75;
+        private FlowLayoutPanel flowLayoutPanel76;
+        private FlowLayoutPanel flowLayoutPanel86;
+        private FlowLayoutPanel flowLayoutPanel83;
+        private FlowLayoutPanel flowLayoutPanel84;
+        private FlowLayoutPanel flowLayoutPanel85;
+        private FlowLayoutPanel flowLayoutPanel93;
+        private FlowLayoutPanel flowLayoutPanel92;
+        private FlowLayoutPanel flowLayoutPanel89;
+        private FlowLayoutPanel flowLayoutPanel91;
+        private FlowLayoutPanel flowLayoutPanel90;
     }
 }
 
