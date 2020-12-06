@@ -205,6 +205,7 @@ namespace PUBGWinsUI
                 LabelAverage = KPWErangel
             };
             mapWins.Add(mapWinErangel);
+
             MapWin mapWinMiramar = new MapWin("Miramar")
             {
                 LabelWins = WinsMiramar,
@@ -212,6 +213,7 @@ namespace PUBGWinsUI
                 LabelAverage = KPWMiramar
             };
             mapWins.Add(mapWinMiramar);
+
             MapWin mapWinSanhok = new MapWin("Sanhok")
             {
                 LabelWins = WinsSanhok,
@@ -219,6 +221,7 @@ namespace PUBGWinsUI
                 LabelAverage = KPWSanhok
             };
             mapWins.Add(mapWinSanhok);
+
             MapWin mapWinVikendi = new MapWin("Vikendi")
             {
                 LabelWins = WinsVikendi,
@@ -226,6 +229,7 @@ namespace PUBGWinsUI
                 LabelAverage = KPWVikendi
             };
             mapWins.Add(mapWinVikendi);
+
             MapWin mapWinKarakin = new MapWin("Karakin")
             {
                 LabelWins = WinsKarakin,
@@ -233,6 +237,14 @@ namespace PUBGWinsUI
                 LabelAverage = KPWKarakin
             };
             mapWins.Add(mapWinKarakin);
+
+            MapWin mapWinParamo = new MapWin("Paramo")
+            {
+                LabelWins = WinsParamo,
+                LabelKills = KillsParamo,
+                LabelAverage = KPWParamo
+            };
+            mapWins.Add(mapWinParamo);
 
             // Hook up info for teammates.
             teammatesWins = new List<TeammatesNumberWin>();
