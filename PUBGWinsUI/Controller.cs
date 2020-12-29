@@ -96,6 +96,7 @@ namespace PUBGWinsUI
                     {
                         using (SqlCommand command = new SqlCommand("UPDATE Wins SET Kills = @Kills, Map = @Map, Teammates = @Teammates, Teammate1 = @Teammate1, Description = @Description, Server = @Server, Perspective = @Perspective, Empty = 0 WHERE Empty = 1", conn, trans))
                         {
+                            // Can fail is description is too long.
                             AddCommonParameters(command);
                             command.Parameters.AddWithValue("@Teammates", teammates);
                             command.Parameters.AddWithValue("@Teammate1", teammate1);
