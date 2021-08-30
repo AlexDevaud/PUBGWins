@@ -254,6 +254,14 @@ namespace PUBGWinsUI
             };
             mapWins.Add(mapWinHaven);
 
+            MapWin mapWinTaego = new MapWin("Taego")
+            {
+                LabelWins = WinsTaego,
+                LabelKills = KillsTaego,
+                LabelAverage = KPWTaego
+            };
+            mapWins.Add(mapWinTaego);
+
             // Hook up info for teammates.
             teammatesWins = new List<TeammatesNumberWin>();
             TeammatesNumberWin teammatesWin0 = new TeammatesNumberWin(0)

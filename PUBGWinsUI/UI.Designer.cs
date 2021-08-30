@@ -176,6 +176,9 @@ namespace PUBGWinsUI
             this.flowLayoutPanel88 = new System.Windows.Forms.FlowLayoutPanel();
             this.label65 = new System.Windows.Forms.Label();
             this.KPWParamo = new System.Windows.Forms.Label();
+            this.flowLayoutPanel91 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label68 = new System.Windows.Forms.Label();
+            this.KPWHaven = new System.Windows.Forms.Label();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
@@ -187,6 +190,9 @@ namespace PUBGWinsUI
             this.flowLayoutPanel56 = new System.Windows.Forms.FlowLayoutPanel();
             this.label64 = new System.Windows.Forms.Label();
             this.KillsParamo = new System.Windows.Forms.Label();
+            this.flowLayoutPanel90 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label67 = new System.Windows.Forms.Label();
+            this.KillsHaven = new System.Windows.Forms.Label();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel17 = new System.Windows.Forms.FlowLayoutPanel();
@@ -197,6 +203,9 @@ namespace PUBGWinsUI
             this.flowLayoutPanel52 = new System.Windows.Forms.FlowLayoutPanel();
             this.label57 = new System.Windows.Forms.Label();
             this.WinsParamo = new System.Windows.Forms.Label();
+            this.flowLayoutPanel89 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label66 = new System.Windows.Forms.Label();
+            this.WinsHaven = new System.Windows.Forms.Label();
             this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
@@ -269,15 +278,15 @@ namespace PUBGWinsUI
             this.flowLayoutPanel62 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel65 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel68 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel89 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label66 = new System.Windows.Forms.Label();
-            this.WinsHaven = new System.Windows.Forms.Label();
-            this.flowLayoutPanel90 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label67 = new System.Windows.Forms.Label();
-            this.KillsHaven = new System.Windows.Forms.Label();
-            this.flowLayoutPanel91 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label68 = new System.Windows.Forms.Label();
-            this.KPWHaven = new System.Windows.Forms.Label();
+            this.flowLayoutPanel92 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label69 = new System.Windows.Forms.Label();
+            this.WinsTaego = new System.Windows.Forms.Label();
+            this.flowLayoutPanel93 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label70 = new System.Windows.Forms.Label();
+            this.KillsTaego = new System.Windows.Forms.Label();
+            this.flowLayoutPanel94 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label71 = new System.Windows.Forms.Label();
+            this.KPWTaego = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -285,6 +294,7 @@ namespace PUBGWinsUI
             this.flowLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel88.SuspendLayout();
+            this.flowLayoutPanel91.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel9.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
@@ -292,6 +302,7 @@ namespace PUBGWinsUI
             this.flowLayoutPanel13.SuspendLayout();
             this.flowLayoutPanel16.SuspendLayout();
             this.flowLayoutPanel56.SuspendLayout();
+            this.flowLayoutPanel90.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
             this.flowLayoutPanel11.SuspendLayout();
             this.flowLayoutPanel17.SuspendLayout();
@@ -300,6 +311,7 @@ namespace PUBGWinsUI
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.flowLayoutPanel20.SuspendLayout();
             this.flowLayoutPanel52.SuspendLayout();
+            this.flowLayoutPanel89.SuspendLayout();
             this.flowLayoutPanel21.SuspendLayout();
             this.flowLayoutPanel22.SuspendLayout();
             this.flowLayoutPanel23.SuspendLayout();
@@ -372,9 +384,9 @@ namespace PUBGWinsUI
             this.flowLayoutPanel62.SuspendLayout();
             this.flowLayoutPanel65.SuspendLayout();
             this.flowLayoutPanel68.SuspendLayout();
-            this.flowLayoutPanel89.SuspendLayout();
-            this.flowLayoutPanel90.SuspendLayout();
-            this.flowLayoutPanel91.SuspendLayout();
+            this.flowLayoutPanel92.SuspendLayout();
+            this.flowLayoutPanel93.SuspendLayout();
+            this.flowLayoutPanel94.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -443,7 +455,8 @@ namespace PUBGWinsUI
             "Vikendi",
             "Karakin",
             "Paramo",
-            "Haven"});
+            "Haven",
+            "Taego"});
             this.MenuMap.Location = new System.Drawing.Point(43, 3);
             this.MenuMap.Name = "MenuMap";
             this.MenuMap.Size = new System.Drawing.Size(108, 21);
@@ -1685,10 +1698,11 @@ namespace PUBGWinsUI
             this.flowLayoutPanel6.Controls.Add(this.flowLayoutPanel5);
             this.flowLayoutPanel6.Controls.Add(this.flowLayoutPanel88);
             this.flowLayoutPanel6.Controls.Add(this.flowLayoutPanel91);
+            this.flowLayoutPanel6.Controls.Add(this.flowLayoutPanel94);
             this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel6.Location = new System.Drawing.Point(255, 3);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(160, 133);
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(160, 152);
             this.flowLayoutPanel6.TabIndex = 146;
             // 
             // flowLayoutPanel88
@@ -1718,6 +1732,34 @@ namespace PUBGWinsUI
             this.KPWParamo.Size = new System.Drawing.Size(13, 13);
             this.KPWParamo.TabIndex = 191;
             this.KPWParamo.Text = "0";
+            // 
+            // flowLayoutPanel91
+            // 
+            this.flowLayoutPanel91.AutoSize = true;
+            this.flowLayoutPanel91.Controls.Add(this.label68);
+            this.flowLayoutPanel91.Controls.Add(this.KPWHaven);
+            this.flowLayoutPanel91.Location = new System.Drawing.Point(3, 117);
+            this.flowLayoutPanel91.Name = "flowLayoutPanel91";
+            this.flowLayoutPanel91.Size = new System.Drawing.Size(149, 13);
+            this.flowLayoutPanel91.TabIndex = 195;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(3, 0);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(124, 13);
+            this.label68.TabIndex = 190;
+            this.label68.Text = "Average Kills on Haven: ";
+            // 
+            // KPWHaven
+            // 
+            this.KPWHaven.AutoSize = true;
+            this.KPWHaven.Location = new System.Drawing.Point(133, 0);
+            this.KPWHaven.Name = "KPWHaven";
+            this.KPWHaven.Size = new System.Drawing.Size(13, 13);
+            this.KPWHaven.TabIndex = 191;
+            this.KPWHaven.Text = "0";
             // 
             // flowLayoutPanel7
             // 
@@ -1795,10 +1837,11 @@ namespace PUBGWinsUI
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel15);
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel56);
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel90);
+            this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel93);
             this.flowLayoutPanel16.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel16.Location = new System.Drawing.Point(132, 3);
             this.flowLayoutPanel16.Name = "flowLayoutPanel16";
-            this.flowLayoutPanel16.Size = new System.Drawing.Size(117, 133);
+            this.flowLayoutPanel16.Size = new System.Drawing.Size(117, 152);
             this.flowLayoutPanel16.TabIndex = 153;
             // 
             // flowLayoutPanel56
@@ -1828,6 +1871,34 @@ namespace PUBGWinsUI
             this.KillsParamo.Size = new System.Drawing.Size(13, 13);
             this.KillsParamo.TabIndex = 191;
             this.KillsParamo.Text = "0";
+            // 
+            // flowLayoutPanel90
+            // 
+            this.flowLayoutPanel90.AutoSize = true;
+            this.flowLayoutPanel90.Controls.Add(this.label67);
+            this.flowLayoutPanel90.Controls.Add(this.KillsHaven);
+            this.flowLayoutPanel90.Location = new System.Drawing.Point(3, 117);
+            this.flowLayoutPanel90.Name = "flowLayoutPanel90";
+            this.flowLayoutPanel90.Size = new System.Drawing.Size(106, 13);
+            this.flowLayoutPanel90.TabIndex = 194;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(3, 0);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(81, 13);
+            this.label67.TabIndex = 190;
+            this.label67.Text = "Kills on Haven: ";
+            // 
+            // KillsHaven
+            // 
+            this.KillsHaven.AutoSize = true;
+            this.KillsHaven.Location = new System.Drawing.Point(90, 0);
+            this.KillsHaven.Name = "KillsHaven";
+            this.KillsHaven.Size = new System.Drawing.Size(13, 13);
+            this.KillsHaven.TabIndex = 191;
+            this.KillsHaven.Text = "0";
             // 
             // flowLayoutPanel8
             // 
@@ -1889,10 +1960,11 @@ namespace PUBGWinsUI
             this.flowLayoutPanel20.Controls.Add(this.flowLayoutPanel19);
             this.flowLayoutPanel20.Controls.Add(this.flowLayoutPanel52);
             this.flowLayoutPanel20.Controls.Add(this.flowLayoutPanel89);
+            this.flowLayoutPanel20.Controls.Add(this.flowLayoutPanel92);
             this.flowLayoutPanel20.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel20.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel20.Name = "flowLayoutPanel20";
-            this.flowLayoutPanel20.Size = new System.Drawing.Size(123, 133);
+            this.flowLayoutPanel20.Size = new System.Drawing.Size(123, 152);
             this.flowLayoutPanel20.TabIndex = 160;
             // 
             // flowLayoutPanel52
@@ -1923,6 +1995,34 @@ namespace PUBGWinsUI
             this.WinsParamo.TabIndex = 191;
             this.WinsParamo.Text = "0";
             // 
+            // flowLayoutPanel89
+            // 
+            this.flowLayoutPanel89.AutoSize = true;
+            this.flowLayoutPanel89.Controls.Add(this.label66);
+            this.flowLayoutPanel89.Controls.Add(this.WinsHaven);
+            this.flowLayoutPanel89.Location = new System.Drawing.Point(3, 117);
+            this.flowLayoutPanel89.Name = "flowLayoutPanel89";
+            this.flowLayoutPanel89.Size = new System.Drawing.Size(112, 13);
+            this.flowLayoutPanel89.TabIndex = 226;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(3, 0);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(87, 13);
+            this.label66.TabIndex = 190;
+            this.label66.Text = "Wins on Haven: ";
+            // 
+            // WinsHaven
+            // 
+            this.WinsHaven.AutoSize = true;
+            this.WinsHaven.Location = new System.Drawing.Point(96, 0);
+            this.WinsHaven.Name = "WinsHaven";
+            this.WinsHaven.Size = new System.Drawing.Size(13, 13);
+            this.WinsHaven.TabIndex = 191;
+            this.WinsHaven.Text = "0";
+            // 
             // flowLayoutPanel21
             // 
             this.flowLayoutPanel21.AutoSize = true;
@@ -1931,7 +2031,7 @@ namespace PUBGWinsUI
             this.flowLayoutPanel21.Controls.Add(this.flowLayoutPanel6);
             this.flowLayoutPanel21.Location = new System.Drawing.Point(533, 3);
             this.flowLayoutPanel21.Name = "flowLayoutPanel21";
-            this.flowLayoutPanel21.Size = new System.Drawing.Size(418, 139);
+            this.flowLayoutPanel21.Size = new System.Drawing.Size(418, 158);
             this.flowLayoutPanel21.TabIndex = 161;
             // 
             // flowLayoutPanel22
@@ -2241,7 +2341,7 @@ namespace PUBGWinsUI
             this.panelAll.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.panelAll.Location = new System.Drawing.Point(0, 0);
             this.panelAll.Name = "panelAll";
-            this.panelAll.Size = new System.Drawing.Size(1082, 592);
+            this.panelAll.Size = new System.Drawing.Size(1082, 611);
             this.panelAll.TabIndex = 189;
             // 
             // panelTop
@@ -2252,7 +2352,7 @@ namespace PUBGWinsUI
             this.panelTop.Controls.Add(this.flowLayoutPanel21);
             this.panelTop.Location = new System.Drawing.Point(3, 23);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(954, 145);
+            this.panelTop.Size = new System.Drawing.Size(954, 164);
             this.panelTop.TabIndex = 226;
             // 
             // flowLayoutPanel87
@@ -2407,7 +2507,7 @@ namespace PUBGWinsUI
             this.panelBottom.AutoSize = true;
             this.panelBottom.Controls.Add(this.panelDescriptionButtons);
             this.panelBottom.Controls.Add(this.flowLayoutPanel73);
-            this.panelBottom.Location = new System.Drawing.Point(3, 174);
+            this.panelBottom.Location = new System.Drawing.Point(3, 193);
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Size = new System.Drawing.Size(993, 415);
             this.panelBottom.TabIndex = 231;
@@ -2698,89 +2798,89 @@ namespace PUBGWinsUI
             this.flowLayoutPanel68.Size = new System.Drawing.Size(133, 13);
             this.flowLayoutPanel68.TabIndex = 206;
             // 
-            // flowLayoutPanel89
+            // flowLayoutPanel92
             // 
-            this.flowLayoutPanel89.AutoSize = true;
-            this.flowLayoutPanel89.Controls.Add(this.label66);
-            this.flowLayoutPanel89.Controls.Add(this.WinsHaven);
-            this.flowLayoutPanel89.Location = new System.Drawing.Point(3, 117);
-            this.flowLayoutPanel89.Name = "flowLayoutPanel89";
-            this.flowLayoutPanel89.Size = new System.Drawing.Size(112, 13);
-            this.flowLayoutPanel89.TabIndex = 226;
+            this.flowLayoutPanel92.AutoSize = true;
+            this.flowLayoutPanel92.Controls.Add(this.label69);
+            this.flowLayoutPanel92.Controls.Add(this.WinsTaego);
+            this.flowLayoutPanel92.Location = new System.Drawing.Point(3, 136);
+            this.flowLayoutPanel92.Name = "flowLayoutPanel92";
+            this.flowLayoutPanel92.Size = new System.Drawing.Size(111, 13);
+            this.flowLayoutPanel92.TabIndex = 227;
             // 
-            // label66
+            // label69
             // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(3, 0);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(87, 13);
-            this.label66.TabIndex = 190;
-            this.label66.Text = "Wins on Haven: ";
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(3, 0);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(86, 13);
+            this.label69.TabIndex = 190;
+            this.label69.Text = "Wins on Taego: ";
             // 
-            // WinsHaven
+            // WinsTaego
             // 
-            this.WinsHaven.AutoSize = true;
-            this.WinsHaven.Location = new System.Drawing.Point(96, 0);
-            this.WinsHaven.Name = "WinsHaven";
-            this.WinsHaven.Size = new System.Drawing.Size(13, 13);
-            this.WinsHaven.TabIndex = 191;
-            this.WinsHaven.Text = "0";
+            this.WinsTaego.AutoSize = true;
+            this.WinsTaego.Location = new System.Drawing.Point(95, 0);
+            this.WinsTaego.Name = "WinsTaego";
+            this.WinsTaego.Size = new System.Drawing.Size(13, 13);
+            this.WinsTaego.TabIndex = 191;
+            this.WinsTaego.Text = "0";
             // 
-            // flowLayoutPanel90
+            // flowLayoutPanel93
             // 
-            this.flowLayoutPanel90.AutoSize = true;
-            this.flowLayoutPanel90.Controls.Add(this.label67);
-            this.flowLayoutPanel90.Controls.Add(this.KillsHaven);
-            this.flowLayoutPanel90.Location = new System.Drawing.Point(3, 117);
-            this.flowLayoutPanel90.Name = "flowLayoutPanel90";
-            this.flowLayoutPanel90.Size = new System.Drawing.Size(106, 13);
-            this.flowLayoutPanel90.TabIndex = 194;
+            this.flowLayoutPanel93.AutoSize = true;
+            this.flowLayoutPanel93.Controls.Add(this.label70);
+            this.flowLayoutPanel93.Controls.Add(this.KillsTaego);
+            this.flowLayoutPanel93.Location = new System.Drawing.Point(3, 136);
+            this.flowLayoutPanel93.Name = "flowLayoutPanel93";
+            this.flowLayoutPanel93.Size = new System.Drawing.Size(105, 13);
+            this.flowLayoutPanel93.TabIndex = 195;
             // 
-            // label67
+            // label70
             // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(3, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(81, 13);
-            this.label67.TabIndex = 190;
-            this.label67.Text = "Kills on Haven: ";
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(3, 0);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(80, 13);
+            this.label70.TabIndex = 190;
+            this.label70.Text = "Kills on Taego: ";
             // 
-            // KillsHaven
+            // KillsTaego
             // 
-            this.KillsHaven.AutoSize = true;
-            this.KillsHaven.Location = new System.Drawing.Point(90, 0);
-            this.KillsHaven.Name = "KillsHaven";
-            this.KillsHaven.Size = new System.Drawing.Size(13, 13);
-            this.KillsHaven.TabIndex = 191;
-            this.KillsHaven.Text = "0";
+            this.KillsTaego.AutoSize = true;
+            this.KillsTaego.Location = new System.Drawing.Point(89, 0);
+            this.KillsTaego.Name = "KillsTaego";
+            this.KillsTaego.Size = new System.Drawing.Size(13, 13);
+            this.KillsTaego.TabIndex = 191;
+            this.KillsTaego.Text = "0";
             // 
-            // flowLayoutPanel91
+            // flowLayoutPanel94
             // 
-            this.flowLayoutPanel91.AutoSize = true;
-            this.flowLayoutPanel91.Controls.Add(this.label68);
-            this.flowLayoutPanel91.Controls.Add(this.KPWHaven);
-            this.flowLayoutPanel91.Location = new System.Drawing.Point(3, 117);
-            this.flowLayoutPanel91.Name = "flowLayoutPanel91";
-            this.flowLayoutPanel91.Size = new System.Drawing.Size(149, 13);
-            this.flowLayoutPanel91.TabIndex = 195;
+            this.flowLayoutPanel94.AutoSize = true;
+            this.flowLayoutPanel94.Controls.Add(this.label71);
+            this.flowLayoutPanel94.Controls.Add(this.KPWTaego);
+            this.flowLayoutPanel94.Location = new System.Drawing.Point(3, 136);
+            this.flowLayoutPanel94.Name = "flowLayoutPanel94";
+            this.flowLayoutPanel94.Size = new System.Drawing.Size(148, 13);
+            this.flowLayoutPanel94.TabIndex = 196;
             // 
-            // label68
+            // label71
             // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(3, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(124, 13);
-            this.label68.TabIndex = 190;
-            this.label68.Text = "Average Kills on Haven: ";
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(3, 0);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(123, 13);
+            this.label71.TabIndex = 190;
+            this.label71.Text = "Average Kills on Taego: ";
             // 
-            // KPWHaven
+            // KPWTaego
             // 
-            this.KPWHaven.AutoSize = true;
-            this.KPWHaven.Location = new System.Drawing.Point(133, 0);
-            this.KPWHaven.Name = "KPWHaven";
-            this.KPWHaven.Size = new System.Drawing.Size(13, 13);
-            this.KPWHaven.TabIndex = 191;
-            this.KPWHaven.Text = "0";
+            this.KPWTaego.AutoSize = true;
+            this.KPWTaego.Location = new System.Drawing.Point(132, 0);
+            this.KPWTaego.Name = "KPWTaego";
+            this.KPWTaego.Size = new System.Drawing.Size(13, 13);
+            this.KPWTaego.TabIndex = 191;
+            this.KPWTaego.Text = "0";
             // 
             // UI
             // 
@@ -2806,6 +2906,8 @@ namespace PUBGWinsUI
             this.flowLayoutPanel6.PerformLayout();
             this.flowLayoutPanel88.ResumeLayout(false);
             this.flowLayoutPanel88.PerformLayout();
+            this.flowLayoutPanel91.ResumeLayout(false);
+            this.flowLayoutPanel91.PerformLayout();
             this.flowLayoutPanel7.ResumeLayout(false);
             this.flowLayoutPanel7.PerformLayout();
             this.flowLayoutPanel9.ResumeLayout(false);
@@ -2820,6 +2922,8 @@ namespace PUBGWinsUI
             this.flowLayoutPanel16.PerformLayout();
             this.flowLayoutPanel56.ResumeLayout(false);
             this.flowLayoutPanel56.PerformLayout();
+            this.flowLayoutPanel90.ResumeLayout(false);
+            this.flowLayoutPanel90.PerformLayout();
             this.flowLayoutPanel8.ResumeLayout(false);
             this.flowLayoutPanel8.PerformLayout();
             this.flowLayoutPanel11.ResumeLayout(false);
@@ -2835,6 +2939,8 @@ namespace PUBGWinsUI
             this.flowLayoutPanel20.PerformLayout();
             this.flowLayoutPanel52.ResumeLayout(false);
             this.flowLayoutPanel52.PerformLayout();
+            this.flowLayoutPanel89.ResumeLayout(false);
+            this.flowLayoutPanel89.PerformLayout();
             this.flowLayoutPanel21.ResumeLayout(false);
             this.flowLayoutPanel21.PerformLayout();
             this.flowLayoutPanel22.ResumeLayout(false);
@@ -2977,12 +3083,12 @@ namespace PUBGWinsUI
             this.flowLayoutPanel65.PerformLayout();
             this.flowLayoutPanel68.ResumeLayout(false);
             this.flowLayoutPanel68.PerformLayout();
-            this.flowLayoutPanel89.ResumeLayout(false);
-            this.flowLayoutPanel89.PerformLayout();
-            this.flowLayoutPanel90.ResumeLayout(false);
-            this.flowLayoutPanel90.PerformLayout();
-            this.flowLayoutPanel91.ResumeLayout(false);
-            this.flowLayoutPanel91.PerformLayout();
+            this.flowLayoutPanel92.ResumeLayout(false);
+            this.flowLayoutPanel92.PerformLayout();
+            this.flowLayoutPanel93.ResumeLayout(false);
+            this.flowLayoutPanel93.PerformLayout();
+            this.flowLayoutPanel94.ResumeLayout(false);
+            this.flowLayoutPanel94.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3237,6 +3343,15 @@ namespace PUBGWinsUI
         private FlowLayoutPanel flowLayoutPanel89;
         private Label label66;
         private Label WinsHaven;
+        private FlowLayoutPanel flowLayoutPanel94;
+        private Label label71;
+        private Label KPWTaego;
+        private FlowLayoutPanel flowLayoutPanel93;
+        private Label label70;
+        private Label KillsTaego;
+        private FlowLayoutPanel flowLayoutPanel92;
+        private Label label69;
+        private Label WinsTaego;
     }
 }
 
